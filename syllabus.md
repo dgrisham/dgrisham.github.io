@@ -24,7 +24,7 @@ Course Info
 -   **CID**: CSCI 400
 -   **Lecture**: TR, 9:30-10:45
 -   **Room**: CT B60
--   **Website**: <https://github.com/dgrisham/csci400>
+-   **Website**: <https://dgrisham.github.io>
 
 Grading
 -------
