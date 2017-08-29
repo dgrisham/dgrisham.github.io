@@ -1,3 +1,12 @@
+The schedule gives the dates of all of the lectures, due dates for homework
+assignments, exam dates, etc. It also links to all of the course materials --
+the **lecture slides** can be viewed by clicking on the links within the
+schedule table below, and they should render directly in the browser. You'll
+also be able to navigate to the **in-class exercises** and **homework
+assignments** from here as well.
+
+--------------------------------------------------------------------------------
+
 All assignments are due by 23:59:59 on the due date.
 
 [**Meetup scheduling**](assignments/meetup.md): Due 9/3
