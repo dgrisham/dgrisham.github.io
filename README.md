@@ -9,6 +9,12 @@ Class-exercises](#assignments-and-class-exercises) section below, many of the
 (non-slides) Markdown (`.md`) files are best viewed in Github (Github renders
 them nicely, and the intra-repo hyperlinks will work as well).
 
+# Important Links
+
+[**Schedule**](schedule.md)
+
+[**Syllabus**](syllabus.md)
+
 # Notes
 
 ## Slides
