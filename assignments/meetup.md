@@ -50,7 +50,9 @@ length and should include a few slides, which cover:
 Schedule
 --------
 
+(Place your entry *under* the 'Placeholder' row)
+
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
-
+Placeholder                 | Placeholer   | Placeholder       | Placeholder
 
