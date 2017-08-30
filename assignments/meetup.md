@@ -55,4 +55,5 @@ Schedule
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
 Placeholder                 | Placeholer   | Placeholder       | Placeholder
+JavaScript Junkies          | 9/6          |                   | Josiah Navarro, TBD, TBD
 
