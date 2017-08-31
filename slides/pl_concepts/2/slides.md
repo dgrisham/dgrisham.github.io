@@ -39,12 +39,12 @@ Object Lifetime
     -   Destroys objects that are no longer reachable
 
 Object Lifetimes
----------------
+----------------
 
 1.  \hl{Static}
-2.  \hl{Stack}
-3.  \hl{Explicit heap}
-4.  \hl{Implicit heap}
+2.  \hl{Stack (Dynamic)}
+3.  \hl{Explicit heap (Dynamic)}
+4.  \hl{Implicit heap (Dynamic)}
 
 Variables by Lifetime: (1) Static
 ---------------------------------
@@ -63,11 +63,13 @@ Variables by Lifetime: (1) Static
 \hl{Example}
 
 ```c
+// `count` allocated here (prior to runtime)
 void fn() {
     static int count = 0;
     count ++;
     std::cout << count;
 }
+
 fn();
 fn();
 ```
@@ -99,8 +101,8 @@ Variables by Lifetime: (2) Stack
 void fn(int param) {
     int temp;
     int temp2;
+    // param, temp, temp2 now allocated 
 }
-// param, temp, temp2 now allocated 
 ```
 
 Variables by Lifetime: (2) Stack

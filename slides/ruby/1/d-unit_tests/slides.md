@@ -42,7 +42,7 @@ Unit Test
 ---------
 
 ```ruby
-requre 'minitest/autorun'
+require 'minitest/autorun'
 class ConverterTest < MiniTest::Test
     @@EPSILON = 0.0001
     def test_feetToMeters
