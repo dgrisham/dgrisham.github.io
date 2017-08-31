@@ -11,7 +11,7 @@ Most of the larger code examples in this file can be found in these files so
 that you can run them in the terminal to view the output.
 
 One you are finished with all of the content, complete the
-[Self-Test](#self-test) at the bottom of this document. There is nothing to
+[SelfTest](#self-test) at the bottom of this document. There is nothing to
 submit, you may keep your answers as a study guide.
 
 Language Design -- Classes
@@ -730,7 +730,7 @@ A few additional topics that aren't covered here, but might be useful:
 -   Marshalling
     -   Create from serialized data
 
-Self-Test
+Self Test
 ---------
 
 1.  What does it mean to be *strictly encapsulated*?
