@@ -45,10 +45,10 @@ Compare to Java
 Object Creation
 ---------------
 
--   Every class inherits method `new`{.ruby}
-    -   Calls `allocate`{.ruby} to get space (cannot override)
-    -   Calls `initialize`{.ruby} to create instance variables
--   Often convenient to provide default parameters for `initialize`{.ruby}
+-   Every class inherits method `new`
+    -   Calls `allocate` to get space (cannot override)
+    -   Calls `initialize` to create instance variables
+-   Often convenient to provide default parameters for `initialize`
 
     ```ruby
     def initialize(x, y, z=nil)
@@ -118,11 +118,11 @@ Simple Class
 ------------
 
 You can see a slightly more complete `Cat` class here:
-[Cat](demo_files/ruby_classes-1.rb)
+[Cat](src/classes-1.rb)
 
 
 Operator Overloading, etc.
 --------------------------
 
-Check out this Ruby class: [Bottle](demo_files/ruby_classes-2.rb)
+Check out this Ruby class: [Bottle](src/classes-2.rb)
 
