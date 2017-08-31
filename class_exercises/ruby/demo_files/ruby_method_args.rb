@@ -1,10 +1,10 @@
 =begin
-	Demo: Method arguments
-	Corresponds to: Ruby-Method_Proc.pptx
+    Demo: Method arguments
+    Corresponds to: Ruby-Method_Proc.pptx
 =end
 
 =begin
-	Illustrate default arguments
+    Illustrate default arguments
 =end
 def title(name, len=3)
   name[0,len]
@@ -22,7 +22,7 @@ puts punctuation("OMG!!!", 3)
 puts punctuation("How do you feel today?")
 
 =begin
-	Illustrate variable # of arguments
+    Illustrate variable # of arguments
 =end
 def limitedSum(max, *rest)
   sum = 0
@@ -45,7 +45,7 @@ data = [1,4,5]
 puts limitedSum(20, *data)
 
 =begin
-	Illustrate hashes as arguments
+    Illustrate hashes as arguments
 =end
 
 def greeting(args)

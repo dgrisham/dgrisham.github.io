@@ -1,6 +1,6 @@
 =begin
-	Ruby Arrays, Hashes, etc.
-	Corresponds to RubyDataTypes.ppt
+    Ruby Arrays, Hashes, etc.
+    Corresponds to RubyDataTypes.ppt
 =end
 
 # topic: Arrays
@@ -41,7 +41,7 @@ colors3 = { Cyndi: "orange", Karyl: "purple" }
 puts "Cyndi's favorite color: #{colors3[:Cyndi]}"
 puts "Everyones favorite colors:"
 colors.each do |key, value|
-	puts "#{key}'s favorite color is #{value}"
+    puts "#{key}'s favorite color is #{value}"
 end
 
 # topic: Ranges

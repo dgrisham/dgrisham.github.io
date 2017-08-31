@@ -1,6 +1,6 @@
 =begin
-	Demo: Method invocation
-	Corresponds to: RubyExpressions.ppt
+    Demo: Method invocation
+    Corresponds to: RubyExpressions.ppt
 =end
 
 # topic: method invocation
@@ -53,7 +53,7 @@ puts "z: #{z}"
 
 puts "\nMultiple return values"
 def fn
-	return 4,5,6
+    return 4,5,6
 end
 x,y,z = fn
 puts "x: #{x}"

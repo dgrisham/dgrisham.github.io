@@ -1,31 +1,31 @@
 =begin
-	Demo: Reflection Methods
-	Corresponds to: RubyReflection.pptx
+    Demo: Reflection Methods
+    Corresponds to: RubyReflection.pptx
 =end
 
 class Cat
-	def initialize(name, age)
-		@name = name
-		@age = age
-	end
-	
-	def purr
-		puts "purrrrrr"
-	end
-	
-	def show_local
-	    x = 5
-		local_variables.each do |var|
-		    puts var
-		end
-	end
-	
-	def show_methods
-		Cat.instance_methods(false).each do |method|
-		    puts method.to_s
-		end
-	end
-	
+    def initialize(name, age)
+        @name = name
+        @age = age
+    end
+    
+    def purr
+        puts "purrrrrr"
+    end
+    
+    def show_local
+        x = 5
+        local_variables.each do |var|
+            puts var
+        end
+    end
+    
+    def show_methods
+        Cat.instance_methods(false).each do |method|
+            puts method.to_s
+        end
+    end
+    
 end
 
 cat = Cat.new("Fluffy", 6)

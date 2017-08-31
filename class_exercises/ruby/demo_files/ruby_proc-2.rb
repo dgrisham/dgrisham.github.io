@@ -1,16 +1,16 @@
 =begin
-	Demo: Using Proc and eval
-	Corresponds to: RubyMetaprogramming.pptx
+    Demo: Using Proc and eval
+    Corresponds to: RubyMetaprogramming.pptx
 =end
 
 
 require 'singleton'
 class TryIt 
-	include Singleton
-	
-	def show_what n
-		puts n
-	end
+    include Singleton
+    
+    def show_what n
+        puts n
+    end
 end
 
 # eval considered evil by many
@@ -28,10 +28,10 @@ TryIt.instance.instance_eval(cmd)
 
 # class does not need to be a singleton
 class TryAgain
-	
-	def show_what n
-		puts n
-	end
+    
+    def show_what n
+        puts n
+    end
 end
 
 tryAgain = TryAgain.new

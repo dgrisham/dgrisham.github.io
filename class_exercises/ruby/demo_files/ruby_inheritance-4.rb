@@ -1,33 +1,33 @@
 =begin
-	Demo: Chaining methods
-	Corresponds to: RubyInheritance.pptx
+    Demo: Chaining methods
+    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person
-	def initialize(name)
-		@name = name
-	end
-	def greeting
-		puts "Hi, my name is #{@name}"
-	end
-	def long_greeting
-		puts "Hi, my name is #{@name}."
-	end
+    def initialize(name)
+        @name = name
+    end
+    def greeting
+        puts "Hi, my name is #{@name}"
+    end
+    def long_greeting
+        puts "Hi, my name is #{@name}."
+    end
 end
 
 class Student < Person
-	def initialize(name, major)
-		super(name)
-		@major = major
-	end
-	def greeting
-		puts "Hi, I'm a student and my name is #{@name}"
-	end
-	def long_greeting
-		# super automatically calls the corresponding parent method
-		super
-		puts "I am studying #{@major}."
-	end
+    def initialize(name, major)
+        super(name)
+        @major = major
+    end
+    def greeting
+        puts "Hi, I'm a student and my name is #{@name}"
+    end
+    def long_greeting
+        # super automatically calls the corresponding parent method
+        super
+        puts "I am studying #{@major}."
+    end
 end
 
 me = Person.new("Cyndi")

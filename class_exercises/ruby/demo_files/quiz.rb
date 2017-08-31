@@ -1,5 +1,5 @@
 =begin
-	From: http://jroller.com/rolsen/entry/building_a_dsl_in_ruby
+    From: http://jroller.com/rolsen/entry/building_a_dsl_in_ruby
 =end
 require 'singleton'
 
@@ -72,6 +72,3 @@ def wrong(text)
 end
 
 load 'questions.qm'
-
-
-

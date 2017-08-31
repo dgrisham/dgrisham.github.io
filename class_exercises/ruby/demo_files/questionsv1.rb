@@ -1,5 +1,5 @@
 =begin
-	First step in creating the DSL - just respond to the methods
+    First step in creating the DSL - just respond to the methods
 =end
 def question(text)
   puts "Just read a question: #{text}"

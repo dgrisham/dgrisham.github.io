@@ -1,6 +1,6 @@
 =begin
-	Demo: Singleton method added to an object
-	Corresponds to: RubyInheritance.pptx
+    Demo: Singleton method added to an object
+    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person

@@ -1,5 +1,5 @@
 =begin
-	Corresponds to Ruby-Methods_Procs.pptx
+    Corresponds to Ruby-Methods_Procs.pptx
 =end
 # generate sequence of n numbers m*i + c
 def sequence(n,m,c)

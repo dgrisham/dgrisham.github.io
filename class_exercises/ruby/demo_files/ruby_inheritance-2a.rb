@@ -1,22 +1,22 @@
 =begin
-	Demo: Method visibility
-	Corresponds to: RubyInheritance.pptx
+    Demo: Method visibility
+    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person 
-	def initialize(name)
-	  @name = name
-	  puts "initializing"
-	end
-		
-	def setupEmail(email)
-		@email = email
-	end
-		
-	def letsEmail() 
-	  puts "Emailing #{@email}"
-	end
-	private :letsEmail
+    def initialize(name)
+      @name = name
+      puts "initializing"
+    end
+        
+    def setupEmail(email)
+        @email = email
+    end
+        
+    def letsEmail() 
+      puts "Emailing #{@email}"
+    end
+    private :letsEmail
 
 end
 p = Person.new("Peter")

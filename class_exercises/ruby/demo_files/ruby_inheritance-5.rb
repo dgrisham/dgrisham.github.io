@@ -1,29 +1,29 @@
 =begin
-	Demo: Class variables
-	Corresponds to: RubyInheritance.pptx
+    Demo: Class variables
+    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person
-	def initialize(name)
-		@name = name
-		@@what = 12
-	end
-	def show 
-		puts "Person: #{@@something}"
-	end
+    def initialize(name)
+        @name = name
+        @@what = 12
+    end
+    def show 
+        puts "Person: #{@@something}"
+    end
 end
 
 class Student < Person
 
-	def make_something
-		@@something = 15
-	end
-	def show 
-		puts "Student: #{@@something} and #{@@what}"
-	end
-	def change_something
-		@@something = 25
-	end
+    def make_something
+        @@something = 15
+    end
+    def show 
+        puts "Student: #{@@something} and #{@@what}"
+    end
+    def change_something
+        @@something = 25
+    end
 
 end
 

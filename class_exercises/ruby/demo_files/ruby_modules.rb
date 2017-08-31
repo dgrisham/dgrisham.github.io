@@ -1,6 +1,6 @@
 =begin
-	Demo: Module as namespace
-	Corresponds to: RubyInheritance.pptx
+    Demo: Module as namespace
+    Corresponds to: RubyInheritance.pptx
 =end
 
 module Base64
@@ -12,7 +12,7 @@ end
 def self.decode (text)
 #could be: Base64.decode
 #cannot leave off self
-    puts "Decoded data"	
+    puts "Decoded data" 
 end
 
 end

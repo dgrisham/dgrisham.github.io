@@ -1,6 +1,6 @@
 =begin
-	Demo: Module as mixin
-	Corresponds to: RubyInheritance.pptx
+    Demo: Module as mixin
+    Corresponds to: RubyInheritance.pptx
 =end
 
 module FlyingCreature 
@@ -9,10 +9,10 @@ module FlyingCreature
    end 
 end 
 class Bird 
-	include FlyingCreature 
-	def initialize
-	  @speed = 5
-	end
+    include FlyingCreature 
+    def initialize
+      @speed = 5
+    end
 #... 
 end 
 class Mammal

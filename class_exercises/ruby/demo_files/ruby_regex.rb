@@ -1,6 +1,6 @@
 =begin
-	Demo: Simple regular expressions
-	Corresponds to: Ruby-RegEx.pptx
+    Demo: Simple regular expressions
+    Corresponds to: Ruby-RegEx.pptx
 =end
 
 =begin
@@ -19,7 +19,7 @@ location = /Ruby/i =~ s
 puts "Found Ruby/i at #{location}"
 # can also use as part of a condition
 if s =~ /Ruby/i
-	puts "found Ruby - case insensitive"
+    puts "found Ruby - case insensitive"
 end
 =begin
 Character class
@@ -40,7 +40,7 @@ Anchor (begin or end of string)
 =end
 puts "\nAnchors"
 if s =~ /\Aruby/
-	puts "found Ruby at beginning"
+    puts "found Ruby at beginning"
 end
 if s2 =~ /\Aruby/
   puts "found Ruby at beginning"
@@ -68,7 +68,7 @@ Alternatives
 puts "\nAlternatives"
 s3 = "I love Java and Ruby and PHP"
 if s3 =~ /Java|PHP/
-	puts "what, another language?"
+    puts "what, another language?"
 end
 if s2 =~ /Java|PHP/
   puts "what, another language?"
@@ -82,23 +82,23 @@ puts "\nSpecial character classes"
 # Regular character class, easy to recognize/remember
 partNum = "aZ2"
 if partNum =~ /[a-z][A-Z][0-9]/
-	puts "part number is lower-case then upper-case then digit"
+    puts "part number is lower-case then upper-case then digit"
 end
 # Same pattern with special character class
 if partNum =~ /[a-z][A-Z]\d/
-	puts "part number is still lower-case then upper-case then digit"
+    puts "part number is still lower-case then upper-case then digit"
 end
 if partNum =~ /[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9]/
-	puts "part number has 3 word characters"
+    puts "part number has 3 word characters"
 end
 if partNum =~ /\w\w\w/
-	puts "part number still has 3 word characters"
+    puts "part number still has 3 word characters"
 end
 if partNum =~ /..\d/
-	puts "part number is two characters followed by a digit"
+    puts "part number is two characters followed by a digit"
 end
 if partNum =~ /\D\D\d/
-	puts "part number is two non-digits followed by a digit"
+    puts "part number is two non-digits followed by a digit"
 end
 partNum = "123"
 if partNum =~ /\D\D\d/
@@ -107,7 +107,7 @@ else
   puts "part number is invalid"
 end
 if partNum =~ /..\d/
-	puts "part number is two characters followed by a digit"
+    puts "part number is two characters followed by a digit"
 end
 partNum = "3.A"
 # escape special characters
@@ -120,7 +120,7 @@ Repetition
 puts "\nRepetition"
 anotherPart = "A45@"
 if anotherPart =~ /.[0-9]+@/
-	puts "another part is any character, one or more digits, @"
+    puts "another part is any character, one or more digits, @"
 end
 anotherPart = "A@"
 if anotherPart =~ /.[0-9]+@/
@@ -129,14 +129,14 @@ else
   puts "another part must contain one or more digits"
 end
 if anotherPart =~ /.[0-9]*@/
-	puts "another part is any character, optional digits, @"
+    puts "another part is any character, optional digits, @"
 end
 if anotherPart =~ /.[0-9]?@/
-	puts "another part is any character, optional one digit, @"
+    puts "another part is any character, optional one digit, @"
 end
 anotherPart = "A1@"
 if anotherPart =~ /A[0-9]?@/
-	puts "another part is A, optional one digit, @"
+    puts "another part is A, optional one digit, @"
 end
 anotherPart = "A12@"
 if anotherPart =~ /A[0-9]?@/

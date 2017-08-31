@@ -1,6 +1,6 @@
 =begin
-	Demo: Basic Ruby
-	Corresponds to: RubyBasics.ppt
+    Demo: Basic Ruby
+    Corresponds to: RubyBasics.ppt
 =end
 
 # getting started
@@ -20,7 +20,7 @@ puts "\nBlock structure examples"
 
 x = 5
 unless x == 10 
-	print x
+    print x
 end
 # newline
 puts 
@@ -56,7 +56,7 @@ puts "hey " * 5
 
 # topic: whitespace in function invocation
 def f(x)
-	x*x
+    x*x
 end
 
 puts f(3+2) + 1
