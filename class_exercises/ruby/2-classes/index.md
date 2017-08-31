@@ -1,9 +1,18 @@
 Ruby Classes and Objects
 ========================
 
+You will explore these topics with a partner.
+
+Preparation
+-----------
+
 Start by downloading the [Ruby `Class` demo files](./ruby-class_demo_files.zip).
 Most of the larger code examples in this file can be found in these files so
 that you can run them in the terminal to view the output.
+
+One you are finished with all of the content, complete the [Self
+Test](#self-test) at the bottom of this document. There is nothing to submit,
+you may keep your answers as a study guide.
 
 Language Design -- Classes
 --------------------------
@@ -129,7 +138,7 @@ A few things to note:
 -   *Return value of last expression* in a function is *returned*
 -   `@` indicates *instance variable*
 
-### Operator Overloading, etc.
+### Operator Overloading and Metaprogramming
 
 **Open/run the `ruby_classes-2.rb` file in the provided files**
 
@@ -720,3 +729,63 @@ A few additional topics that aren't covered here, but might be useful:
 -   `initialize_copy`
 -   Marshalling
     -   Create from serialized data
+
+Self-Test
+---------
+
+1.  What does it mean to be *strictly encapsulated*?
+2.  What's the method name of the 'constructor' in Ruby?
+3.  What's the difference between a variable named `y` and one named `@y`?
+4.  As in Java, instance variables should be declared inside the class but
+    outside any method. True / False
+5.  What's the purpose of the `to_s` method?
+6.  Regarding `ruby_classes-1.rb` (Section [Simple Class](#simple-class))
+    -   Does the output make sense to you?
+    -   Why doesn't the 'getter' for `name` need a `return` statement?
+    -   What does `attr_reader` do?
+7.  Regarding `ruby_classes-2.rb` (Section [Operator
+    Overloading](#operator-overloading-and-metaprogramming))
+    -   Does the output make sense?
+    -   What's the difference between `add` and `add!`
+    -   What function is implicitly called by `Bottle.new`?
+8.  Does C++ support ad-hoc polymorphism? Explain your answer.
+9.  Give an example of parametric polymorphism in Java.
+10. Regarding `ruby_classes-3.rb` (Section [Duck Typing](#duck-typing)) -- Be
+    sure you understand this!
+    -   Use this example to explain *duck typing* (and don't just say "If it
+        walks like a duck..." - how does this example show it?)
+11. What's the difference between `instance_of?` and `is_a`?
+12. To see the value of `respond_to`, and have some comparison between Ruby and
+    Java, you might take a quick look at:
+    <https://blogs.kde.org/2005/10/08/java-reflection-vs-ruby-respondto>
+13. Regarding `ruby_classes-4.rb` (Section [Equality
+    Example](#equality-example))
+    -   Does the output make sense?
+    -   What does the `alias` statement do?
+    -   This example overrides `==`. What function would you override in Java to
+        have a similar effect?
+14. Regarding `ruby_classes-5.rb` (Section [Type-safe
+    Methods](#type-safe-methods))
+    -   Does the output make sense?
+    -   We'll talk more about exceptions in an upcoming lecture, but what can
+        you figure out just by looking at this code?
+15. Regarding `ruby_classes-6.rb` (Section [More
+    Overloading](#more-overloading))
+    -   Does the output make sense?
+    -   Can you explain how the yield works in the `each` method?
+    -   Why are there so many options for `[]`? Do you understand them all?
+16. Regarding `ruby_classes-7.rb` (Section [Comparison
+    Example](#comparison-example))
+    -   Does the output make sense?
+    -   What Java function is the spaceship operator similar to?
+17. Regarding `ruby_classes-8.rb` (Section [Class Methods and
+    Variables](#class-methods-and-variables))
+    -   Does the output make sense?
+    -   What does `@@` mean?
+    -   What's the syntax for a class method?
+
+Submit/Rubric
+-------------
+
+Nothing to submit. If you don't finish during class, I *strongly* recommend you
+finish on your own.
