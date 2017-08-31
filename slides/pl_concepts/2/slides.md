@@ -6,6 +6,12 @@ author: Colorado School of Mines
 theme: Amsterdam
 ...
 
+Color Key
+---------
+
+-   [\link{Clickable URL link}](https://www.youtube.com/watch?v=8FEFClgA37E)
+-   \q{Write down an answer to this for class participation}
+-   \comment{Just a comment -- don't confuse with yellow}
 
 Object Lifetime
 ===============
