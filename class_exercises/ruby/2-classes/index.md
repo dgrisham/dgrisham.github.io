@@ -10,9 +10,9 @@ Start by downloading the [Ruby `Class` demo files](./ruby-class_demo_files.zip).
 Most of the larger code examples in this file can be found in these files so
 that you can run them in the terminal to view the output.
 
-One you are finished with all of the content, complete the [Self
-Test](#self-test) at the bottom of this document. There is nothing to submit,
-you may keep your answers as a study guide.
+One you are finished with all of the content, complete the
+[Self-Test](#self-test) at the bottom of this document. There is nothing to
+submit, you may keep your answers as a study guide.
 
 Language Design -- Classes
 --------------------------
