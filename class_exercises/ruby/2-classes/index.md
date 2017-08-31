@@ -29,7 +29,7 @@ Encapsulation
 -   Protect instance variables from outside forces
     -   i.e., other classes
 -   Ruby is *strictly encapsulated*
-    -   Always private
+    -   *Always* private
     -   *Must* include getters/setters
     -   **Encapsulated:** other classes can't access data directly
 -   Reflection and open classes subvert this encapsulation
@@ -37,19 +37,19 @@ Encapsulation
 ### Compare to Java
 
 In Java, the default visibility of a class variable is to the package the class
-is a part of. You can also declare them as `public`. Because of these two
+is a part of. You can also declare class vars as `public`. Because of these two
 points, Java is *not* strictly encapsulated.
 
 Best practice in Java is to make instance variables private. We can see why if
 we consider the public attributes of a class as an API (**A**pplication
-**P**rogramming **I**nterface) that outside programs will interface with. For
+**P**rogramming **I**nterface) that outside programs will interact with. For
 example, we probably want to write the class in a way that makes it easy to
 update in the future without causing the calling code to fail.
 
 Given this perspective, it might start to make sense why we use getters and
-setters. If the calling code had direct access to a class variable, then updates
-to the class may break the calling code in certain ways; getters and setters can
-act as mediators here. In particular:
+setters. If the calling code interact with a class variable directly, then
+updates to the class may break the calling code in certain ways; getters and
+setters can act as mediators here. In particular:
 
 -   A setter should accept some input from the user and update the class in a
     controlled way. This allows the class implementor to ensure that all input
@@ -69,17 +69,16 @@ Object Creation
 -   Often convenient to provide default parameters for `initialize`
 
     ```ruby
-    def initialize(x, y, z=nil)
+    def initialize(x, y, z=0)
         @x, @y, @z = x, y, z
     end
     ```
 
 ### Simple Class
 
-**Open/run the `ruby_classes-1.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-1.rb` file in the provided files**
 
-Here's an example of a simple `Cat` class, complete with getters and setters
+Here's an example of a simple `Cat` class, complete with getters and setters:
 
 ```ruby
 class Cat
@@ -132,8 +131,7 @@ A few things to note:
 
 ### Operator Overloading, etc.
 
-**Open/run the `ruby_classes-2.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-2.rb` file in the provided files**
 
 ```ruby
 class Bottle
@@ -188,7 +186,7 @@ end
 ```
 
 And we can try running the code to see how it behaves (try running the provided
-file in the terminal to s (see top of file)ee the output of the following):
+file in the terminal to s ee the output of the following):
 
 ```ruby
 b = Bottle.new("Tab", 16)
@@ -224,8 +222,8 @@ puts "b5 is #{b5}"
 Polymorphism
 ------------
 
-Wikipedia: *Polymorphism** is the provision of a single interface to entities
-of different types.
+Wikipedia: *Polymorphism* (from the Greek 'many forms') is the provision of a
+single interface to entities of different types.
 
 A **polymorphic type** is one whose operations can also be applied to values of
 some other type(s).
@@ -237,7 +235,7 @@ We'll see 3 types of polymorphism:
 2.  Parametric
     -   e.g. generics in Java, duck typing in Ruby
 3.  Subtyping
-    e.g. parent-child relationships where child overrides parent methods
+    -   e.g. parent-child relationships where child overrides parent methods
 
 ### Ad-hoc Polymorphism
 
@@ -249,7 +247,7 @@ Ad-hoc polymorphism is supported in many languages using *function overloading*
 -- same function name, but behavior is different depending on number and/or
 types of parameters.
 
-See also: <http://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading>
+See: <http://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading>
 
 ### Parametric Polymorphism
 
@@ -258,18 +256,17 @@ transparently with any number of new types, it is called **parametric
 polymorphism**. There may be some restriction on the types that are accepted,
 such as "the input type must support comparison (`<`, `>`, `==`)".
 
-A *type parameter* or *type variable* may be used as a placeholder, e.g.
-`LinkedList<T>` in Java, were `T` is the type variable.
+A *type parameter* or *type variable* may be used as a placeholder for an actual
+type, e.g. `LinkedList<T>` in Java, where `T` is the type variable.
 
 In object-oriented programming, this is often referred to as **generic
 programming**.
 
-See also: <https://stackoverflow.com/questions/10179449/what-is-parametric-polymorphism-in-java-with-example>
+See: <https://stackoverflow.com/questions/10179449/what-is-parametric-polymorphism-in-java-with-example>
 
 ### Duck Typing
 
-**Open/run the `ruby_classes-3.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-3.rb` file in the provided files**
 
 "If it walks like a duck and quacks like a duck, it must be a duck."
 
@@ -371,8 +368,7 @@ In Ruby:
 Equality Example
 ----------------
 
-**Open/run the `ruby_classes-4.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-4.rb` file in the provided files**
 
 ```ruby
 class Bottle
@@ -392,9 +388,9 @@ class Bottle
     alias eql? ==
 end
 
-# Can also has ounces
 class Can
     attr_accessor :ounces
+
     def initialize(label, ounces)
         @label = label
         @ounces = ounces
@@ -466,8 +462,7 @@ See: <https://stackoverflow.com/questions/4467538/what-does-the-operator-do-in-r
 Type-safe Methods
 -----------------
 
-**Open/run the `ruby_classes-5.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-5.rb` file in the provided files**
 
 The following re-implements the code from the [Duck Typing](#duck-typing)
 section with manual type checking to catch any issues with the input types to
@@ -495,7 +490,6 @@ class Bottle
 
     def add3(other)
         Bottle.new(@label, @ounces+other.ounces)
-        # like "catch" for method not defined error
         rescue
             raise TypeError, "Cannot add with an argument that doesn't have ounces"
     end
@@ -507,10 +501,12 @@ end
 
 class Can
     attr_accessor :ounces
+
     def initialize(label, ounces)
         @label = label
         @ounces = ounces
     end
+
     def to_s
         "(#@label, #@ounces)"
     end
@@ -545,8 +541,7 @@ b2 = b.add3(cat)
 More Overloading
 ----------------
 
-**Open/run the `ruby_classes-6.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-6.rb` file in the provided files**
 
 Examples of overloading the `each` and `[]` functions:
 
@@ -560,7 +555,6 @@ class Bottle
         @ounces = ounces
     end
 
-    # will return each field in order
     def each
         yield @label
         yield @ounces
@@ -609,8 +603,7 @@ terms of `<=>`), but these can be overriden if desired (e.g. for efficiency).
 Comparison Example
 ------------------
 
-**Open/run the `ruby_classes-7.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-7.rb` file in the provided files**
 
 ```ruby
 class Bottle
@@ -653,8 +646,7 @@ puts "b == b4 #{b == b4}"
 Class Methods and Variables
 ---------------------------
 
-**Open/run the `ruby_classes-8.rb` file in the provided files (see top of
-file)**
+**Open/run the `ruby_classes-8.rb` file in the provided files**
 
 Recall that `@@` is used to prefix *class variables* in Ruby -- variables that
 have a single instance that is shared by all instances of the class. Ruby also
