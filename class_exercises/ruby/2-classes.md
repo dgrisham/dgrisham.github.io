@@ -118,11 +118,11 @@ Simple Class
 ------------
 
 You can see a slightly more complete `Cat` class here:
-[Cat](src/ruby_classes-1.rb)
+[Cat](demo_files/ruby_classes-1.rb)
 
 
 Operator Overloading, etc.
 --------------------------
 
-Check out this Ruby class: [Bottle](src/ruby_classes-2.rb)
+Check out this Ruby class: [Bottle](demo_files/ruby_classes-2.rb)
 
