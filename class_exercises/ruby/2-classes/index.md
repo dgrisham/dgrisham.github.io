@@ -744,7 +744,7 @@ Self-Test
     -   Why doesn't the 'getter' for `name` need a `return` statement?
     -   What does `attr_reader` do?
 7.  Regarding `ruby_classes-2.rb` (Section [Operator
-    Overloading](#operator-overloading-and-metaprogramming))
+    Overloading and Metaprogramming](#operator-overloading-and-metaprogramming))
     -   Does the output make sense?
     -   What's the difference between `add` and `add!`
     -   What function is implicitly called by `Bottle.new`?
