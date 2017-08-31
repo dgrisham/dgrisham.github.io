@@ -111,6 +111,8 @@ store word choices:
    2     | Test loading the file
    2     | Test selecting a random word
 
+*2 points* Discretionary (coding style/cleanliness, etc.)
+
 Submit
 ------
 
