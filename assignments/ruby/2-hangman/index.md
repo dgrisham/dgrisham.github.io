@@ -117,7 +117,7 @@ That is correct, you win!
 
 
 The game is lost if there are too many bad letter guesses. In the hangman game,
-the face, body, arms and legs would be drawn. For our game we will allow 6 bad
+the face, body, arms, and legs would be drawn. For our game we will allow 6 bad
 guesses.
 
 ```
