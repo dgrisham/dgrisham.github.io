@@ -35,43 +35,173 @@ When the program starts, display a number of underscores equal to the number of
 letters in the word, and a prompt to enter a letter or some character to guess
 (I used '0').
 
-![Start of the hangman game](img/start.gif)
+### Examples
 
-Start of hangman game
+Start of hangman game:
 
-One way to win the game is to guess all the letters to fill the word.
+```
+THE WORD
+_ _ _ _ _ _
 
-![Hangman game with all letters filled](img/all_filled.gif)
+Enter your next letter or '0' to guess the answer: 
+```
 
-A winning game with all letters filled
+A winning game with all the letters filled:
 
-Another way to win the game is to "guess" the complete word.
+```
+THE WORD
+_ _ _ _ _ _
 
-![Hangman game with word guessed](img/good_guess.gif)
+Enter your next letter or '0' to guess the answer: g
 
-A winning game with complete word guessed
+
+THE WORD
+_ _ _ _ _ _
+Bad guesses (only 4 left!): g
+
+Enter your next letter or '0' to guess the answer: t
+
+
+THE WORD
+_ _ _ _ _ _
+Bad guesses (only 4 left!): gt
+
+Enter your next letter or '0' to guess the answer: b
+
+
+THE WORD
+b _ _ _ _ _
+Bad guesses (only 4 left!): gt
+
+Enter your next letter or '0' to guess the answer: a
+
+
+THE WORD
+b a _ a _ a
+Bad guesses (only 4 left!): gt
+
+Enter your next letter or '0' to guess the answer: n
+
+
+THE WORD
+b a n a n a
+Bad guesses (only 4 left!): gt
+
+Enter your next letter or '0' to guess the answer: b
+
+
+THE WORD
+b a n a n a
+Congratulations, you win!
+```
+
+Winning the game by guessing the complete word:
+
+```
+THE WORD
+_ _ _ _ _ _
+
+Enter your next letter or '0' to guess the answer: p
+
+
+THE WORD
+_ p p _ _ _
+
+Enter your next letter or '0' to guess the answer: 0
+
+What's the word?
+apple
+That is correct, you win!
+```
 
 The game is lost if there are too many bad letter guesses. In the hangman game,
 the face, body, arms and legs would be drawn. For our game we will allow 6 bad
 guesses.
 
-![Hangman game with too many bad guesses](img/many_bad.gif)
+```
+THE WORD
+_ _ _ _ _ _
 
-A losing game with too many bad guesses
+Enter your next letter or '0' to guess the answer: b
 
-Another way to lose is to enter a guess that is incorrect.
 
-![Hangman game with a bad guess](img/bad_guess.gif)
+THE WORD
+_ _ _ _ _ _
+Bad guesses (only 4 left!): b
 
-A losing game with a bad guess
+Enter your next letter or '0' to guess the answer: l
 
-Allow the user to play again or quit.
 
-![Hangman game option to play again](img/end.gif)
+THE WORD
+_ _ _ _ _ _
+Bad guesses (only 4 left!): bl
 
-After a win or loss, prompt to play again
+Enter your next letter or '0' to guess the answer: g
 
-Your display does not need to match mine exactly.
+
+THE WORD
+_ _ _ _ _ _
+Bad guesses (only 4 left!): blg
+
+Enter your next letter or '0' to guess the answer: t
+
+
+THE WORD
+_ _ t t _ _
+Bad guesses (only 4 left!): blg
+
+Enter your next letter or '0' to guess the answer: i
+
+
+THE WORD
+_ i t t _ _
+Bad guesses (only 4 left!): blg
+
+Enter your next letter or '0' to guess the answer: y
+
+
+THE WORD
+b a n a n a
+Bad guesses (only 4 left!): blgy
+
+Enter your next letter or '0' to guess the answer: p
+
+
+THE WORD
+b a n a n a
+Bad guesses (only 4 left!): blgyp
+
+Enter your next letter or '0' to guess the answer: o
+
+Sorry, too many bad guesses!
+
+Enter 'q' to quit or any other character for another game: 
+```
+
+Another way to lose is to enter a guess that is incorrect:
+
+```
+THE WORD
+_ _ _ _
+
+Enter your next letter or '0' to guess the answer: 0
+
+What's the word?
+pear
+That is not correct, you lose!
+```
+
+After a win or loss, prompt to play again or quit:
+
+```
+THE WORD
+k i w i
+Congratulations, you win!
+
+Enter 'q' to quit or any other character for another game: q
+```
+
+*Your display does not need to match the examples exactly.*
 
 Rubric
 ------
