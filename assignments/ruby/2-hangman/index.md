@@ -45,6 +45,7 @@ _ _ _ _ _ _
 
 Enter your next letter or '0' to guess the answer: 
 ```
+________________________________________________________________________________
 
 A winning game with all the letters filled:
 
@@ -94,7 +95,7 @@ THE WORD
 b a n a n a
 Congratulations, you win!
 ```
-
+________________________________________________________________________________
 
 Winning the game by guessing the complete word:
 
@@ -114,7 +115,7 @@ What's the word?
 apple
 That is correct, you win!
 ```
-
+________________________________________________________________________________
 
 The game is lost if there are too many bad letter guesses. In the hangman game,
 the face, body, arms, and legs would be drawn. For our game we will allow 6 bad
@@ -179,7 +180,7 @@ Sorry, too many bad guesses!
 
 Enter 'q' to quit or any other character for another game: 
 ```
-
+________________________________________________________________________________
 
 Another way to lose is to enter a guess that is incorrect:
 
@@ -193,7 +194,7 @@ What's the word?
 pear
 That is not correct, you lose!
 ```
-
+________________________________________________________________________________
 
 After a win or loss, prompt to play again or quit:
 
@@ -204,7 +205,7 @@ Congratulations, you win!
 
 Enter 'q' to quit or any other character for another game: q
 ```
-
+________________________________________________________________________________
 
 *Your display does not need to match the examples exactly.*
 
