@@ -55,4 +55,5 @@ Schedule
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
 Placeholder                 | Placeholer   | Placeholder       | Placeholder
+Boulder Data science Study Group | 9/3     |                   | Daniel Renkert, Austin Phillips
 
