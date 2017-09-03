@@ -55,4 +55,5 @@ Schedule
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
 Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
+DTC Go Monthly Meetup            | 9/13         |                   | Daichi Jameson, Reece Hughes
 
