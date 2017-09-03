@@ -55,4 +55,4 @@ Schedule
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
 Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
-
+Denver Java User Group           | 9/13         |                   | Benjamin Tarman, Mason English, Jesse Halbach , Kyle Voris
