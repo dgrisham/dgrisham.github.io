@@ -55,4 +55,5 @@ Schedule
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
 Placeholder                 | Placeholer   | Placeholder       | Placeholder
+Denver Gophers                 | September 28th   |        | Adrien Perinet, Austin Schussler, Ian Tobiason
 
