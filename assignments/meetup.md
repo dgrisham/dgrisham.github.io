@@ -52,8 +52,7 @@ Schedule
 
 (Place your entry *under* the 'Placeholder' row)
 
-Meeting                     | Meeting Date | Presentation Date | Students
--------                     | :----------: | :---------------: | --------
-Placeholder                 | Placeholer   | Placeholder       | Placeholder
-Boulder Data science Study Group | 9/3     |                   | Daniel Renkert, Austin Phillips
+Meeting                          | Meeting Date | Presentation Date | Students
+-------                          | :----------: | :---------------: | --------
+Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
 
