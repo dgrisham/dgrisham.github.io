@@ -55,4 +55,5 @@ Schedule
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
 Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
+Colorado Video Games BBQ         | 9/9          |                   | Liam Clift, Justin Persinger, Caleb Micho
 
