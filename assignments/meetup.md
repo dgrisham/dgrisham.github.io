@@ -54,5 +54,8 @@ Schedule
 
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
-Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
+Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
+-------                          | :----------: | :---------------: | --------
+Group 2 | 9/9          |                   | Caleb Micho, Liam Clift, Justin Persinger
+
 
