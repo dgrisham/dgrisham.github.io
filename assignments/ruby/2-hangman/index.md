@@ -13,7 +13,7 @@ Preparation
 -   You may want to [review how the game is
     played](http://en.wikipedia.org/wiki/Hangman_(game)).
 -   Download [my sample word file](testWords.txt) (right-click and choose *Save
-    link as...*.
+    link as...*).
 
 To work with command line arguments, read:
 
