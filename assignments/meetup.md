@@ -55,4 +55,5 @@ Schedule
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
 Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
-
+Galvanize Data Science Info      | 9/12         |                   | Allee Zarrini, Josiah Navarro
+Session - Denver                 |              |                   | Becca May, Alexey Yaremenko
