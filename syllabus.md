@@ -10,7 +10,7 @@ Instructor
 
 ### Office Hours
 
-Office hours will be held in TBD
+Office hours will be held in **Brown Building 280B**
 
 -   Tuesdays, 3:00-4:00 pm
 -   Thursdays, 2:00-3:00 pm

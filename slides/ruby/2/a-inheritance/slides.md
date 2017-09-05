@@ -243,15 +243,13 @@ accidentally override a method!}
 Language Comparison
 -------------------
 
-Run `ruby_inheritance-1.rb`
-
--   Does Java automatically call parent constructor?
+-   Does Java automatically call parent constructor ('ctor')?
     -   [\link{Read}](https://stackoverflow.com/questions/6318628/when-do-you-need-to-explicitly-call-a-superclass-constructor)
 -   Compare to C++
     -   [\link{Read}](https://stackoverflow.com/questions/120876/what-are-the-rules-for-calling-the-superclass-constructor)
 -   \q{Questions}\Noteref 
     1.  \q{In Java, when you do need to explicitly call the parent ctor?}
-    2.  \q{In C++, why don't they use a keyword like} `super` \q{to call th
+    2.  \q{In C++, why don't they use a keyword like} `super` \q{to call the
             parent ctor?}
 
 \Note{Not exam topics}
