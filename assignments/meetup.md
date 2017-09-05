@@ -52,8 +52,8 @@ Schedule
 
 (Place your entry *under* the 'Placeholder' row)
 
-Meeting                     | Meeting Date | Presentation Date | Students
--------                     | :----------: | :---------------: | --------
-Placeholder                 | Placeholer   | Placeholder       | Placeholder
+Meeting                          | Meeting Date | Presentation Date | Students
+-------                          | :----------: | :---------------: | --------
+Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
 Denver Gophers                 | 9/28   |        | Adrien Perinet, Austin Schussler, Ian Tobiason
 

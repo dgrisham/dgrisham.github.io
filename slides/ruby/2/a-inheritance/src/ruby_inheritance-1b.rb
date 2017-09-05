@@ -1,6 +1,5 @@
 =begin
     Demo: Simple inheritance
-    Corresponds to: RubyInheritance.pptx
     Instance variables are not inherited
 =end
 
@@ -14,23 +13,23 @@ class Person
         @email = email
     end
     
-    def letsEmail() 
+    def sendEmail() 
         puts "Emailing #{@email}"
     end
 end
 
 class Student < Person
     def to_s
-        # technically @name is not inherited... but it 
-        # came into being when initialize was called
+        # technically `@name` is not inherited... but it 
+        # came into being when `initialize` was called
         "Name: #{@name}"
         # the following line generates output, then displays object ID
         #puts "Name: #{@name}"
     end
 end
 
-p = Person.new("Peter")
-p.setupEmail("peter@mines.edu")
-s = Student.new("Cyndi")
-p.letsEmail
-s.letsEmail
+p = Person.new("Devin")
+p.setupEmail("dev@mines.edu")
+s = Student.new("Gene")
+p.sendEmail
+s.sendEmail
