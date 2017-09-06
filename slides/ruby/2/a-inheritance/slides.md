@@ -487,6 +487,7 @@ class AbstractGreeter
   def greet
     puts "#{greeting} #{who}" # call abstract methods
   end
+  def say_hi; puts "Hi!"; end # concrete method
 end
 class WorldGreeter < AbstractGreeter
   def greeting; "Hello"; end
@@ -504,6 +505,7 @@ class AbstractGreeter
   def greet
     puts "#{greeting} #{who}" # call abstract methods
   end
+  def say_hi; puts "Hi!"; end # concrete method
 end
 class WorldGreeter < AbstractGreeter
   def greeting; "Hello"; end
@@ -521,8 +523,11 @@ Example: Abstract Class Methods (3/3)
 -------------------------------------
 
 ```ruby
+# `WorldGreeter` implements methods for `greet`
 WorldGreeter.new.greet
+# cannot call abstract method
 AbstractGreeter.new.greet
+# can call concrete method
 AbstractGreeter.new.say_hi
 ```
 
