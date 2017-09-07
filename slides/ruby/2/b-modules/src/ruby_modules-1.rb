@@ -4,13 +4,12 @@
 
 module Base64
 
-def self.encode (data)
+def self.encode(data)
     puts "Encoded data"
 end
 
-def self.decode (text)
-#could be: Base64.decode
-#cannot leave off self
+# could be: Base64.decode, but that breaks when module name changes
+def self.decode(text)
     puts "Decoded data" 
 end
 

@@ -22,10 +22,14 @@ class Bat < Mammal
     #... 
 end 
 
-daffy = Bird.new
-daffy.fly
-dracula = Bat.new 
-dracula.fly
-puts "dracula is a flying creature: #{dracula.is_a? FlyingCreature}"
-piglet = Mammal.new
-puts "piglet is a flying creature: #{piglet.is_a? FlyingCreature}"
+tweety = Bird.new
+tweety.fly
+puts "tweety is a flying creature? #{tweety.is_a? FlyingCreature}"
+
+bat = Bat.new
+bat.fly
+puts "bat is a flying creature? #{bat.is_a? FlyingCreature}"
+
+batman = Mammal.new
+# batman.fly # error
+puts "batman is a flying creature? #{batman.is_a? FlyingCreature}"

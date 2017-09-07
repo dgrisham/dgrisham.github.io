@@ -1,6 +1,5 @@
 =begin
     Demo: Simple inheritance
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person 

@@ -1,6 +1,5 @@
 =begin
     Ruby Arrays, Hashes, etc.
-    Corresponds to RubyDataTypes.ppt
 =end
 
 # topic: Arrays

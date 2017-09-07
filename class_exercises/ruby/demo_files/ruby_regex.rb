@@ -1,6 +1,5 @@
 =begin
     Demo: Simple regular expressions
-    Corresponds to: Ruby-RegEx.pptx
 =end
 
 =begin

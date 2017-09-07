@@ -1,6 +1,5 @@
 =begin
     Demo:Control flow
-    Corresponds to: Ruby-ControlFlow.ppt
 =end
 
 x=5

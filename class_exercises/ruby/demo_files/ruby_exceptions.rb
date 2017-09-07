@@ -1,6 +1,5 @@
 =begin
     Demo: Exception handling
-    Corresponds to: RubyExceptions.pptx
     
     Code excerpted from The Ruby Programming Language
     

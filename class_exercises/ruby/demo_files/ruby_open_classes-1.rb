@@ -1,6 +1,5 @@
 =begin
     Demo: Open class structure
-    Corresponds to: RubyModules.pptx
 =end
 
 class Cat 

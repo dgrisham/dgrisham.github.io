@@ -1,6 +1,5 @@
 =begin
     Demo: Overriding inherited methods
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person

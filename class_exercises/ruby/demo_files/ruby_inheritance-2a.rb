@@ -1,6 +1,5 @@
 =begin
     Demo: Method visibility
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person 

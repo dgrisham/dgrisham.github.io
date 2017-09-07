@@ -1,6 +1,5 @@
 =begin
     Demo: Method arguments
-    Corresponds to: Ruby-Method_Proc.pptx
 =end
 
 =begin

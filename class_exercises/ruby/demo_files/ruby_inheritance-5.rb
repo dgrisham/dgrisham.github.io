@@ -1,6 +1,5 @@
 =begin
     Demo: Class variables
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person

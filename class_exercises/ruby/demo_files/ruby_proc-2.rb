@@ -1,6 +1,5 @@
 =begin
     Demo: Using Proc and eval
-    Corresponds to: RubyMetaprogramming.pptx
 =end
 
 
