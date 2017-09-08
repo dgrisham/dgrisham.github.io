@@ -2,7 +2,7 @@ gem "minitest"
 require 'minitest/autorun'
 # for prior versions of Ruby (e.g., 1.9.3), use test/unit
 #require 'test/unit'
-require_relative "RegexPractice"
+require_relative "regex_practice.rb"
 include RegexPractice
 
 class RegexPracticeTester < Minitest::Test
