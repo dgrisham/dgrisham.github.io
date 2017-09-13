@@ -41,7 +41,7 @@ out how many there are... no fair asking on Piazza).
 Rubric
 ------
 
-This exercise is worth 50 points.
+This exercise is worth **50 points**.
 
  Points  | Metric
 :------: | :-----
