@@ -8,7 +8,7 @@ date: 16 September 2017
 Color Key
 ---------
 
--   [\link{Clickable URL link}]()
+-   [\link{Clickable URL link}](https://www.youtube.com/watch?v=tW8FKkVnqng)
 -   \q{Write down an answer to this for class participation}
 -   \comment{Just a comment -- don't confuse with yellow}
 
@@ -236,8 +236,8 @@ More Challenge Details
     -   \hli{Uses reflection} to store user input in object
 -   Can verify with `puts <object>`{.ruby}
 
-On your own...
---------------
+Questions to consider...
+------------------------
 
 -   What other languages have reflection?
 -   Is it used for different purposes depending on the language?
