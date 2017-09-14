@@ -232,7 +232,7 @@ More Challenge Details
     -   \hli{Uses reflection} to store user input in object
 -   Can verify with `puts <object>`{.ruby}
 
-\Note{{\it Not} a class method}
+\Note{Not a class method}
 
 Questions to consider...
 ------------------------
