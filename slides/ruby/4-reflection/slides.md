@@ -178,28 +178,24 @@ Ok, why else?
     -   User has powerful game piece
     -   Rolls die, is able to spawn new object of same type
 -   How can we create a new instance of that class?
-    -   player.class.new(params)
+    -   `player.class.new(params)`
 
 Sounds pretty useful!
 ---------------------
 
-[\link{What is reflection, + why is it useful?}](https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful)
-
-Skim up to `dump` method example (3rd answer)
-
+-   [\link{What is reflection, + why is it useful?}](https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful)
+    -   Skim up to `dump` method example (3rd answer)
 -   \q{Briefly describe something cool you can do with reflection}
--   \q{Go to next slide for next question}
 
 Cool, anything else?
 --------------------
 
 -   Ruby on Rails & Active Record
--   Object-relational mapper (ORM)
+-   \hl{Object-relational mapper} (ORM)
     -   Database table:
         -   Rows = objects
         -   Columns = instance vars
--   Objects act as interface to database
--   \hl{or}: Database acts as backend impl for objects
+-   Objects act as \hli{interface} to database
 
 Simple example
 --------------
@@ -210,8 +206,8 @@ Another use of Reflection
 -------------------------
 
 -   Given an \hli{arbitrary} object...
-    -   Prompt user for input
-    -   Modify object using that input
+    1.  Prompt user for input
+    2.  Modify object using that input
 
 In-Class Challenge
 ------------------
@@ -230,11 +226,13 @@ Sparky is a level 5 Pikachu
 More Challenge Details
 ----------------------
 
--   \hli{Write a function} that...
+-   \hli{Write a function}\Noteref that...
     -   Accepts an object
     -   \hli{Uses reflection} to prompt user for input
     -   \hli{Uses reflection} to store user input in object
 -   Can verify with `puts <object>`{.ruby}
+
+\Note{{\it Not} a class method}
 
 Questions to consider...
 ------------------------
