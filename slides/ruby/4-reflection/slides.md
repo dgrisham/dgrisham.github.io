@@ -101,6 +101,7 @@ class Cat
   def purr
     puts "purrr"
   end
+end
 ```
 
 ```ruby
@@ -122,6 +123,7 @@ class Cat
       puts var
     end
   end
+end
 ```
 
 ```ruby
