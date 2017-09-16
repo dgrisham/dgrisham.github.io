@@ -20,3 +20,4 @@ Date | Lecture | In-class Exercise | Assignment | Due Date
 9/5  | [Ruby Inheritance](slides/ruby/2/a-inheritance/slides.pdf) | N/A | [Scramble](assignments/ruby/3-scramble//) | 9/10
 9/7  | [Ruby Modules](slides/ruby/2/b-modules/slides.pdf), [Ruby Regex](slides/ruby/3-regex/slides.pdf) | N/A | [Regex Basics](assignments/ruby/4-regexp_basics/), [Regex Applied](assignments/ruby/5-regexp_applied/) | Basics: 9/13, Applied: 9/17
 9/14 | [Ruby Reflection](slides/ruby/4-reflection/slides.pdf) | N/A | [Nim](assignments/ruby/6-nim/) | 9/21
+9/16 | N/A | [Exceptions](class_exercises/ruby/3-exceptions) | N/A | N/A 
