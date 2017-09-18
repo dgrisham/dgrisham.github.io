@@ -45,7 +45,7 @@ There are several ways to invoke `raise`:
 Example + Exercise
 ------------------
 
-```{.ruby}
+```ruby
 def factorial(n)
     raise "Bad argument" if n < 1
     # raise ArgumentError if n < 1
@@ -58,7 +58,7 @@ end
 
 You can also provide a custom stack trace:
 
-```{.ruby}
+```ruby
 def factorial4(n)
     if n < 1
         raise ArgumentError, "Exception argument >= 1, got #{n}", caller
@@ -79,7 +79,7 @@ Catching an Exception
 `rescue` is a language keyword (not a `Kernel` method). You can attach a
 `rescue` clause to any statement in Ruby -- typically, it's attached to `begin`:
 
-```{.ruby}
+```ruby
 begin
     # statements, possible exceptions
 rescue
@@ -95,7 +95,7 @@ Handling Exceptions
 current raised exception, though it is better to specify a variable for the
 exception in the `rescue` statement:
 
-```{.ruby}
+```ruby
 begin
     x = factorial(0)
     rescue => err
@@ -106,7 +106,7 @@ end
 Handling Multiple Types of Exceptions
 -------------------------------------
 
-```{.ruby}
+```ruby
 def factorial5(n)
     raise TypeError, "Need integer" if not n.is_a? Integer
     raise ArgumentError, "Need argument >= 1, got #{n}" if n < 1
@@ -136,7 +136,7 @@ The following code gives a relatively complex system of exception handling --
 **as a quick exercise, try tracing this code through each of the paths it could
 take**.
 
-```{.ruby}
+```ruby
 def explode
     raise "bam!" if rand(10) == 0
 end
