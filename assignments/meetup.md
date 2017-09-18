@@ -26,7 +26,6 @@ Preparation
 
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
-Boulder Haskell Programmers | 9/6          |                   | Kevin Shields, Bilinda Butcher
 
 You can find more info on how to format tables in Github-flavored Markdown
 [here](https://help.github.com/articles/organizing-information-with-tables/).
@@ -59,3 +58,4 @@ Denver Gophers                               | 9/28         |                   
 Denver Java User Group                       | 9/13         |                   | Benjamin Tarman, Mason English, Jesse Halbach, Kyle Voris
 DTC Go Monthly Meetup                        | 9/13         |                   | Daichi Jameson, Reece Hughes
 Galvanize Data Science Info Session - Denver | 9/12         |                   | Allee Zarrini, Josiah Navarro, Becca May, Alexey Yaremenko
+Linux User Group                             | 9/21         |                   | David Henningsen, Cliff Boyce, Coleman Hoyt, Felipe Guerreiro da Silva, Ble Salia
