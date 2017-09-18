@@ -26,7 +26,8 @@ Preparation
 
 Meeting                     | Meeting Date | Presentation Date | Students
 -------                     | :----------: | :---------------: | --------
-Boulder Haskell Programmers | 9/6          |                   | Kevin Shields, Bilinda Butcher
+ Linux User Group           | 9/21         |                   | David Henningsen, Cliff Boyce, Coleman Hoyt, 
+____________________________|______________|___________________| Felipe Guerreiro da Silva, Ble Salia
 
 You can find more info on how to format tables in Github-flavored Markdown
 [here](https://help.github.com/articles/organizing-information-with-tables/).
@@ -52,7 +53,17 @@ Schedule
 
 (Place your entry *under* the 'Placeholder' row)
 
+
 Meeting                          | Meeting Date | Presentation Date | Students
 -------                          | :----------: | :---------------: | --------
 Boulder Data science Study Group | 9/3          |                   | Daniel Renkert, Austin Phillips
-Denver Public Library            | Monday (TBA) |                   | Taylor Rumbaugh, Brandon Green, Jordan King
+                                 |              |                   |
+=======
+Meeting                                      | Meeting Date | Presentation Date | Students
+-------                                      | :----------: | :---------------: | --------
+Boulder Data science Study Group             | 9/3          |                   | Daniel Renkert, Austin Phillips
+Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason
+Denver Java User Group                       | 9/13         |                   | Benjamin Tarman, Mason English, Jesse Halbach, Kyle Voris
+DTC Go Monthly Meetup                        | 9/13         |                   | Daichi Jameson, Reece Hughes
+Galvanize Data Science Info Session - Denver | 9/12         |                   | Allee Zarrini, Josiah Navarro, Becca May, Alexey Yaremenko
+Denver Public Library                        | 9/25         |                   | Taylor Rumbaugh, Brandon Green, Jordin King

@@ -1,6 +1,5 @@
 =begin
     Demo: Reflection Methods
-    Corresponds to: RubyReflection.pptx
 =end
 
 class Cat

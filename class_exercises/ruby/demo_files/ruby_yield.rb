@@ -1,5 +1,4 @@
 =begin
-    Corresponds to Ruby-Methods_Procs.pptx
 =end
 
 class NumericSequences

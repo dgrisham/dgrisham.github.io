@@ -1,6 +1,5 @@
 =begin
     Demo: Basic Ruby
-    Corresponds to: RubyBasics.ppt
 =end
 
 # getting started

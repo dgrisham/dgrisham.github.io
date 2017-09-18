@@ -1,6 +1,5 @@
 =begin
     Demo: Simple reflection
-    Corresponds to: RubyReflection.pptx
 =end
 
 class Message_framework 

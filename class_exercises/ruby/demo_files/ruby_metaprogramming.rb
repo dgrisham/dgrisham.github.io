@@ -1,8 +1,6 @@
 =begin
     Example from RPL, illustrates metaprogramming
     "can create methods that behave like language keywords"
-    
-    Corresponds to: RubyMetaprogramming.pptx
 =end
 
 module EasyAccess
@@ -32,5 +30,3 @@ module EasyAccess
         class_eval code
     end
 end
-
-

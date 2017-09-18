@@ -1,6 +1,5 @@
 =begin
     Demo: Chaining methods
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class Person

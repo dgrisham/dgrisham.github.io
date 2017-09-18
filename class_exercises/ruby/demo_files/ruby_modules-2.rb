@@ -1,6 +1,5 @@
 =begin
     Demo: Module as mixin
-    Corresponds to: RubyInheritance.pptx
 =end
 
 module FlyingCreature 

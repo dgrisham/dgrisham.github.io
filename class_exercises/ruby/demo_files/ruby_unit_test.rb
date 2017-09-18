@@ -1,6 +1,5 @@
 =begin
     Demo: Unit test syntax
-    Corresponds to: RubyUnitTest.pptx
 =end
 
 class Converter

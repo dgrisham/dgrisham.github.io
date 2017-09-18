@@ -1,6 +1,5 @@
 =begin
     Demo: Abstract classes
-    Corresponds to: RubyInheritance.pptx
 =end
 
 class AbstractGreeter

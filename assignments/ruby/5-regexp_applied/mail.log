@@ -1,0 +1,309 @@
+Dec 11 05:14:03 toilers postfix/pickup[3635]: A54F11B2003: uid=33 from=<toilers@mines.edu>
+Dec 11 05:14:03 toilers postfix/cleanup[3919]: A54F11B2003: message-id=<20131211121403.A54F11B2003@toilers.Mines.EDU>
+Dec 11 05:14:03 toilers postfix/pickup[3635]: B52A91B2004: uid=33 from=<toilers@mines.edu>
+Dec 11 05:14:03 toilers postfix/cleanup[3919]: B52A91B2004: message-id=<20131211121403.B52A91B2004@toilers.Mines.EDU>
+Dec 11 05:14:03 toilers postfix/qmgr[1387]: A54F11B2003: from=<toilers@mines.edu>, size=870, nrcpt=1 (queue active)
+Dec 11 05:14:03 toilers postfix/qmgr[1387]: B52A91B2004: from=<toilers@mines.edu>, size=1495, nrcpt=1 (queue active)
+Dec 11 05:14:03 toilers postfix/smtp[3924]: A54F11B2003: to=<toilers@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.32, delays=0.16/0.1/0.03/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBBCE39s006082 Message accepted for delivery)
+Dec 11 05:14:03 toilers postfix/qmgr[1387]: A54F11B2003: removed
+Dec 11 05:14:03 toilers postfix/smtp[3925]: B52A91B2004: to=<dream_hashim800@yahoo.com>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.27, delays=0.09/0.11/0.03/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBBCE3vW006083 Message accepted for delivery)
+Dec 11 05:14:03 toilers postfix/qmgr[1387]: B52A91B2004: removed
+Dec 11 05:18:07 toilers postfix/pickup[3635]: BFD2F1B2003: uid=33 from=<toilers@mines.edu>
+Dec 11 05:18:07 toilers postfix/cleanup[3933]: BFD2F1B2003: message-id=<20131211121807.BFD2F1B2003@toilers.Mines.EDU>
+Dec 11 05:18:07 toilers postfix/qmgr[1387]: BFD2F1B2003: from=<toilers@mines.edu>, size=880, nrcpt=1 (queue active)
+Dec 11 05:18:07 toilers postfix/pickup[3635]: C790F1B2004: uid=33 from=<toilers@mines.edu>
+Dec 11 05:18:07 toilers postfix/cleanup[3933]: C790F1B2004: message-id=<20131211121807.C790F1B2004@toilers.Mines.EDU>
+Dec 11 05:18:07 toilers postfix/qmgr[1387]: C790F1B2004: from=<toilers@mines.edu>, size=1117, nrcpt=1 (queue active)
+Dec 11 05:18:07 toilers postfix/smtp[3937]: BFD2F1B2003: to=<toilers@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.14, delays=0.07/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBBCI7oK006323 Message accepted for delivery)
+Dec 11 05:18:07 toilers postfix/qmgr[1387]: BFD2F1B2003: removed
+Dec 11 05:18:07 toilers postfix/smtp[3938]: C790F1B2004: to=<dream_hashim800@yahoo.com>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.03/0.03/0.02/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBBCI72U006324 Message accepted for delivery)
+Dec 11 05:18:07 toilers postfix/qmgr[1387]: C790F1B2004: removed
+Dec 11 06:25:05 toilers postfix/pickup[3965]: 999FB1B2003: uid=0 from=<root>
+Dec 11 06:25:05 toilers postfix/cleanup[4405]: 999FB1B2003: message-id=<20131211132505.999FB1B2003@toilers.Mines.EDU>
+Dec 11 06:25:05 toilers postfix/qmgr[1387]: 999FB1B2003: from=<root@toilers.Mines.EDU>, size=5936, nrcpt=1 (queue active)
+Dec 11 06:25:05 toilers postfix/cleanup[4405]: B6C161B2004: message-id=<20131211132505.999FB1B2003@toilers.Mines.EDU>
+Dec 11 06:25:05 toilers postfix/qmgr[1387]: B6C161B2004: from=<root@toilers.Mines.EDU>, size=6072, nrcpt=3 (queue active)
+Dec 11 06:25:05 toilers postfix/local[4411]: 999FB1B2003: to=<root@toilers.Mines.EDU>, orig_to=<root>, relay=local, delay=1, delays=0.92/0.06/0/0.05, dsn=2.0.0, status=sent (forwarded as B6C161B2004)
+Dec 11 06:25:05 toilers postfix/qmgr[1387]: 999FB1B2003: removed
+Dec 11 06:25:05 toilers postfix/smtp[4419]: B6C161B2004: to=<echopper@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.15, delays=0.05/0.01/0.05/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBBDP5ji010691 Message accepted for delivery)
+Dec 11 06:25:05 toilers postfix/smtp[4419]: B6C161B2004: to=<mheck@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.15, delays=0.05/0.01/0.05/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBBDP5ji010691 Message accepted for delivery)
+Dec 11 06:25:05 toilers postfix/smtp[4419]: B6C161B2004: to=<frodobaggins@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.15, delays=0.05/0.01/0.05/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBBDP5ji010691 Message accepted for delivery)
+Dec 11 06:25:05 toilers postfix/qmgr[1387]: B6C161B2004: removed
+Dec 11 08:43:24 toilers postfix/pickup[6979]: 56CEF3AA7E1: uid=0 from=<root>
+Dec 11 08:43:24 toilers postfix/cleanup[7562]: 56CEF3AA7E1: message-id=<20131211154324.56CEF3AA7E1@toilers.Mines.EDU>
+Dec 11 08:43:24 toilers postfix/qmgr[1387]: 56CEF3AA7E1: from=<root@toilers.Mines.EDU>, size=104462, nrcpt=1 (queue active)
+Dec 11 08:43:24 toilers postfix/cleanup[7562]: 7C1BA3AA7E2: message-id=<20131211154324.56CEF3AA7E1@toilers.Mines.EDU>
+Dec 11 08:43:24 toilers postfix/qmgr[1387]: 7C1BA3AA7E2: from=<root@toilers.Mines.EDU>, size=104598, nrcpt=3 (queue active)
+Dec 11 08:43:24 toilers postfix/local[7571]: 56CEF3AA7E1: to=<root@toilers.Mines.EDU>, orig_to=<root>, relay=local, delay=2.2, delays=2/0.05/0/0.13, dsn=2.0.0, status=sent (forwarded as 7C1BA3AA7E2)
+Dec 11 08:43:24 toilers postfix/qmgr[1387]: 56CEF3AA7E1: removed
+Dec 11 08:43:24 toilers postfix/smtp[7572]: 7C1BA3AA7E2: to=<echopper@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.42, delays=0.12/0.22/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBBFhOT2026128 Message accepted for delivery)
+Dec 11 08:43:24 toilers postfix/smtp[7572]: 7C1BA3AA7E2: to=<mheck@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.42, delays=0.12/0.22/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBBFhOT2026128 Message accepted for delivery)
+Dec 11 08:43:24 toilers postfix/smtp[7572]: 7C1BA3AA7E2: to=<frodobaggins@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.42, delays=0.12/0.22/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBBFhOT2026128 Message accepted for delivery)
+Dec 11 08:43:24 toilers postfix/qmgr[1387]: 7C1BA3AA7E2: removed
+Dec 11 11:55:28 toilers postfix/pickup[8939]: 658ED3AA7EB: uid=33 from=<www-data>
+Dec 11 11:55:28 toilers postfix/cleanup[9470]: 658ED3AA7EB: message-id=<20131211185528.658ED3AA7EB@toilers.Mines.EDU>
+Dec 11 11:55:28 toilers postfix/qmgr[1387]: 658ED3AA7EB: from=<www-data@toilers.Mines.EDU>, size=2120, nrcpt=1 (queue active)
+Dec 11 11:55:28 toilers postfix/smtp[9472]: 658ED3AA7EB: to=<ben@cs.tufts.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.28, delays=0.12/0.02/0.02/0.13, dsn=2.0.0, status=sent (250 2.0.0 rBBItSgD020498 Message accepted for delivery)
+Dec 11 11:55:28 toilers postfix/qmgr[1387]: 658ED3AA7EB: removed
+Dec 11 13:54:52 toilers postfix/pickup[11440]: 5C5561B2003: uid=33 from=<www-data>
+Dec 11 13:54:52 toilers postfix/cleanup[11444]: 5C5561B2003: message-id=<20131211205452.5C5561B2003@toilers.Mines.EDU>
+Dec 11 13:54:52 toilers postfix/qmgr[1387]: 5C5561B2003: from=<www-data@toilers.Mines.EDU>, size=2116, nrcpt=1 (queue active)
+Dec 11 13:54:52 toilers postfix/smtp[11446]: 5C5561B2003: to=<fspires@nsf.gov>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.16, delays=0.09/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBBKsqq6001462 Message accepted for delivery)
+Dec 11 13:54:52 toilers postfix/qmgr[1387]: 5C5561B2003: removed
+Dec 11 13:55:55 toilers postfix/pickup[11440]: B8EA21B2003: uid=33 from=<www-data>
+Dec 11 13:55:55 toilers postfix/cleanup[11444]: B8EA21B2003: message-id=<20131211205555.B8EA21B2003@toilers.Mines.EDU>
+Dec 11 13:55:55 toilers postfix/qmgr[1387]: B8EA21B2003: from=<www-data@toilers.Mines.EDU>, size=1642, nrcpt=1 (queue active)
+Dec 11 13:55:55 toilers postfix/smtp[11446]: B8EA21B2003: to=<osgonzalez@suagm.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.25, delays=0.01/0/0.02/0.22, dsn=2.0.0, status=sent (250 2.0.0 rBBKtt1T001526 Message accepted for delivery)
+Dec 11 13:55:56 toilers postfix/qmgr[1387]: B8EA21B2003: removed
+Dec 11 14:06:08 toilers postfix/pickup[11440]: 19D1C1B2003: uid=33 from=<www-data>
+Dec 11 14:06:08 toilers postfix/cleanup[11759]: 19D1C1B2003: message-id=<20131211210608.19D1C1B2003@toilers.Mines.EDU>
+Dec 11 14:06:08 toilers postfix/qmgr[1387]: 19D1C1B2003: from=<www-data@toilers.Mines.EDU>, size=2126, nrcpt=1 (queue active)
+Dec 11 14:06:08 toilers postfix/smtp[11761]: 19D1C1B2003: to=<kbryant@blackgirlscode.org>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.3, delays=0.13/0.02/0.03/0.13, dsn=2.0.0, status=sent (250 2.0.0 rBBL682d002804 Message accepted for delivery)
+Dec 11 14:06:08 toilers postfix/qmgr[1387]: 19D1C1B2003: removed
+Dec 11 20:23:40 toilers postfix/pickup[12523]: 881091B2003: uid=33 from=<www-data>
+Dec 11 20:23:40 toilers postfix/cleanup[13233]: 881091B2003: message-id=<20131212032340.881091B2003@toilers.Mines.EDU>
+Dec 11 20:23:40 toilers postfix/qmgr[1387]: 881091B2003: from=<www-data@toilers.Mines.EDU>, size=2075, nrcpt=1 (queue active)
+Dec 11 20:23:40 toilers postfix/smtp[13235]: 881091B2003: to=<victorh@usf.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.19, delays=0.06/0.02/0.02/0.09, dsn=2.0.0, status=sent (250 2.0.0 rBC3Newj028208 Message accepted for delivery)
+Dec 11 20:23:40 toilers postfix/qmgr[1387]: 881091B2003: removed
+Dec 11 22:13:52 toilers postfix/pickup[13507]: 4515F1B2003: uid=33 from=<www-data>
+Dec 11 22:13:52 toilers postfix/cleanup[13522]: 4515F1B2003: message-id=<20131212051352.4515F1B2003@toilers.Mines.EDU>
+Dec 11 22:13:52 toilers postfix/qmgr[1387]: 4515F1B2003: from=<www-data@toilers.Mines.EDU>, size=2111, nrcpt=1 (queue active)
+Dec 11 22:13:52 toilers postfix/smtp[13524]: 4515F1B2003: to=<cbrown@nms.org>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.54, delays=0.38/0.02/0.02/0.13, dsn=2.0.0, status=sent (250 2.0.0 rBC5Dq3w032106 Message accepted for delivery)
+Dec 11 22:13:52 toilers postfix/qmgr[1387]: 4515F1B2003: removed
+Dec 12 03:10:18 toilers postfix/pickup[15756]: 9DF541B2003: uid=33 from=<www-data>
+Dec 12 03:10:18 toilers postfix/cleanup[15880]: 9DF541B2003: message-id=<20131212101018.9DF541B2003@toilers.Mines.EDU>
+Dec 12 03:10:18 toilers postfix/qmgr[1387]: 9DF541B2003: from=<www-data@toilers.Mines.EDU>, size=1554, nrcpt=1 (queue active)
+Dec 12 03:10:18 toilers postfix/smtp[15882]: 9DF541B2003: to=<hdwyer@education.ucsb.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.28, delays=0.06/0.01/0.02/0.18, dsn=2.0.0, status=sent (250 2.0.0 rBCAAI9d009782 Message accepted for delivery)
+Dec 12 03:10:18 toilers postfix/qmgr[1387]: 9DF541B2003: removed
+Dec 12 03:13:39 toilers postfix/pickup[15756]: C32F81B2003: uid=33 from=<www-data>
+Dec 12 03:13:39 toilers postfix/cleanup[15886]: C32F81B2003: message-id=<20131212101339.C32F81B2003@toilers.Mines.EDU>
+Dec 12 03:13:39 toilers postfix/qmgr[1387]: C32F81B2003: from=<www-data@toilers.Mines.EDU>, size=1543, nrcpt=1 (queue active)
+Dec 12 03:13:40 toilers postfix/smtp[15888]: C32F81B2003: to=<pat@code.org>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.42, delays=0.08/0.02/0.03/0.3, dsn=2.0.0, status=sent (250 2.0.0 rBCADdvt009943 Message accepted for delivery)
+Dec 12 03:13:40 toilers postfix/qmgr[1387]: C32F81B2003: removed
+Dec 12 03:37:04 toilers postfix/pickup[15756]: 04C011B2003: uid=33 from=<www-data>
+Dec 12 03:37:04 toilers postfix/cleanup[15926]: 04C011B2003: message-id=<20131212103704.04C011B2003@toilers.Mines.EDU>
+Dec 12 03:37:04 toilers postfix/qmgr[1387]: 04C011B2003: from=<www-data@toilers.Mines.EDU>, size=1545, nrcpt=1 (queue active)
+Dec 12 03:37:04 toilers postfix/smtp[15928]: 04C011B2003: to=<olgak@utep.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.23, delays=0.06/0.02/0.02/0.13, dsn=2.0.0, status=sent (250 2.0.0 rBCAb4v9011779 Message accepted for delivery)
+Dec 12 03:37:04 toilers postfix/qmgr[1387]: 04C011B2003: removed
+Dec 12 04:24:38 toilers postfix/pickup[15756]: 994D41B2003: uid=33 from=<www-data>
+Dec 12 04:24:38 toilers postfix/cleanup[16029]: 994D41B2003: message-id=<20131212112438.994D41B2003@toilers.Mines.EDU>
+Dec 12 04:24:38 toilers postfix/qmgr[1387]: 994D41B2003: from=<www-data@toilers.Mines.EDU>, size=794, nrcpt=1 (queue active)
+Dec 12 04:24:38 toilers postfix/pickup[15756]: 9FBA91B2004: uid=33 from=<www-data>
+Dec 12 04:24:38 toilers postfix/cleanup[16029]: 9FBA91B2004: message-id=<20131212112438.9FBA91B2004@toilers.Mines.EDU>
+Dec 12 04:24:38 toilers postfix/qmgr[1387]: 9FBA91B2004: from=<www-data@toilers.Mines.EDU>, size=3019, nrcpt=1 (queue active)
+Dec 12 04:24:38 toilers postfix/smtp[16033]: 994D41B2003: to=<frodobaggins@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.13, delays=0.05/0.03/0.03/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBCBOcGi014203 Message accepted for delivery)
+Dec 12 04:24:38 toilers postfix/qmgr[1387]: 994D41B2003: removed
+Dec 12 04:24:38 toilers postfix/smtp[16035]: 9FBA91B2004: to=<jcnithya@gmail.com>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.17, delays=0.05/0.03/0.02/0.07, dsn=2.0.0, status=sent (250 2.0.0 rBCBOcHA014204 Message accepted for delivery)
+Dec 12 04:24:38 toilers postfix/qmgr[1387]: 9FBA91B2004: removed
+Dec 12 06:25:07 toilers postfix/pickup[16369]: 20FD61B2003: uid=0 from=<root>
+Dec 12 06:25:07 toilers postfix/cleanup[16719]: 20FD61B2003: message-id=<20131212132507.20FD61B2003@toilers.Mines.EDU>
+Dec 12 06:25:07 toilers postfix/qmgr[1387]: 20FD61B2003: from=<root@toilers.Mines.EDU>, size=7138, nrcpt=1 (queue active)
+Dec 12 06:25:07 toilers postfix/cleanup[16719]: 3D6B61B2004: message-id=<20131212132507.20FD61B2003@toilers.Mines.EDU>
+Dec 12 06:25:07 toilers postfix/qmgr[1387]: 3D6B61B2004: from=<root@toilers.Mines.EDU>, size=7274, nrcpt=3 (queue active)
+Dec 12 06:25:07 toilers postfix/local[16735]: 20FD61B2003: to=<root@toilers.Mines.EDU>, orig_to=<root>, relay=local, delay=0.87, delays=0.85/0/0/0.02, dsn=2.0.0, status=sent (forwarded as 3D6B61B2004)
+Dec 12 06:25:07 toilers postfix/qmgr[1387]: 20FD61B2003: removed
+Dec 12 06:25:07 toilers postfix/smtp[16736]: 3D6B61B2004: to=<echopper@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.09, delays=0.02/0.01/0.02/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBCDP7aq022477 Message accepted for delivery)
+Dec 12 06:25:07 toilers postfix/smtp[16736]: 3D6B61B2004: to=<mheck@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.09, delays=0.02/0.01/0.02/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBCDP7aq022477 Message accepted for delivery)
+Dec 12 06:25:07 toilers postfix/smtp[16736]: 3D6B61B2004: to=<frodobaggins@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.09, delays=0.02/0.01/0.02/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBCDP7aq022477 Message accepted for delivery)
+Dec 12 06:25:07 toilers postfix/qmgr[1387]: 3D6B61B2004: removed
+Dec 12 08:44:45 toilers postfix/pickup[19370]: A4C101B2003: uid=0 from=<root>
+Dec 12 08:44:45 toilers postfix/cleanup[19513]: A4C101B2003: message-id=<20131212154445.A4C101B2003@toilers.Mines.EDU>
+Dec 12 08:44:45 toilers postfix/qmgr[1387]: A4C101B2003: from=<root@toilers.Mines.EDU>, size=104462, nrcpt=1 (queue active)
+Dec 12 08:44:46 toilers postfix/cleanup[19513]: 1915B1B2004: message-id=<20131212154445.A4C101B2003@toilers.Mines.EDU>
+Dec 12 08:44:46 toilers postfix/qmgr[1387]: 1915B1B2004: from=<root@toilers.Mines.EDU>, size=104598, nrcpt=3 (queue active)
+Dec 12 08:44:46 toilers postfix/local[19522]: A4C101B2003: to=<root@toilers.Mines.EDU>, orig_to=<root>, relay=local, delay=2.1, delays=1.9/0.16/0/0.04, dsn=2.0.0, status=sent (forwarded as 1915B1B2004)
+Dec 12 08:44:46 toilers postfix/qmgr[1387]: A4C101B2003: removed
+Dec 12 08:44:46 toilers postfix/smtp[19523]: 1915B1B2004: to=<echopper@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.33, delays=0.04/0.23/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBCFikUA005570 Message accepted for delivery)
+Dec 12 08:44:46 toilers postfix/smtp[19523]: 1915B1B2004: to=<mheck@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.33, delays=0.04/0.23/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBCFikUA005570 Message accepted for delivery)
+Dec 12 08:44:46 toilers postfix/smtp[19523]: 1915B1B2004: to=<frodobaggins@mines.edu>, orig_to=<root>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.33, delays=0.04/0.23/0.02/0.05, dsn=2.0.0, status=sent (250 2.0.0 rBCFikUA005570 Message accepted for delivery)
+Dec 12 08:44:46 toilers postfix/qmgr[1387]: 1915B1B2004: removed
+Dec 12 08:53:10 toilers postfix/pickup[19370]: 90ED01B2003: uid=33 from=<www-data>
+Dec 12 08:53:10 toilers postfix/cleanup[19724]: 90ED01B2003: message-id=<20131212155310.90ED01B2003@toilers.Mines.EDU>
+Dec 12 08:53:10 toilers postfix/qmgr[1387]: 90ED01B2003: from=<www-data@toilers.Mines.EDU>, size=3148, nrcpt=1 (queue active)
+Dec 12 08:53:10 toilers postfix/smtp[19726]: 90ED01B2003: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.16, delays=0.09/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCFrA4B006598 Message accepted for delivery)
+Dec 12 08:53:10 toilers postfix/qmgr[1387]: 90ED01B2003: removed
+Dec 12 09:32:55 toilers postfix/pickup[19370]: 347B11BA094: uid=33 from=<www-data>
+Dec 12 09:32:55 toilers postfix/cleanup[20199]: 347B11BA094: message-id=<20131212163255.347B11BA094@toilers.Mines.EDU>
+Dec 12 09:32:55 toilers postfix/qmgr[1387]: 347B11BA094: from=<www-data@toilers.Mines.EDU>, size=3937, nrcpt=1 (queue active)
+Dec 12 09:32:55 toilers postfix/smtp[20201]: 347B11BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.3, delays=0.09/0.02/0.16/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCGWtaC012643 Message accepted for delivery)
+Dec 12 09:32:55 toilers postfix/qmgr[1387]: 347B11BA094: removed
+Dec 12 09:38:33 toilers postfix/pickup[19370]: 474971BA094: uid=33 from=<www-data>
+Dec 12 09:38:33 toilers postfix/cleanup[20326]: 474971BA094: message-id=<20131212163833.474971BA094@toilers.Mines.EDU>
+Dec 12 09:38:33 toilers postfix/qmgr[1387]: 474971BA094: from=<www-data@toilers.Mines.EDU>, size=3945, nrcpt=1 (queue active)
+Dec 12 09:38:33 toilers postfix/smtp[20328]: 474971BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.11, delays=0.05/0.01/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBCGcXc1013450 Message accepted for delivery)
+Dec 12 09:38:33 toilers postfix/qmgr[1387]: 474971BA094: removed
+Dec 12 09:40:26 toilers postfix/pickup[20329]: 168191BA094: uid=33 from=<www-data>
+Dec 12 09:40:26 toilers postfix/cleanup[20353]: 168191BA094: message-id=<20131212164026.168191BA094@toilers.Mines.EDU>
+Dec 12 09:40:26 toilers postfix/qmgr[1387]: 168191BA094: from=<www-data@toilers.Mines.EDU>, size=3945, nrcpt=1 (queue active)
+Dec 12 09:40:26 toilers postfix/smtp[20355]: 168191BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.47, delays=0.11/0.02/0.31/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCGeQSm013696 Message accepted for delivery)
+Dec 12 09:40:26 toilers postfix/qmgr[1387]: 168191BA094: removed
+Dec 12 09:45:48 toilers postfix/pickup[20329]: 5FEAA1BA094: uid=33 from=<www-data>
+Dec 12 09:45:48 toilers postfix/cleanup[20361]: 5FEAA1BA094: message-id=<20131212164548.5FEAA1BA094@toilers.Mines.EDU>
+Dec 12 09:45:48 toilers postfix/qmgr[1387]: 5FEAA1BA094: from=<www-data@toilers.Mines.EDU>, size=2113, nrcpt=1 (queue active)
+Dec 12 09:45:48 toilers postfix/smtp[20363]: 5FEAA1BA094: to=<jenlyons@nsf.gov>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.19, delays=0.11/0.02/0.02/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBCGjm7N014408 Message accepted for delivery)
+Dec 12 09:45:48 toilers postfix/qmgr[1387]: 5FEAA1BA094: removed
+Dec 12 10:09:15 toilers postfix/pickup[20329]: DD9A21BA094: uid=33 from=<www-data>
+Dec 12 10:09:15 toilers postfix/cleanup[20421]: DD9A21BA094: message-id=<20131212170915.DD9A21BA094@toilers.Mines.EDU>
+Dec 12 10:09:15 toilers postfix/qmgr[1387]: DD9A21BA094: from=<www-data@toilers.Mines.EDU>, size=2532, nrcpt=1 (queue active)
+Dec 12 10:09:16 toilers postfix/smtp[20423]: DD9A21BA094: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.11, delays=0.05/0.02/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBCH9FvL017857 Message accepted for delivery)
+Dec 12 10:09:16 toilers postfix/qmgr[1387]: DD9A21BA094: removed
+Dec 12 10:09:32 toilers postfix/pickup[20329]: 1C4A61BA094: uid=33 from=<www-data>
+Dec 12 10:09:32 toilers postfix/cleanup[20421]: 1C4A61BA094: message-id=<20131212170932.1C4A61BA094@toilers.Mines.EDU>
+Dec 12 10:09:32 toilers postfix/qmgr[1387]: 1C4A61BA094: from=<www-data@toilers.Mines.EDU>, size=3558, nrcpt=1 (queue active)
+Dec 12 10:09:32 toilers postfix/smtp[20423]: 1C4A61BA094: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.03/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBCH9Wsb017901 Message accepted for delivery)
+Dec 12 10:09:32 toilers postfix/qmgr[1387]: 1C4A61BA094: removed
+Dec 12 10:57:01 toilers postfix/pickup[20329]: 70EED1BA094: uid=33 from=<www-data>
+Dec 12 10:57:01 toilers postfix/cleanup[20793]: 70EED1BA094: message-id=<20131212175701.70EED1BA094@toilers.Mines.EDU>
+Dec 12 10:57:01 toilers postfix/qmgr[1387]: 70EED1BA094: from=<www-data@toilers.Mines.EDU>, size=3795, nrcpt=1 (queue active)
+Dec 12 10:57:01 toilers postfix/smtp[20795]: 70EED1BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.14, delays=0.06/0.01/0.04/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCHv19x023740 Message accepted for delivery)
+Dec 12 10:57:01 toilers postfix/qmgr[1387]: 70EED1BA094: removed
+Dec 12 11:25:29 toilers postfix/pickup[20833]: E84B11BA094: uid=33 from=<www-data>
+Dec 12 11:25:29 toilers postfix/cleanup[20949]: E84B11BA094: message-id=<20131212182529.E84B11BA094@toilers.Mines.EDU>
+Dec 12 11:25:29 toilers postfix/qmgr[1387]: E84B11BA094: from=<www-data@toilers.Mines.EDU>, size=3795, nrcpt=1 (queue active)
+Dec 12 11:25:30 toilers postfix/smtp[20951]: E84B11BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.15, delays=0.06/0.01/0.04/0.04, dsn=2.0.0, status=sent (250 2.0.0 rBCIPUwv027569 Message accepted for delivery)
+Dec 12 11:25:30 toilers postfix/qmgr[1387]: E84B11BA094: removed
+Dec 12 11:32:57 toilers postfix/pickup[20833]: 2C1981BA094: uid=33 from=<www-data>
+Dec 12 11:32:57 toilers postfix/cleanup[20970]: 2C1981BA094: message-id=<20131212183257.2C1981BA094@toilers.Mines.EDU>
+Dec 12 11:32:57 toilers postfix/qmgr[1387]: 2C1981BA094: from=<www-data@toilers.Mines.EDU>, size=1984, nrcpt=1 (queue active)
+Dec 12 11:32:57 toilers postfix/smtp[20972]: 2C1981BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.06/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIWvYJ028471 Message accepted for delivery)
+Dec 12 11:32:57 toilers postfix/qmgr[1387]: 2C1981BA094: removed
+Dec 12 11:33:30 toilers postfix/pickup[20833]: BF89F1BA094: uid=33 from=<www-data>
+Dec 12 11:33:30 toilers postfix/cleanup[20970]: BF89F1BA094: message-id=<20131212183330.BF89F1BA094@toilers.Mines.EDU>
+Dec 12 11:33:30 toilers postfix/qmgr[1387]: BF89F1BA094: from=<www-data@toilers.Mines.EDU>, size=3145, nrcpt=1 (queue active)
+Dec 12 11:33:30 toilers postfix/smtp[20972]: BF89F1BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.05, delays=0.01/0/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBCIXUWs028577 Message accepted for delivery)
+Dec 12 11:33:30 toilers postfix/qmgr[1387]: BF89F1BA094: removed
+Dec 12 11:33:58 toilers postfix/pickup[20833]: B40D71BA094: uid=33 from=<www-data>
+Dec 12 11:33:58 toilers postfix/cleanup[20970]: B40D71BA094: message-id=<20131212183358.B40D71BA094@toilers.Mines.EDU>
+Dec 12 11:33:58 toilers postfix/qmgr[1387]: B40D71BA094: from=<www-data@toilers.Mines.EDU>, size=1984, nrcpt=1 (queue active)
+Dec 12 11:33:58 toilers postfix/smtp[20972]: B40D71BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIXwcH028607 Message accepted for delivery)
+Dec 12 11:33:58 toilers postfix/qmgr[1387]: B40D71BA094: removed
+Dec 12 11:34:24 toilers postfix/pickup[20833]: A84C71BA094: uid=33 from=<www-data>
+Dec 12 11:34:24 toilers postfix/cleanup[20970]: A84C71BA094: message-id=<20131212183424.A84C71BA094@toilers.Mines.EDU>
+Dec 12 11:34:24 toilers postfix/qmgr[1387]: A84C71BA094: from=<www-data@toilers.Mines.EDU>, size=1984, nrcpt=1 (queue active)
+Dec 12 11:34:24 toilers postfix/smtp[20972]: A84C71BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIYOZ0028749 Message accepted for delivery)
+Dec 12 11:34:24 toilers postfix/qmgr[1387]: A84C71BA094: removed
+Dec 12 11:34:41 toilers postfix/pickup[20833]: 740A81BA094: uid=33 from=<www-data>
+Dec 12 11:34:41 toilers postfix/cleanup[20970]: 740A81BA094: message-id=<20131212183441.740A81BA094@toilers.Mines.EDU>
+Dec 12 11:34:41 toilers postfix/qmgr[1387]: 740A81BA094: from=<www-data@toilers.Mines.EDU>, size=1984, nrcpt=1 (queue active)
+Dec 12 11:34:41 toilers postfix/smtp[20972]: 740A81BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.05, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIYf9o028803 Message accepted for delivery)
+Dec 12 11:34:41 toilers postfix/qmgr[1387]: 740A81BA094: removed
+Dec 12 11:36:38 toilers postfix/pickup[20833]: 1B3271BA094: uid=33 from=<www-data>
+Dec 12 11:36:38 toilers postfix/cleanup[21103]: 1B3271BA094: message-id=<20131212183638.1B3271BA094@toilers.Mines.EDU>
+Dec 12 11:36:38 toilers postfix/qmgr[1387]: 1B3271BA094: from=<www-data@toilers.Mines.EDU>, size=1984, nrcpt=1 (queue active)
+Dec 12 11:36:38 toilers postfix/smtp[21105]: 1B3271BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.11, delays=0.05/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIaciU029008 Message accepted for delivery)
+Dec 12 11:36:38 toilers postfix/qmgr[1387]: 1B3271BA094: removed
+Dec 12 11:41:11 toilers postfix/pickup[20833]: C57811BA094: uid=33 from=<www-data>
+Dec 12 11:41:11 toilers postfix/cleanup[21250]: C57811BA094: message-id=<20131212184111.C57811BA094@toilers.Mines.EDU>
+Dec 12 11:41:11 toilers postfix/qmgr[1387]: C57811BA094: from=<www-data@toilers.Mines.EDU>, size=3795, nrcpt=1 (queue active)
+Dec 12 11:41:11 toilers postfix/smtp[21252]: C57811BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.11, delays=0.05/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIfBlq029496 Message accepted for delivery)
+Dec 12 11:41:11 toilers postfix/qmgr[1387]: C57811BA094: removed
+Dec 12 11:42:37 toilers postfix/pickup[20833]: B46021BA094: uid=33 from=<www-data>
+Dec 12 11:42:37 toilers postfix/cleanup[21250]: B46021BA094: message-id=<20131212184237.B46021BA094@toilers.Mines.EDU>
+Dec 12 11:42:37 toilers postfix/qmgr[1387]: B46021BA094: from=<www-data@toilers.Mines.EDU>, size=3796, nrcpt=1 (queue active)
+Dec 12 11:42:37 toilers postfix/smtp[21252]: B46021BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.09, delays=0.05/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIgbUf029670 Message accepted for delivery)
+Dec 12 11:42:37 toilers postfix/qmgr[1387]: B46021BA094: removed
+Dec 12 11:43:39 toilers postfix/pickup[20833]: ECE971BA094: uid=33 from=<www-data>
+Dec 12 11:43:39 toilers postfix/cleanup[21250]: ECE971BA094: message-id=<20131212184339.ECE971BA094@toilers.Mines.EDU>
+Dec 12 11:43:39 toilers postfix/qmgr[1387]: ECE971BA094: from=<www-data@toilers.Mines.EDU>, size=3796, nrcpt=1 (queue active)
+Dec 12 11:43:40 toilers postfix/smtp[21252]: ECE971BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIhdht029780 Message accepted for delivery)
+Dec 12 11:43:40 toilers postfix/qmgr[1387]: ECE971BA094: removed
+Dec 12 11:44:14 toilers postfix/pickup[20833]: 044E41BA094: uid=33 from=<www-data>
+Dec 12 11:44:14 toilers postfix/cleanup[21250]: 044E41BA094: message-id=<20131212184414.044E41BA094@toilers.Mines.EDU>
+Dec 12 11:44:14 toilers postfix/qmgr[1387]: 044E41BA094: from=<www-data@toilers.Mines.EDU>, size=3796, nrcpt=1 (queue active)
+Dec 12 11:44:14 toilers postfix/smtp[21252]: 044E41BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIiEKN029857 Message accepted for delivery)
+Dec 12 11:44:14 toilers postfix/qmgr[1387]: 044E41BA094: removed
+Dec 12 11:48:32 toilers postfix/pickup[20833]: 5026B1BA094: uid=33 from=<www-data>
+Dec 12 11:48:32 toilers postfix/cleanup[21267]: 5026B1BA094: message-id=<20131212184832.5026B1BA094@toilers.Mines.EDU>
+Dec 12 11:48:32 toilers postfix/qmgr[1387]: 5026B1BA094: from=<www-data@toilers.Mines.EDU>, size=2248, nrcpt=1 (queue active)
+Dec 12 11:48:32 toilers postfix/smtp[21269]: 5026B1BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.1, delays=0.04/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCImWDd030249 Message accepted for delivery)
+Dec 12 11:48:32 toilers postfix/qmgr[1387]: 5026B1BA094: removed
+Dec 12 11:52:08 toilers postfix/pickup[20833]: 550831CA403: uid=33 from=<www-data>
+Dec 12 11:52:08 toilers postfix/cleanup[21285]: 550831CA403: message-id=<20131212185208.550831CA403@toilers.Mines.EDU>
+Dec 12 11:52:08 toilers postfix/qmgr[1387]: 550831CA403: from=<www-data@toilers.Mines.EDU>, size=2262, nrcpt=1 (queue active)
+Dec 12 11:52:08 toilers postfix/smtp[21287]: 550831CA403: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.15, delays=0.08/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIq8Zf030604 Message accepted for delivery)
+Dec 12 11:52:08 toilers postfix/qmgr[1387]: 550831CA403: removed
+Dec 12 11:54:07 toilers postfix/pickup[20833]: 0F0701CA403: uid=33 from=<www-data>
+Dec 12 11:54:07 toilers postfix/cleanup[21291]: 0F0701CA403: message-id=<20131212185407.0F0701CA403@toilers.Mines.EDU>
+Dec 12 11:54:07 toilers postfix/qmgr[1387]: 0F0701CA403: from=<www-data@toilers.Mines.EDU>, size=2416, nrcpt=1 (queue active)
+Dec 12 11:54:07 toilers postfix/smtp[21293]: 0F0701CA403: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.11, delays=0.04/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIs7e6030802 Message accepted for delivery)
+Dec 12 11:54:07 toilers postfix/qmgr[1387]: 0F0701CA403: removed
+Dec 12 11:54:56 toilers postfix/pickup[20833]: 54CA71CA403: uid=33 from=<www-data>
+Dec 12 11:54:56 toilers postfix/cleanup[21291]: 54CA71CA403: message-id=<20131212185456.54CA71CA403@toilers.Mines.EDU>
+Dec 12 11:54:56 toilers postfix/qmgr[1387]: 54CA71CA403: from=<www-data@toilers.Mines.EDU>, size=2413, nrcpt=1 (queue active)
+Dec 12 11:54:56 toilers postfix/smtp[21293]: 54CA71CA403: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.07, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIsuhd030879 Message accepted for delivery)
+Dec 12 11:54:56 toilers postfix/qmgr[1387]: 54CA71CA403: removed
+Dec 12 11:57:21 toilers postfix/pickup[20833]: 85DC21CA403: uid=33 from=<www-data>
+Dec 12 11:57:21 toilers postfix/cleanup[21301]: 85DC21CA403: message-id=<20131212185721.85DC21CA403@toilers.Mines.EDU>
+Dec 12 11:57:21 toilers postfix/qmgr[1387]: 85DC21CA403: from=<www-data@toilers.Mines.EDU>, size=2436, nrcpt=1 (queue active)
+Dec 12 11:57:21 toilers postfix/smtp[21303]: 85DC21CA403: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.1, delays=0.03/0.01/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCIvLNi031116 Message accepted for delivery)
+Dec 12 11:57:21 toilers postfix/qmgr[1387]: 85DC21CA403: removed
+Dec 12 12:12:44 toilers postfix/pickup[20833]: 4A0681BA094: uid=33 from=<www-data>
+Dec 12 12:12:44 toilers postfix/cleanup[21343]: 4A0681BA094: message-id=<20131212191244.4A0681BA094@toilers.Mines.EDU>
+Dec 12 12:12:44 toilers postfix/qmgr[1387]: 4A0681BA094: from=<www-data@toilers.Mines.EDU>, size=3566, nrcpt=1 (queue active)
+Dec 12 12:12:44 toilers postfix/smtp[21345]: 4A0681BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.05/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCJCi1l000763 Message accepted for delivery)
+Dec 12 12:12:44 toilers postfix/qmgr[1387]: 4A0681BA094: removed
+Dec 12 12:12:59 toilers postfix/pickup[20833]: 95C441BA094: uid=33 from=<www-data>
+Dec 12 12:12:59 toilers postfix/cleanup[21343]: 95C441BA094: message-id=<20131212191259.95C441BA094@toilers.Mines.EDU>
+Dec 12 12:12:59 toilers postfix/qmgr[1387]: 95C441BA094: from=<www-data@toilers.Mines.EDU>, size=2908, nrcpt=1 (queue active)
+Dec 12 12:12:59 toilers postfix/smtp[21345]: 95C441BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCJCxh3000798 Message accepted for delivery)
+Dec 12 12:12:59 toilers postfix/qmgr[1387]: 95C441BA094: removed
+Dec 12 12:13:55 toilers postfix/pickup[20833]: 946521BA094: uid=33 from=<www-data>
+Dec 12 12:13:55 toilers postfix/cleanup[21343]: 946521BA094: message-id=<20131212191355.946521BA094@toilers.Mines.EDU>
+Dec 12 12:13:55 toilers postfix/qmgr[1387]: 946521BA094: from=<www-data@toilers.Mines.EDU>, size=2924, nrcpt=1 (queue active)
+Dec 12 12:13:55 toilers postfix/smtp[21345]: 946521BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.07, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBCJDts2000901 Message accepted for delivery)
+Dec 12 12:13:55 toilers postfix/qmgr[1387]: 946521BA094: removed
+Dec 12 12:28:43 toilers postfix/pickup[20833]: 5B9A91BA094: uid=33 from=<www-data>
+Dec 12 12:28:43 toilers postfix/cleanup[21534]: 5B9A91BA094: message-id=<20131212192843.5B9A91BA094@toilers.Mines.EDU>
+Dec 12 12:28:43 toilers postfix/qmgr[1387]: 5B9A91BA094: from=<www-data@toilers.Mines.EDU>, size=4136, nrcpt=1 (queue active)
+Dec 12 12:28:43 toilers postfix/smtp[21536]: 5B9A91BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.16, delays=0.06/0.02/0.02/0.07, dsn=2.0.0, status=sent (250 2.0.0 rBCJShF6002502 Message accepted for delivery)
+Dec 12 12:28:43 toilers postfix/qmgr[1387]: 5B9A91BA094: removed
+Dec 12 12:30:22 toilers postfix/pickup[20833]: 012DF1BA094: uid=33 from=<www-data>
+Dec 12 12:30:22 toilers postfix/cleanup[21534]: 012DF1BA094: message-id=<20131212193022.012DF1BA094@toilers.Mines.EDU>
+Dec 12 12:30:22 toilers postfix/qmgr[1387]: 012DF1BA094: from=<www-data@toilers.Mines.EDU>, size=4272, nrcpt=1 (queue active)
+Dec 12 12:30:22 toilers postfix/smtp[21536]: 012DF1BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.13, delays=0.04/0/0.02/0.07, dsn=2.0.0, status=sent (250 2.0.0 rBCJUMWX002687 Message accepted for delivery)
+Dec 12 12:30:22 toilers postfix/qmgr[1387]: 012DF1BA094: removed
+Dec 12 12:30:43 toilers postfix/pickup[20833]: BBBB31BA094: uid=33 from=<www-data>
+Dec 12 12:30:43 toilers postfix/cleanup[21534]: BBBB31BA094: message-id=<20131212193043.BBBB31BA094@toilers.Mines.EDU>
+Dec 12 12:30:43 toilers postfix/qmgr[1387]: BBBB31BA094: from=<www-data@toilers.Mines.EDU>, size=4272, nrcpt=1 (queue active)
+Dec 12 12:30:43 toilers postfix/smtp[21536]: BBBB31BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.1, delays=0.01/0/0.02/0.07, dsn=2.0.0, status=sent (250 2.0.0 rBCJUhrr002740 Message accepted for delivery)
+Dec 12 12:30:43 toilers postfix/qmgr[1387]: BBBB31BA094: removed
+Dec 12 12:32:46 toilers postfix/pickup[21558]: 855911BA094: uid=33 from=<www-data>
+Dec 12 12:32:46 toilers postfix/cleanup[21562]: 855911BA094: message-id=<20131212193246.855911BA094@toilers.Mines.EDU>
+Dec 12 12:32:46 toilers postfix/qmgr[1387]: 855911BA094: from=<www-data@toilers.Mines.EDU>, size=4272, nrcpt=1 (queue active)
+Dec 12 12:32:46 toilers postfix/smtp[21564]: 855911BA094: to=<mickeymouse@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.18, delays=0.07/0.02/0.03/0.07, dsn=2.0.0, status=sent (250 2.0.0 rBCJWkTT004722 Message accepted for delivery)
+Dec 12 12:32:46 toilers postfix/qmgr[1387]: 855911BA094: removed
+Dec 12 22:05:55 toilers postfix/pickup[26368]: 1EC651BA094: uid=33 from=<www-data>
+Dec 12 22:05:55 toilers postfix/cleanup[26887]: 1EC651BA094: message-id=<20131213050555.1EC651BA094@toilers.Mines.EDU>
+Dec 12 22:05:55 toilers postfix/qmgr[1387]: 1EC651BA094: from=<www-data@toilers.Mines.EDU>, size=1547, nrcpt=1 (queue active)
+Dec 12 22:05:55 toilers postfix/smtp[26889]: 1EC651BA094: to=<gandalf@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.14, delays=0.08/0.02/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBD55tdP018750 Message accepted for delivery)
+Dec 12 22:05:55 toilers postfix/qmgr[1387]: 1EC651BA094: removed
+Dec 12 22:17:58 toilers postfix/pickup[26368]: 893101BA094: uid=33 from=<www-data>
+Dec 12 22:17:58 toilers postfix/cleanup[27395]: 893101BA094: message-id=<20131213051758.893101BA094@toilers.Mines.EDU>
+Dec 12 22:17:58 toilers postfix/qmgr[1387]: 893101BA094: from=<www-data@toilers.Mines.EDU>, size=1562, nrcpt=1 (queue active)
+Dec 12 22:17:58 toilers postfix/smtp[27397]: 893101BA094: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.05/0.02/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBD5HwUT019150 Message accepted for delivery)
+Dec 12 22:17:58 toilers postfix/qmgr[1387]: 893101BA094: removed
+Dec 12 22:29:01 toilers postfix/pickup[27880]: D6B513AA7DF: uid=33 from=<www-data>
+Dec 12 22:29:01 toilers postfix/cleanup[27881]: D6B513AA7DF: message-id=<20131213052901.D6B513AA7DF@toilers.Mines.EDU>
+Dec 12 22:29:01 toilers postfix/qmgr[1387]: D6B513AA7DF: from=<www-data@toilers.Mines.EDU>, size=1559, nrcpt=1 (queue active)
+Dec 12 22:29:01 toilers postfix/smtp[27883]: D6B513AA7DF: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.06/0.01/0.02/0.02, dsn=2.0.0, status=sent (250 2.0.0 rBD5T10E019569 Message accepted for delivery)
+Dec 12 22:29:01 toilers postfix/qmgr[1387]: D6B513AA7DF: removed
+Dec 12 22:50:50 toilers postfix/pickup[27880]: 22C683AA7DF: uid=33 from=<www-data>
+Dec 12 22:50:50 toilers postfix/cleanup[28964]: 22C683AA7DF: message-id=<20131213055050.22C683AA7DF@toilers.Mines.EDU>
+Dec 12 22:50:50 toilers postfix/qmgr[1387]: 22C683AA7DF: from=<www-data@toilers.Mines.EDU>, size=1557, nrcpt=1 (queue active)
+Dec 12 22:50:50 toilers postfix/smtp[28966]: 22C683AA7DF: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.12, delays=0.05/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBD5oo45020168 Message accepted for delivery)
+Dec 12 22:50:50 toilers postfix/qmgr[1387]: 22C683AA7DF: removed
+Dec 12 23:01:52 toilers postfix/pickup[27880]: 7D1193AA7DF: uid=33 from=<www-data>
+Dec 12 23:01:52 toilers postfix/cleanup[29623]: 7D1193AA7DF: message-id=<20131213060152.7D1193AA7DF@toilers.Mines.EDU>
+Dec 12 23:01:52 toilers postfix/qmgr[1387]: 7D1193AA7DF: from=<www-data@toilers.Mines.EDU>, size=1559, nrcpt=1 (queue active)
+Dec 12 23:01:52 toilers postfix/smtp[29625]: 7D1193AA7DF: to=<donaldduck@mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.13, delays=0.06/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBD61qCC020499 Message accepted for delivery)
+Dec 12 23:01:52 toilers postfix/qmgr[1387]: 7D1193AA7DF: removed
+Dec 12 23:32:48 toilers postfix/pickup[27880]: 2C9DF1BA094: uid=33 from=<www-data>
+Dec 12 23:32:48 toilers postfix/cleanup[30763]: 2C9DF1BA094: message-id=<20131213063248.2C9DF1BA094@toilers.Mines.EDU>
+Dec 12 23:32:48 toilers postfix/qmgr[1387]: 2C9DF1BA094: from=<www-data@toilers.Mines.EDU>, size=1569, nrcpt=1 (queue active)
+Dec 12 23:32:48 toilers postfix/smtp[30767]: 2C9DF1BA094: to=<eeyore@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.14, delays=0.07/0.02/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBD6Wm9o021514 Message accepted for delivery)
+Dec 12 23:32:48 toilers postfix/qmgr[1387]: 2C9DF1BA094: removed
+Dec 12 23:33:30 toilers postfix/pickup[27880]: 9E59D1BA094: uid=33 from=<www-data>
+Dec 12 23:33:30 toilers postfix/cleanup[30763]: 9E59D1BA094: message-id=<20131213063330.9E59D1BA094@toilers.Mines.EDU>
+Dec 12 23:33:30 toilers postfix/qmgr[1387]: 9E59D1BA094: from=<www-data@toilers.Mines.EDU>, size=1569, nrcpt=1 (queue active)
+Dec 12 23:33:30 toilers postfix/smtp[30767]: 9E59D1BA094: to=<winniepooh@mymail.mines.edu>, relay=smtp.Mines.EDU[138.67.1.48]:25, delay=0.06, delays=0.01/0/0.02/0.03, dsn=2.0.0, status=sent (250 2.0.0 rBD6XU5a021534 Message accepted for delivery)
+Dec 12 23:33:30 toilers postfix/qmgr[1387]: 9E59D1BA094: removed

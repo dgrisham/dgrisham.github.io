@@ -1,6 +1,5 @@
 =begin
     Demo: Simple inheritance
-    Corresponds to: RubyInheritance.pptx
     Instance variables are not inherited
 =end
 
@@ -17,8 +16,6 @@ class Person
     def letsEmail() 
         puts "Emailing #{@email}"
     end
-    
-
 end
 
 class Student < Person
@@ -29,8 +26,6 @@ class Student < Person
         # the following line generates output, then displays object ID
         #puts "Name: #{@name}"
     end
-
-    
 end
 
 p = Person.new("Peter")
@@ -38,5 +33,3 @@ p.setupEmail("peter@mines.edu")
 s = Student.new("Cyndi")
 p.letsEmail
 s.letsEmail
-
-

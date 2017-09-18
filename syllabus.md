@@ -10,7 +10,12 @@ Instructor
 
 ### Office Hours
 
-TBD
+Office hours will be held in **Brown Building 280B**
+
+-   Tuesdays, 3:00-4:00 pm
+-   Thursdays, 2:00-3:00 pm
+
+If you can't make these hours, email me and we can schedule another time.
 
 TA/Grader
 ---------
@@ -22,7 +27,7 @@ Course Info
 -----------
 
 -   **CID**: CSCI 400
--   **Lecture**: TR, 9:30-10:45
+-   **Lecture**: TR, 9:30-10:45 am
 -   **Room**: CT B60
 -   **Website**: <https://dgrisham.github.io>
 

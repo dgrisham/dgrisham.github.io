@@ -1,6 +1,5 @@
 =begin
     Demo: Module as namespace
-    Corresponds to: RubyInheritance.pptx
 =end
 
 module Base64

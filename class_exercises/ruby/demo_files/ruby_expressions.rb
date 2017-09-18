@@ -1,6 +1,5 @@
 =begin
     Demo: Method invocation
-    Corresponds to: RubyExpressions.ppt
 =end
 
 # topic: method invocation
