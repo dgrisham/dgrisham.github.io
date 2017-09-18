@@ -236,6 +236,11 @@ More Challenge Details
 
 \Note{Not a class method}
 
+Challenge Solution
+------------------
+
+[\link{Download}](src/pikachu_reflection.rb)
+
 Questions to consider...
 ------------------------
 
