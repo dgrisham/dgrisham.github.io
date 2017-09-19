@@ -55,8 +55,9 @@ Schedule
 Meeting                                      | Meeting Date | Presentation Date | Students
 -------                                      | :----------: | :---------------: | --------
 Boulder Data science Study Group             | 9/3          |                   | Daniel Renkert, Austin Phillips
-Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason
+Colorado Video Games BBQ                     | 9/9          |                   | Liam Clift, Justin Persinger, Caleb Micho
+Galvanize Data Science Info Session - Denver | 9/12         |                   | Allee Zarrini, Josiah Navarro, Becca May, Alexey Yaremenko
 Denver Java User Group                       | 9/13         |                   | Benjamin Tarman, Mason English, Jesse Halbach, Kyle Voris
 DTC Go Monthly Meetup                        | 9/13         |                   | Daichi Jameson, Reece Hughes
-Galvanize Data Science Info Session - Denver | 9/12         |                   | Allee Zarrini, Josiah Navarro, Becca May, Alexey Yaremenko
 Linux User Group                             | 9/21         |                   | David Henningsen, Cliff Boyce, Coleman Hoyt, Felipe Guerreiro da Silva, Ble Salia
+Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason
