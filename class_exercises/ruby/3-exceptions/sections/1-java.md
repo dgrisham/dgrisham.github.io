@@ -210,7 +210,7 @@ Exercise
 
 ### Preparation
 
-1.  Download and import [exceptions.zip](src/java_exceptions.zip)
+1.  Download and import [exceptions.zip](../src/java_exceptions.zip)
 2.  Read about the `finally` clause in [this link](http://www.javapractices.com/topic/TopicAction.do?Id=25)
 
 #### `PropagateDemo`

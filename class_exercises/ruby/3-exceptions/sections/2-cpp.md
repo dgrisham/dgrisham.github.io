@@ -133,7 +133,7 @@ int main() {
 }
 ```
 
-Download the [example program](src/exceptions.cpp) and run it to see out it
+Download the [example program](../src/exceptions.cpp) and run it to see out it
 works. To build, try `g++ exceptions.cpp`.
 
 Exercise
