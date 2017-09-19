@@ -140,8 +140,8 @@ Exercise
 --------
 
 **Note: You can skip this exercise for now so that you have time to get through
-all of the class exercise today, but *be sure to come back and complete this
-later*.**
+all of the class exercise today, but be sure to come back and complete this
+later.**
 
 Modify the program so that it has another exception named
 `FailingInputException`. If the user inputs a grade less than 60, the program
