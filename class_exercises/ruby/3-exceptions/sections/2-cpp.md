@@ -139,6 +139,10 @@ works. To build, try `g++ exceptions.cpp`.
 Exercise
 --------
 
+**Note: You can skip this exercise for now so that you have time to get through
+all of the class exercise today, but *be sure to come back and complete this
+later*.**
+
 Modify the program so that it has another exception named
 `FailingInputException`. If the user inputs a grade less than 60, the program
 should display a message that we don't allow failing grades and then continue
@@ -190,8 +194,7 @@ Press any key to continue . . .
 **Note:** This is *not* a good use of exceptions. The point is really to
 contrast the mechanics of C++ and Java.
 
-Hint
-----
+### Hint
 
 There are two `try`/`catch` blocks. Be sure to add your new exception to the
 correct one.
