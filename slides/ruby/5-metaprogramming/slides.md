@@ -73,7 +73,7 @@ Domain-Specific Language
 -   \hl{General-purpose language} (\hl{GPL})
     -   Used to solve problems in many domains
     -   E.g. Python, Java, Ruby, C++, Haskell, ...
--   \hl{Domain-specific languages)
+-   \hl{Domain-specific languages}
     -   Used to solve problems within in \hli{specific domain}
 
 DSL Examples
@@ -103,12 +103,15 @@ Internal vs. External DSL
 
 \comment{Don't need to know the difference for exam}
 
-iDSL Example
-------------
-
-
 Quiz DSL Exercise
 =================
+
+Source Files
+------------
+
+\centering
+
+[\link{Download}](src/quiz.zip)
 
 Goal
 ----
@@ -188,7 +191,7 @@ Responding to the DSL
 Store the Questions
 -------------------
 
-`Quiz`{.ruby} class in `quiz.rb`
+See: `Quiz`{.ruby} class in `quiz.rb`
 
 Handle One Question
 -------------------
