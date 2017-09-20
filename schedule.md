@@ -11,6 +11,8 @@ All assignments are due by 23:59:59 on the due date.
 
 [**Meetup scheduling**](assignments/meetup.md): Due 9/3
 
+[**Exam Review (link)**](exams/review-ruby.md)
+
 Date | Lecture | In-class | Assignment | Due Date
 ---- | ------- | -------- | ---------- | --------
 8/22 | [Course Overview](slides/course_overview/slides.pdf) | N/A | N/A | N/A
@@ -25,5 +27,3 @@ Date | Lecture | In-class | Assignment | Due Date
 9/26 | Ruby Methods, Procs, ... | N/A | N/A | N/A
 9/28 | N/A | Ruby + PL Concepts Exam Review | N/A | N/A
 10/3 | N/A | **Ruby + PL Concepts Exam** | N/A | N/A
-
-[**Exam Review (link)**](exams/review-ruby.md)
