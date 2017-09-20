@@ -11,7 +11,7 @@ All assignments are due by 23:59:59 on the due date.
 
 [**Meetup scheduling**](assignments/meetup.md): Due 9/3
 
-[**Exam Review (link)**](exams/review-ruby.md)
+[**Exam Review**](exams/review-ruby.md)
 
 Date | Lecture | In-class | Assignment | Due Date
 ---- | ------- | -------- | ---------- | --------
