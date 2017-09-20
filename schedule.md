@@ -24,6 +24,6 @@ Date | Lecture | In-class | Assignment | Due Date
 9/21 | Ruby Metaprogramming | N/A | [DSL](assignments/ruby/7-dsl/) | 9/28
 9/26 | Ruby Methods, Procs, ... | N/A | N/A | N/A
 9/28 | N/A | Ruby + PL Concepts Exam Review | N/A | N/A
-10/3 | N/A | Ruby + PL Concepts Exam | N/A | N/A
+10/3 | N/A | **Ruby + PL Concepts Exam** | N/A | N/A
 
 [**Exam Review (link)**](exams/review-ruby.md)
