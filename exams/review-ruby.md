@@ -4,9 +4,11 @@ Ruby + PL Concepts Exam Review
 Bloom's Taxonomy
 ----------------
 
-Bloom's Taxonomy of Education Objects - Cognitive Domain. Placing
-questions in specific categories is not that important, but this should
-give you an idea of the types of questions.
+**Bloom's Taxonomy of Education Objects -- Cognitive Domain**
+
+Placing questions in specific categories is not that important, but this should
+give you an idea of the types of questions. (*Note:* This hasn't been explicitly
+mentioned in class, simply a guide for the exam.)
 
 ### BL1: Remembering
 
@@ -43,7 +45,9 @@ give you an idea of the types of questions.
 Exam Topics
 -----------
 
-### Factors influencing language design (*not on exam*, included as overview of course)
+### Factors influencing language design
+
+***Not on exam**, included as overview of course.
 
 -   Language Evaluation Criteria
     -   Readability
@@ -164,7 +168,7 @@ Exam Topics
 ### Unit testing
 
 -   Like JUnit3, Minitest
--   Use epsilon for floating point
+-   Use error range (called `epsilon` in our examples) for floating point
 
 ### Other
 
