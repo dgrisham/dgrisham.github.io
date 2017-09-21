@@ -50,19 +50,6 @@ Quick Exercise
 -   \hl{Goal:} Create small class with a few instance vars
 -   Start with source file on previous slide
     -   Use to create getters/setters
--   \hli{Hint:} `require_relative` and `include`
-
-`require` and `include`
------------------------
-
-### Recall
-
--   `require`
-    -   Like `include` in other languages (e.g. C++)
-    -   Runs another source file
-    -   Ensures its not `require`d twice
--   `include`
-    -   Imports modules for use as \hli{mix-ins}
 
 DSL Overview
 ============
