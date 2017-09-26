@@ -24,6 +24,6 @@ Date | Lecture | In-class | Assignment | Due Date
 9/14 | [Ruby Reflection](slides/ruby/4-reflection/slides.pdf) | N/A | [Nim](assignments/ruby/6-nim/) | 9/21
 9/16 | N/A | [Exceptions](class_exercises/ruby/3-exceptions) | N/A | N/A
 9/21 | [Ruby Metaprogramming](slides/ruby/5-metaprogramming/slides.pdf) | N/A | [DSL](assignments/ruby/7-dsl/) | 9/28
-9/26 | Ruby Methods, Procs, ... | N/A | N/A | N/A
+9/26 | [Ruby Methods, Procs](slides/ruby/6-methods_procs/slides.pdf) | N/A | N/A | N/A
 9/28 | N/A | Ruby + PL Concepts Exam Review | N/A | N/A
 10/3 | N/A | **Ruby + PL Concepts Exam** | N/A | N/A

@@ -20,9 +20,9 @@ class Quiz
   end
 
   def run_quiz
-    count=0
-    @questions.each { |q| count += 1 if q.ask }
-    puts "You got #{count} answers correct out of #{@questions.size}."
+    num_correct = 0
+    @questions.each { |q| num_correct += 1 if q.ask }
+    puts "You got #{num_correct} answers correct out of #{@questions.size}."
   end
 end
 

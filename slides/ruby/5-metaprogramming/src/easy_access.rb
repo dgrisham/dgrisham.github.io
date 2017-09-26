@@ -1,7 +1,7 @@
 module EasyAccess
     private
 
-    # like `attr_reader`
+    # like `attr_reader
     def self.read(*syms)
         # do nothing if no args
         return if syms.size == 0

@@ -80,8 +80,8 @@ Internal vs. External DSL
 -------------------------
 
 -   \hl{Internal DSL}
-    -   AKA \hli{embedded} DSL
     -   DSL \hli{within} a (more) general-purpose language
+    -   AKA \hli{embedded} DSL
 -   \hl{External DSL} (\hl{eDSL})
     -   \hli{Independent} of any other language
     -   Compiled/interpreted (like a GPL)
@@ -113,7 +113,7 @@ Question: Who was the first president of the USA?
 4 - Dan Harmon
 Enter answer: 1
 
-question 'Complete Airpline (1980) quote: "Don\'t call me _____."'
+question 'Finish this Airpline (1980) quote: "Don\'t call me _____."'
 1 - in the morning
 2 - Maeby Funke
 3 - crazy
@@ -127,7 +127,7 @@ The Program File
 
 \hl{Users} create the questions -- \hli{We don't parse, we just execute}
 
-\footnotesize
+\scriptsize
 
 ```ruby
 question 'Who was the first president of the USA?'
@@ -136,12 +136,14 @@ wrong 'Friedrich Nietzsche'
 right 'George Washington'
 wrong 'Dan Harmon'
 
-question 'Complete Airpline (1980) quote: "Don\'t call me _____."'
+question 'Finish this Airpline (1980) quote: "Don\'t call me _____."'
 wrong 'in the morning'
 wrong 'Maeby Funke'
 wrong 'crazy'
 right 'Shirley'
 ```
+
+\small
 
 `question`\comment{, }`right`\comment{, and }`wrong` \comment{are methods}
 
@@ -172,7 +174,7 @@ Responding to the DSL
     -   \hli{Does} specify questions + answers -- i.e. the program data
 -   `question`{.ruby} method 
     -   Create new entry in list of questions
--   `right`{.ruby}, `wrong`{.ruby} methodS
+-   `right`{.ruby}, `wrong`{.ruby} methods
     -   Set the 'values' for that entry
 
 Store the Questions
