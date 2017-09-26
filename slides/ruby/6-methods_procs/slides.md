@@ -367,3 +367,9 @@ Calling powers -- square and fourth power
 4 16 256
 5 25 625
 ```
+
+`Proc`{.ruby} Exercise Solution
+-------------------------------
+
+[\link{Solution}](src/procExample.rb)
+
