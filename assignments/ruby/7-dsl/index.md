@@ -248,7 +248,7 @@ file. For example, assume your rule file includes the following lines:
 
 ```
 product 'membership'
-action activiate
+action 'activiate'
 ```
 
 The action in this case should be `activate`, but there's a typo (what in the
