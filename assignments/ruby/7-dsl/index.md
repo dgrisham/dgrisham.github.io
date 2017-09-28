@@ -302,11 +302,11 @@ direction...Piazza is good for questions, after you've given it some more
 thought. It's also not required that you use any of these...although it's likely
 you'll use at least some):
 
--   I used `to_sym`{.ruby} to convert strings to symbols
--   I used `respond_to?`{.ruby} for error handling
--   I used `instance_eval`{.ruby} to call the appropriate method.
--   I made use of a `singleton`{.ruby} class called `orderRules`{.ruby} to store
-    the hash of rules
+-   I used `to_sym` to convert strings to symbols
+-   I used `respond_to?` for error handling
+-   I used `instance_eval` to call the appropriate method.
+-   I made use of a `singleton` class called `orderRules` to store the hash of
+    rules
 
 #### Unit Testing
 
