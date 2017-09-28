@@ -27,8 +27,8 @@ mentioned in class, simply a guide for the exam.)
 
 ### BL4: Analyzing.
 
--   Explain why recursion is not possible in a language that uses *only* static
-    variable lifetimes.
+-   Explain why recursion does not work particularly well in a language that
+    supports *only* static lifetime variables.
 -   Analysis tasks often require you to use what you know about a topic to make
     logical inferences (i.e. the answer may not be found directly on a slide)
 

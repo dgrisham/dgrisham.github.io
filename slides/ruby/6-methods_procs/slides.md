@@ -19,12 +19,11 @@ Brief Refactor Exercise (1/2)
 
 ```ruby
 def fib(limit)
-  i = 1
   yield 1
   yield 1
   a = 1
   b = 1
-  while (i < limit) do
+  while (i < limit)
     t = a
     a = a + b
     b = t
@@ -367,9 +366,3 @@ Calling powers -- square and fourth power
 4 16 256
 5 25 625
 ```
-
-`Proc`{.ruby} Exercise Solution
--------------------------------
-
-[\link{Solution}](src/procExample.rb)
-
