@@ -62,4 +62,4 @@ Denver Java User Group                       | 9/13         |                   
 DTC Go Monthly Meetup                        | 9/13         |                   | Daichi Jameson, Reece Hughes
 Linux User Group                             | 9/21         |                   | David Henningsen, Cliff Boyce, Coleman Hoyt, Felipe Guerreiro da Silva, Ble Salia
 Denver Public Library                        | 9/25         |                   | Taylor Rumbaugh, Brandon Green, Jordin King
-Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason
+Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason, Marcus Tonsmann, Loki Hondorf
