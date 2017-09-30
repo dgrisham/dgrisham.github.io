@@ -13,6 +13,8 @@ All assignments are due by 23:59:59 on the due date.
 
 [**Exam Review**](exams/review-ruby.md)
 
+[**Practice Exam**](exams/practice_exam.pdf)
+
 Date | Lecture | In-class | Assignment | Due Date
 ---- | ------- | -------- | ---------- | --------
 8/22 | [Course Overview](slides/course_overview/slides.pdf) | N/A | N/A | N/A
