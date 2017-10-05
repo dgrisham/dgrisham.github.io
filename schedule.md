@@ -20,7 +20,7 @@ Haskell
 
 Date | Lecture Notes | Reading | Assignment | Due Date
 ---- | ------------- | ------- | ---------- | --------
-10/5 | [Haskell Basics 1](lectures/haskell-1/haskell-1.pdf), [Standalone Code Examples](lectures/haskell-1/haskell-1.hs) | Chapter 1, 2 | N/A | N/A
+10/5 | [Haskell Basics 1](lectures/haskell-1/notes.pdf), [Standalone Code Examples](lectures/haskell-1/notes.hs) | Chapter 1, 2 | N/A | N/A
 
 Ruby
 ----
