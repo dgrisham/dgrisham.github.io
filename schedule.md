@@ -11,6 +11,20 @@ All assignments are due by 23:59:59 on the due date.
 
 [**Meetup scheduling**](assignments/meetup.md): Due 9/3
 
+Haskell
+-------
+
+[**Required Text (LYAH)**](http://learnyouahaskell.com/chapters)
+
+[**Supplementary Text (RWH)**](http://book.realworldhaskell.org/read/)
+
+Date | Lecture Notes | Reading | Assignment | Due Date
+---- | ------------- | ------- | ---------- | --------
+10/5 | [Haskell Basics 1](lectures/haskell-1/haskell-1.pdf), [Standalone Code Examples](lectures/haskell-1/haskell-1.hs) | Chapter 1, 2 | N/A | N/A
+
+Ruby
+----
+
 [**Exam Review**](exams/review-ruby.md)
 
 [**Practice Exam**](exams/practice_exam.pdf)
