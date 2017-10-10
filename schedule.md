@@ -18,9 +18,13 @@ Haskell
 
 [**Supplementary Text (RWH)**](http://book.realworldhaskell.org/read/)
 
-Date | Lecture Notes | Reading | Assignment | Due Date
----- | ------------- | ------- | ---------- | --------
-10/5 | [Haskell Basics 1](lectures/haskell-1/notes.pdf), [Standalone Code Examples](lectures/haskell-1/notes.hs) | Chapter 1, 2 | N/A | N/A
+Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
+----  | ------------- | ------- | ---- | ---------- | --------
+10/5  | [Haskell Functions and Types](lectures/haskell-1/notes.pdf), [Standalone Code Examples](lectures/haskell-1/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
+10/10 | [Haskell Data Types 1](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell-2/notes.hs) | Chapter 3 | N/A | TBD | TBD
+10/12 | TBD | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
+10/17 | TBD | Chapter 5 | Quiz: Chapter 3 | TBD | TBD
+10/19 | TBD | Chapter 6 | Quiz: Chapter 4 | TBD | TBD
 
 Ruby
 ----
