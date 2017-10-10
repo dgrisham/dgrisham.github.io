@@ -19,8 +19,8 @@ data Bool' = True' | False'
 -   `Bool'`{.hs} is the name of our data type
 -   `True'`{.hs} and `False'`{.hs} are the *data constructors*
 
-*Note: `Bool`{.hs} is already defined in Haskell, which is why the code uses
-`Bool'`{.hs}, `True'`{.hs}, and `False'`{.hs} here.*
+*Note: `Bool`{.hs} is already defined in Haskell, which is why the example codes
+adds a `'`{.hs} to all of the types/constructors/functions in this section.*
 
 Then we can use the constructors to create instances of this type:
 
@@ -34,16 +34,16 @@ false = False'
 
 Let's write a few of the functions that are common for booleans:
 
-1.  `not`{.hs}
-2.  `and`{.hs}, `or`{.hs}
-3.  `xor`{.hs}
+1.  `not'`{.hs}
+2.  `and'`{.hs}, `or'`{.hs}
+3.  `xor'`{.hs}
 
 ### `not`
 
 ```{.haskell .example}
-not :: Bool' -> Bool'
-not True'  = False'
-not False' = True'
+not' :: Bool' -> Bool'
+not' True'  = False'
+not' False' = True'
 ```
 
 ### `and`
@@ -51,19 +51,19 @@ not False' = True'
 First pass:
 
 ```haskell
-and :: Bool' -> Bool' -> Bool'
-and False' False' = False'
-and False' True'  = False'
-and True'  False' = False'
-and True'  True'  = True'
+and' :: Bool' -> Bool' -> Bool'
+and' False' False' = False'
+and' False' True'  = False'
+and' True'  False' = False'
+and' True'  True'  = True'
 ```
 
 Better:
 
 ```{.haskell .example}
-and :: Bool' -> Bool' -> Bool'
-and True'  True'  = True'
-and _     _       = False'
+and' :: Bool' -> Bool' -> Bool'
+and' True'  True'  = True'
+and' _     _       = False'
 ```
 
 ### `or`
@@ -71,19 +71,19 @@ and _     _       = False'
 First pass:
 
 ```haskell
-or :: Bool' -> Bool' -> Bool'
-or False' False' = False'
-or False' True'  = True'
-or True'  False' = True'
-or True'  True'  = True'
+or' :: Bool' -> Bool' -> Bool'
+or' False' False' = False'
+or' False' True'  = True'
+or' True'  False' = True'
+or' True'  True'  = True'
 ```
 
 Better:
 
 ```{.haskell .example}
-or :: Bool' -> Bool' -> Bool'
-or False'  False'  = False'
-or _     _         = True'
+or' :: Bool' -> Bool' -> Bool'
+or' False'  False'  = False'
+or' _     _         = True'
 ```
 
 ### `xor`
@@ -91,18 +91,18 @@ or _     _         = True'
 First pass:
 
 ```haskell
-xor :: Bool' -> Bool' -> Bool'
-xor False' False' = True'
-xor False' True'  = False'
-xor True'  False' = False'
-xor True'  True'  = True'
+xor' :: Bool' -> Bool' -> Bool'
+xor' False' False' = True'
+xor' False' True'  = False'
+xor' True'  False' = False'
+xor' True'  True'  = True'
 ```
 
 ```haskell
-xor :: Bool' -> Bool' -> Bool'
-xor False' False' = True'
-xor True'  True'  = True'
-xor _     _     = False'
+xor' :: Bool' -> Bool' -> Bool'
+xor' False' False' = True'
+xor' True'  True'  = True'
+xor' _     _     = False'
 ```
 
 We can reduce this by one more line (of actual logic), but not with pattern
@@ -110,8 +110,8 @@ matching (assumes we had a `==`{.hs} equality comparison function for
 `Bool'`{.hs}s):
 
 ```{.haskell .example}
-xor :: Bool' -> Bool' -> Bool'
-xor b1 b2
+xor' :: Bool' -> Bool' -> Bool'
+xor' b1 b2
     | b1 == b2  = True'
     | otherwise = False'
 ```

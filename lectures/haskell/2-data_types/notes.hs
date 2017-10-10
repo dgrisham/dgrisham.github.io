@@ -20,32 +20,32 @@ false = False'
 --- ### `not`
 
 
-not :: Bool' -> Bool'
-not True'  = False'
-not False' = True'
+not' :: Bool' -> Bool'
+not' True'  = False'
+not' False' = True'
 
 
 --- ### `and`
 
 
-and :: Bool' -> Bool' -> Bool'
-and True'  True'  = True'
-and _     _       = False'
+and' :: Bool' -> Bool' -> Bool'
+and' True'  True'  = True'
+and' _     _       = False'
 
 
 --- ### `or`
 
 
-or :: Bool' -> Bool' -> Bool'
-or False'  False'  = False'
-or _     _         = True'
+or' :: Bool' -> Bool' -> Bool'
+or' False'  False'  = False'
+or' _     _         = True'
 
 
 --- ### `xor`
 
 
-xor :: Bool' -> Bool' -> Bool'
-xor b1 b2
+xor' :: Bool' -> Bool' -> Bool'
+xor' b1 b2
     | b1 == b2  = True'
     | otherwise = False'
 
