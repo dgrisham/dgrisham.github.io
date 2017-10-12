@@ -21,10 +21,10 @@ Haskell
 Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 ----  | ------------- | ------- | ---- | ---------- | --------
 10/5  | [Haskell Functions and Types](lectures/haskell/1-functions_types/notes.pdf), [Standalone Code Examples](lectures/haskell/1-functions_types/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
-10/10 | [Haskell Data Types 1](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/2-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
-10/12 | TBD | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
-10/17 | TBD | Chapter 5 | Quiz: Chapter 3 | TBD | TBD
-10/19 | TBD | Chapter 6 | Quiz: Chapter 4 | TBD | TBD
+10/10 | [Haskell Data Types](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/2-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
+10/12 | [Haskell Polymorphism 1](lectures/haskell/3-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
+10/17 | No Class | N/A | N/A | N/A | N/A
+10/19 | Haskell Polymorphism 2 | Chapter 5 | Quiz: Chapter 3 | TBD | TBD
 
 Ruby
 ----
