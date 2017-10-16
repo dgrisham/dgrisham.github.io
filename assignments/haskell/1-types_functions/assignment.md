@@ -7,8 +7,8 @@ Notes:
     function/value you write in your code.
 -   You should turn in the **first two problems** on Canvas in a `.hs` file that
     has the functions you define for each part.
--   You should *neatly write your answer* to **Problem 3** on a sheet of paper
-    and turn it in on TODO:when??
+-   You should *print out **Problem 3***, write your answer on that sheet, and
+    turn it in on Tuesday, October 24 in class.
 -   You can test your code yourself by loading your `.hs` file into `ghci`.
 
 Problem 1 -- Factorial
