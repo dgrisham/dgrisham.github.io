@@ -382,3 +382,45 @@ decrement :: Peano -> Peano
 decrement (Succ p) = p
 decrement Zero     = Zero
 ```
+
+### `add` function for Peano numbers
+
+Let's try something a little more fun.
+
+**Goal:** Function `add`{.hs} that returns the sum of two `Peano`{.hs}s.
+
+### Question
+
+a.  What should the type signature be?
+
+```haskell
+add :: Peano -> Peano -> Peano
+```
+
+b.  What cases do we have for this function?
+
+First pass:
+
+```haskell
+add Zero Zero = undefined
+add Zero (Succ p) = undefined
+add (Succ p) Zero = undefined
+add (Succ p1) (Succ p2) = undefined
+```
+
+How might we implement the bodies of these?
+
+```haskell
+add Zero Zero = Zero
+add Zero (Succ p) = Succ p
+add (Succ p) Zero = Succ p
+add (Succ p1) (Succ p2) = Succ (Succ (add p1 p2))
+```
+
+We can simplify that form into:
+
+```haskell
+add Zero p = Zero
+add p Zero = Zero
+add (Succ p1) (Succ p2) = Succ (Succ (add p1 p2))
+```
