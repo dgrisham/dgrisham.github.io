@@ -8,7 +8,7 @@ Notes:
 -   You should turn in the **first two problems** on Canvas in a `.hs` file that
     has the functions you define for each part.
 -   You should *print out **Problem 3***, write your answer on that sheet, and
-    turn it in on Tuesday, October 24 in class.
+    turn it in on Thursday, October 26 in class.
 -   You can test your code yourself by loading your `.hs` file into `ghci`.
 
 Problem 1 -- Factorial
@@ -62,7 +62,7 @@ Now turning to `Maybe`{.hs}'s constructors, we have `Nothing`{.hs} and
 `Just a`{.hs}.
 
 -   `Nothing`{.hs} is simply a constructor with no arguments -- by default, its
-    typing binding is `Nothing :: Maybe a`{.hs}, but within a particular context
+    type binding is `Nothing :: Maybe a`{.hs}, but within a particular context
     it may be `Nothing :: Maybe Int`{.hs}, `Nothing :: Maybe String`{.hs}, etc.
 -   The `Just a`{.hs} constructor tells us that we can use the `Just`{.hs}
     constructor with an *argument of any type* (hence the type variable
@@ -128,20 +128,14 @@ headMaybe []
 => Nothing
 ```
 
-Since the return value is `Maybe a`{.hs}, we can return a `Just <value>`{.hs}
-whenever the list is non-empty, and when it is empty we simply return
-`Nothing`{.hs}.
+From these examples, we can see that `headMaybe`{.hs} returns
+`Just <first_element>`{.hs} on success, and `Nothing`{.hs} on failure.
 
 Define the function `headMaybe`{.hs} so that it behaves as described above.
 
-Hints:
-
--   All you should use on the right-hand side (RHS) of your definition are the
-    constructors for `Maybe`{.hs} as well as the `head`{.hs} function mentioned
-    above.
--   You'll have two cases to define this function for: the empty list, and all
-    other lists. To pattern match against the empty list, you can use
-    `headMaybe [] = ...`{.hs}
+*Hint: All you should use on the right-hand side (RHS) of your definition are
+the constructors for `Maybe`{.hs} as well as the `head`{.hs} function mentioned
+above.*
 
 \pagebreak
 
