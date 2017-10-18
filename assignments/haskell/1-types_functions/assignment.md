@@ -6,9 +6,10 @@ Notes:
 -   For all of the problems below, you *must* write a type signature for any
     function/value you write in your code.
 -   You should turn in the **first two problems** on Canvas in a `.hs` file that
-    has the functions you define for each part.
+    has the functions you define for each part. These are due by the night of
+    **Tuesday, October 24** (midnight).
 -   You should *print out **Problem 3***, write your answer on that sheet, and
-    turn it in on Thursday, October 26 in class.
+    turn it in on **Thursday, October 26** in class.
 -   You can test your code yourself by loading your `.hs` file into `ghci`.
 
 Problem 1 -- Factorial
