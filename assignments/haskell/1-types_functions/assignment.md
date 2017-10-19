@@ -32,9 +32,12 @@ refer to the fibonacci function `fib`{.hs} in the lecture notes.
 
 ### b.  Pattern Matching
 
-Write the `factorial`{.hs} function using *pattern matching* (and no guards).
+Write the `factorial'`{.hs} function using *pattern matching* (and no guards).
 You may want to refer to the second fibonacci function `fib'`{.hs} from the
 lecture notes.
+
+*Note the `'`{.hs} at the end of the function name `factorial'`{.hs}, which
+differentiates it from the name of the function in part **a***.
 
 \pagebreak
 
