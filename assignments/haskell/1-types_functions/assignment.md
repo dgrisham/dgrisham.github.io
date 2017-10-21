@@ -37,7 +37,7 @@ You may want to refer to the second fibonacci function `fib'`{.hs} from the
 lecture notes.
 
 *Note the `'`{.hs} at the end of the function name `factorial'`{.hs}, which
-differentiates it from the function to wrote in part **a***.
+differentiates it from the function in part **a***.
 
 \pagebreak
 
