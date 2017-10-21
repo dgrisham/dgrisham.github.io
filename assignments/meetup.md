@@ -63,3 +63,4 @@ DTC Go Monthly Meetup                        | 9/13         |                   
 Linux User Group                             | 9/21         |                   | David Henningsen, Cliff Boyce, Coleman Hoyt, Felipe Guerreiro da Silva, Ble Salia
 Denver Public Library                        | 9/25         |                   | Taylor Rumbaugh, Brandon Green, Jordin King
 Denver Gophers                               | 9/28         |                   | Adrien Perinet, Austin Schussler, Ian Tobiason
+Open Code Denver                             | 9/26         |                   | Michael Niemeyer, Felipe Silva, Mykel Allen
