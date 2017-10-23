@@ -420,7 +420,7 @@ add (Succ p1) (Succ p2) = Succ (Succ (add p1 p2))
 We can simplify that form into:
 
 ```haskell
-add Zero p = Zero
-add p Zero = Zero
+add Zero p = p
+add p Zero = p
 add (Succ p1) (Succ p2) = Succ (Succ (add p1 p2))
 ```
