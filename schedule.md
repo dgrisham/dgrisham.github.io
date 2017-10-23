@@ -25,6 +25,7 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 10/12 | [Haskell Polymorphism 1](lectures/haskell/3-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
 10/17 | No Class | N/A | N/A | N/A | N/A
 10/19 | Haskell Polymorphism 2 | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](./assignments/haskell/1-types_functions/assignment.pdf) | 10/24
+10/24 | Haskell Higher Order Functions | Chapter 6 | Quiz: Chapter 4 | N/A
 
 Ruby
 ----
