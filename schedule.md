@@ -20,13 +20,13 @@ Haskell
 
 Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 ----  | ------------- | ------- | ---- | ---------- | --------
-10/5  | [Haskell Functions and Types](lectures/haskell/1-functions_types/notes.pdf), [Standalone Code Examples](lectures/haskell/1-functions_types/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
-10/10 | [Haskell Data Types](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/2-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
-10/12 | [Haskell Polymorphism 1](lectures/haskell/3-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
+10/5  | [Functions and Types](lectures/haskell/1-functions_types/notes.pdf), [Standalone Code Examples](lectures/haskell/1-functions_types/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
+10/10 | [Data Types](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/2-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
+10/12 | [Polymorphism 1](lectures/haskell/3-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
 10/17 | No Class | N/A | N/A | N/A | N/A
-10/19 | Haskell Polymorphism 2 | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](./assignments/haskell/1-types_functions/assignment.pdf) | 10/24
-10/24 | Haskell Higher Order Functions | Chapter 6 | Quiz: Chapter 4 | N/A
-10/26 | Haskell Higher Order Functions 2 | TBD | N/A | [Assignment 2](./assignments/haskell/2/assignment.md)
+10/19 | [Polymorphism 2](lectures/haskell/4-polymorphism_2/notes.pdf) | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](assignments/haskell/1-types_functions/assignment.pdf) | 10/24
+10/24 | [Higher Order Functions 1](lectures/haskell/5-higher_order_functions/notes.md) | Chapter 6 | Quiz: Chapter 4 | N/A
+10/26 | [Higher Order Functions 2](lectures/haskell/6-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md)
 10/31 | TBD | TBD | Quiz: Chapter 5 | TBD
 
 Ruby
