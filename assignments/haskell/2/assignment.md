@@ -209,7 +209,7 @@ applyIfTrue (*3) 5 True
 => 15
 
 applyIfTrue (*3) 5 False
-=> 15
+=> 5
 
 applyIfTrue ((++) "No") " thanks" True
 => "No thanks"
