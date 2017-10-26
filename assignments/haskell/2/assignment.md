@@ -77,27 +77,27 @@ Define the following functions using *list comprehensions*.
 
 a.  `caps` should return all of the capital letters of the input list.
 
-    ```
-    caps ['A', 'B', 'c', 'd, 'E']
-    => ['A', 'B', 'E']
-    ```
+```
+caps ['A', 'B', 'c', 'd, 'E']
+=> ['A', 'B', 'E']
+```
 
 b.  `sumOdd` should calculate the sum of the odd numbers in a list.
 
-    ```
-    sumOdd [1..5]
-    => 9
-    ```
+```
+sumOdd [1..5]
+=> 9
+```
 
 c.  `negsInList` should calculate the number of negative elements in a list.
 
-    ```
-    negsInList [1, 2, 3]
-    => 0
+```
+negsInList [1, 2, 3]
+=> 0
 
-    negsInList [1, -2, -3]
-    => 2
-    ```
+negsInList [1, -2, -3]
+=> 2
+```
 
 Problem 3 -- `maybeElem` (2 pts.)
 ---------------------------------
@@ -105,24 +105,24 @@ Problem 3 -- `maybeElem` (2 pts.)
 The `elem` function (included in the Haskell standard library, `Prelude`)
 returns `True` if an element is in a list and `False` otherwise.
 
-    ```
-    elem 1 [1, 2, 3]
-    => True
+```
+elem 1 [1, 2, 3]
+=> True
 
-    elem 0 [1, 2, 3]
-    => False
-    ```
+elem 0 [1, 2, 3]
+=> False
+```
 
 Write a function called `maybeElem` that returns `Just <value>` if the input
 value is in the list and `Nothing` otherwise.
 
-    ```
-    maybeElem 1 [1, 2, 3]
-    => Just 1
+```
+maybeElem 1 [1, 2, 3]
+=> Just 1
 
-    maybeElem 0 [1, 2, 3]
-    => Nothing
-    ```
+maybeElem 0 [1, 2, 3]
+=> Nothing
+```
 
 Problem 4 -- Expression Types (9 pts.)
 --------------------------------------
@@ -139,13 +139,13 @@ returns a sentence about the major with the form
 characters of the `<course_num>`. *You must use an **as pattern** in your
 function definition.*
 
-    ```
-    courseMajor "CSCI400"
-    => "CSCI400 is a CS course"
+```
+courseMajor "CSCI400"
+=> "CSCI400 is a CS course"
 
-    courseMajor "PHGN100"
-    => "PHGN100 is a PH course"
-    ```
+courseMajor "PHGN100"
+=> "PHGN100 is a PH course"
+```
 
 **b. *where-clause***
 
@@ -153,10 +153,10 @@ Write a function named `calcAreas` that takes a list of tuples of the form
 `(<length>, <width>)` and returns a list of areas. *In your `calcAreas`
 function, you must use a `where` clause to define a helper function.*
 
-    ```
-    calcAreas [(3, 4), (6, 7), (1, 0)]
-    => [12, 42, 0]
-    ```
+```
+calcAreas [(3, 4), (6, 7), (1, 0)]
+=> [12, 42, 0]
+```
 
 **c. *guards***
 
@@ -167,16 +167,16 @@ must use a guard expression to define your function.*
 *Hint: Read the above description carefully, the type signature is important
 here and should be as general as possible.*
 
-    ```
-    orderTwo (2, 3)
-    => (2, 3)
+```
+orderTwo (2, 3)
+=> (2, 3)
 
     orderTwo (3.5, 2)
     => (2, 3.5)
 
-    orderTwo ('b', 'a')
-    => ('a', 'b')
-    ```
+orderTwo ('b', 'a')
+=> ('a', 'b')
+```
 
 Problem 5 -- Higher-Order Functions (9 pts.)
 --------------------------------------------
@@ -189,13 +189,13 @@ Write a function named `swap` that accepts a tuple and swaps the two elements.
 Then, write a function called `swapAll` that works on a list of tuples. *You
 must use `map` in your definition of `swapAll`.*
 
-    ```
-    swap (4, 5)
-    => (5, 4)
+```
+swap (4, 5)
+=> (5, 4)
 
-    swapAll [(4, 5), (6, 4), (25, 36)]
-    => [(5, 4), (4, 6), (36, 25)]
-    ```
+swapAll [(4, 5), (6, 4), (25, 36)]
+=> [(5, 4), (4, 6), (36, 25)]
+```
 
 **b. `applyIfTrue`**
 
@@ -204,9 +204,9 @@ value, and a boolean. If the boolean is `True`, then you should return the
 result of applying the function to the value. Otherwise, just return the
 original value.
 
-    ```
-    applyIfTrue (*3) 5 True
-    => 15
+```
+applyIfTrue (*3) 5 True
+=> 15
 
     applyIfTrue (*3) 5 False
     => 15
@@ -214,19 +214,19 @@ original value.
     applyIfTrue ((++) "No") " thanks" True
     => "No thanks"
 
-    applyIfTrue ((++) "No") " thanks" False
-    => "No"
-    ```
+applyIfTrue ((++) "No") " thanks" False
+=> "No"
+```
 
 **c. `calcArea`**
 
 Write a function called `calcArea` that accepts two lists, one of lengths and
 one of widths, and returns a single list of areas.
 
-    ```
-    calcArea [1, 2, 3] [4, 5, 6]
-    => [4, 10, 18]
+```
+calcArea [1, 2, 3] [4, 5, 6]
+=> [4, 10, 18]
 
-    calcArea [0, 1.1, 2.2] [1, 3, 4]
-    => [0, 3.3, 8.8]
-    ```
+calcArea [0, 1.1, 2.2] [1, 3, 4]
+=> [0, 3.3, 8.8]
+```
