@@ -199,7 +199,7 @@ swapAll [(4, 5), (6, 4), (25, 36)]
 
 **b. `applyIfTrue`**
 
-Write a function called `applyIfTrue` that has 3 parameters: a function, a
+Write a function called `applyIfTrue` that takes 3 parameters: a function, a
 value, and a boolean. If the boolean is `True`, then you should return the
 result of applying the function to the value. Otherwise, just return the
 original value.
