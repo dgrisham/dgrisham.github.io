@@ -171,8 +171,8 @@ here and should be as general as possible.*
 orderTwo (2, 3)
 => (2, 3)
 
-    orderTwo (3.5, 2)
-    => (2, 3.5)
+orderTwo (3.5, 2)
+=> (2, 3.5)
 
 orderTwo ('b', 'a')
 => ('a', 'b')
@@ -208,11 +208,11 @@ original value.
 applyIfTrue (*3) 5 True
 => 15
 
-    applyIfTrue (*3) 5 False
-    => 15
+applyIfTrue (*3) 5 False
+=> 15
 
-    applyIfTrue ((++) "No") " thanks" True
-    => "No thanks"
+applyIfTrue ((++) "No") " thanks" True
+=> "No thanks"
 
 applyIfTrue ((++) "No") " thanks" False
 => "No"
