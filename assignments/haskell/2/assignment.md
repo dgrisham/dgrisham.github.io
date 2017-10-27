@@ -78,8 +78,8 @@ Define the following functions using *list comprehensions*.
 a.  `caps` should return all of the capital letters of the input list.
 
 ```
-caps ['A', 'B', 'c', 'd, 'E']
-=> ['A', 'B', 'E']
+caps ['A', 'B', 'c', 'd', 'E']
+=> "ABE"
 ```
 
 b.  `sumOdd` should calculate the sum of the odd numbers in a list.
@@ -172,7 +172,7 @@ orderTwo (2, 3)
 => (2, 3)
 
 orderTwo (3.5, 2)
-=> (2, 3.5)
+=> (2.0, 3.5)
 
 orderTwo ('b', 'a')
 => ('a', 'b')
@@ -211,11 +211,11 @@ applyIfTrue (*3) 5 True
 applyIfTrue (*3) 5 False
 => 5
 
-applyIfTrue ((++) "No") " thanks" True
+applyIfTrue ((++) "no ") "thanks" True
 => "No thanks"
 
-applyIfTrue ((++) "No") " thanks" False
-=> "No"
+applyIfTrue ((++) "no ") "thanks" False
+=> "thanks"
 ```
 
 **c. `calcArea`**
