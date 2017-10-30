@@ -1,11 +1,6 @@
 Haskell -- Assignment 2
 =======================
 
-**Update: All of the problems have now been added to this assignment. You'll
-notice that I mention something about unit tests in the notes below -- I'll
-release the unit tests file soon, along with instructions on how to use it,
-but you can work on all of the problems in the meantime.**
-
 **This assignment is worth 34 points.**
 
 Notes:
@@ -15,14 +10,12 @@ Notes:
     sure you use the exact function name given in the problem statement to
     define your function**.
 -   **No credit** will be given if you submit an assignment that will not load
-    the test file. So, if you cannot get a test to pass:
-    1.  Submit a file that includes *only* passing functions.
-    2.  Submit a revised unit test file that only includes tests for your
-        passing functions.
+    the test file. So, if you cannot get a test to pass, **set the right-hand
+    side of your function to `undefined`**. Example: `my_func = undefined`.
 -   Name your file `assignment_2.hs`.
--   Write the line `module Assignment2 where` at the top of your file (and
-    this line should not be indented). You will lose **4 points** if you don't
-    have this line.
+-   Write the line `module Assignment2 where` at the top of your file (and this
+    line should not be indented). You will lose **4 points** if you don't have
+    this line.
 
 Problem 1 -- `zipWith'` (8 pts.)
 --------------------------------
