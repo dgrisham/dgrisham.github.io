@@ -1,12 +1,10 @@
 ---
 title: Haskell -- Overview
 author: David Grisham
-date: 30 October 2017
-theme: metropolis
+date: 31 October 2017
+theme: Amsterdam
 header-includes:
     -   \newcommand\ra{\ensuremath{\rightarrow}\ }
-    -   \newcommand{\graphicw}[2]{\center \includegraphics[width=#2]{#1}}
-    -   \newcommand{\link}[1]{\textcolor{blue}{#1}}
 ...
 
 Properties
