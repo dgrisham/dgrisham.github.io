@@ -10,8 +10,9 @@ Notes:
     sure you use the exact function name given in the problem statement to
     define your function**.
 -   **No credit** will be given if you submit an assignment that will not load
-    the test file. So, if you cannot get a test to pass, **set the right-hand
-    side of your function to `undefined`**. Example: `my_func = undefined`.
+    the test file. So, if you cannot figure out how to define a function, **set
+    the right-hand side of your function to `undefined`**. Example:
+    `my_func = undefined`.
 -   Name your file `assignment_2.hs`.
 -   Write the line `module Assignment2 where` at the top of your file (and this
     line should not be indented). You will lose **4 points** if you don't have
