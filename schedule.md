@@ -27,7 +27,7 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 10/19 | [Polymorphism 2](lectures/haskell/4-polymorphism_2/notes.pdf) | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](assignments/haskell/1-types_functions/assignment.pdf) | 10/24
 10/24 | [Higher Order Functions 1](lectures/haskell/5-higher_order_functions/notes.md) | Chapter 6 | Quiz: Chapter 4 | N/A
 10/26 | [Higher Order Functions 2](lectures/haskell/6-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md)
-10/31 | TBD | TBD | Quiz: Chapter 5 | TBD
+10/31 | [Haskell Overview](lectures/haskell/7-haskell_overview/presentation.pdf) | TBD | TBD| TBD
 
 Ruby
 ----
