@@ -191,8 +191,12 @@ decimal) and a list of prices, and returns the total amount saved by the
 discount.
 
 ```
-> totalDiscount 0.1 [4, 5, 6]
-0.9
+> totalDiscount 0.1 [1]
+0.1
+> totalDiscount 0.1 [1, 4]
+0.5
+> totalDiscount 0.5 [1, 2, 3]
+3.0
 ```
 
 ### b. `discountedItems` (8 pts.)
