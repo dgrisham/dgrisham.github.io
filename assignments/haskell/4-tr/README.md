@@ -14,14 +14,14 @@ tr -d <string1> # delete mode
 
 From the OpenBSD man page:
 
-    In the first synopsis form, the characters in `<string1>` are translated
-    into the characters in `<string2>` where the first character in `<string1>`
-    is translated into the first character in `<string2>` and so on. If
-    `<string1>` is longer than `<string2>`, the last character found in
-    `<string2>` is duplicated until `<string1>` is exhausted.
+> In the first synopsis form, the characters in `<string1>` are translated
+> into the characters in `<string2>` where the first character in `<string1>`
+> is translated into the first character in `<string2>` and so on. If
+> `<string1>` is longer than `<string2>`, the last character found in
+> `<string2>` is duplicated until `<string1>` is exhausted.
 
-    In the second synopsis form, the characters in `<string1>` are deleted from
-    the input.
+> In the second synopsis form, the characters in `<string1>` are deleted from
+> the input.
 
 When you run the `tr` command, it will just wait for string input via `STDIN`,
 which is the string that it will translate based on the arguments you provided
