@@ -19,7 +19,7 @@ From the OpenBSD man page:
 > is translated into the first character in `<string2>` and so on. If
 > `<string1>` is longer than `<string2>`, the last character found in
 > `<string2>` is duplicated until `<string1>` is exhausted.
-
+>
 > In the second synopsis form, the characters in `<string1>` are deleted from
 > the input.
 
