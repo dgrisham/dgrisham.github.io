@@ -115,8 +115,8 @@ corresponds to `STDIN` (the string to be translated) and the return value
 corresponds to `STDOUT` (the translated string).
 
 The type of the second argument is `Maybe CharSet` to differentiate between
-between translate and delete mode. In translate mode it will be `Just
-<charset>`, and in delete mode it will be `Nothing`. E.g.:
+between translate and delete mode. In translate mode it will be
+`Just <charset>`, and in delete mode it will be `Nothing`. E.g.:
 
 ```haskell
 -- translate mode
