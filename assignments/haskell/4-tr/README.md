@@ -42,7 +42,8 @@ bzz
 ezz
 ```
 
-```tr -d abc
+```
+tr -d abc
 ace
 e
 aaaabbbbyyyy
