@@ -53,7 +53,7 @@ yyyy
 Corner Cases
 ------------
 
-**First**, if `<string1>` is shorter than `<string2>`, you should repeat the
+**First**, if `<string1>` is longer than `<string2>`, you should repeat the
 final character of `<string2>` until it's the same length as string `<string1>`.
 That is, this:
 
@@ -67,11 +67,11 @@ should be treated as equivalent to:
 tr abc xxx
 ```
 
-**Second**, if `<string1>` is longer than `<string2>`, you should truncate
+**Second**, if `<string1>` is shorter than `<string2>`, you should truncate
 `<string2>` to be the same length as `<string1>`. So this:
 
 ```
-tr abcz def
+tr abc defg
 ```
 
 should be treated as:
