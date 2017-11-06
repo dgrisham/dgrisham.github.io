@@ -20,16 +20,15 @@ Haskell
 
 Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 ----  | ------------- | ------- | ---- | ---------- | --------
-10/5  | [Functions and Types](lectures/haskell/1-functions_types/notes.pdf), [Standalone Code Examples](lectures/haskell/1-functions_types/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
-10/10 | [Data Types](lectures/haskell/2-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/2-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
-10/12 | [Polymorphism 1](lectures/haskell/3-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD
-10/17 | No Class | N/A | N/A | N/A | N/A
-10/19 | [Polymorphism 2](lectures/haskell/4-polymorphism_2/notes.pdf) | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](assignments/haskell/1-types_functions/assignment.pdf) | 10/24
-10/24 | [Higher Order Functions 1](lectures/haskell/5-higher_order_functions/notes.md) | Chapter 6 | Quiz: Chapter 4 | N/A
-10/26 | [Higher Order Functions 2](lectures/haskell/6-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md) | 10/31
-10/31 | [Haskell Overview](lectures/haskell/7-haskell_overview/presentation.pdf) | TBD | TBD| TBD
-11/02 | [Lambdas, Composition, and Typeclasses](lectures/haskell/8-typeclasses/notes.pdf) | Chapter 8 | N/A | [Assignment 3](assignments/haskell/3-higher_order_functions/assignment.pdf), [Source](assignments/haskell/3-higher_order_functions/Assignment3.hs) | 11/7 (1-3), 11/9 (4)
-11/07 | TBD | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/12
+10/5  | [Functions and Types](lectures/haskell/01-functions_types/notes.pdf), [Standalone Code Examples](lectures/haskell/01-functions_types/notes.hs) | Chapter 1, 2 | N/A | N/A | N/A
+10/10 | [Data Types](lectures/haskell/02-data_types/notes.pdf), [Standalone Code Examples](lectures/haskell/02-data_types/notes.hs) | Chapter 3 | N/A | TBD | TBD
+10/12 | [Polymorphism 1](lectures/haskell/03-polymorphism_1/notes.pdf) | Chapter 4 | Quiz: Chapter 2 | TBD | TBD 10/17 | No Class | N/A | N/A | N/A | N/A
+10/19 | [Polymorphism 2](lectures/haskell/04-polymorphism_2/notes.pdf) | Chapter 5 | Quiz: Chapter 3 | [Assignment 1](assignments/haskell/1-types_functions/assignment.pdf) | 10/24
+10/24 | [Higher Order Functions 1](lectures/haskell/05-higher_order_functions/notes.md) | Chapter 6 | Quiz: Chapter 4 | N/A
+10/26 | [Higher Order Functions 2](lectures/haskell/06-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md) | 10/31
+10/31 | [Haskell Overview](lectures/haskell/07-haskell_overview/presentation.pdf) | TBD | TBD| TBD
+11/02 | [Lambdas, Composition, and Typeclasses](lectures/haskell/08-typeclasses/notes.pdf) | Chapter 8 | N/A | [Assignment 3](assignments/haskell/3-higher_order_functions/assignment.pdf), [Source](assignments/haskell/3-higher_order_functions/Assignment3.hs) | 11/7 (1-3), 11/9 (4)
+11/07 | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/12
 
 Ruby
 ----
