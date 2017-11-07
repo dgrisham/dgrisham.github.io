@@ -301,7 +301,7 @@ provided rules this time.
 
 1.  `[False..] => False:[False..]`
 2.  `foldr f z (x:xs) => f x (foldr f z xs)`
-3.  `False && False => False`
+3.  `False && _ => False`
 
 **Steps (6 pts.)**
 
