@@ -28,7 +28,11 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 10/26 | [Higher Order Functions 2](lectures/haskell/06-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md) | 10/31
 10/31 | [Haskell Overview](lectures/haskell/07-haskell_overview/presentation.pdf) | TBD | TBD| TBD
 11/02 | [Lambdas, Composition, and Typeclasses](lectures/haskell/08-typeclasses/notes.pdf) | Chapter 8 | N/A | [Assignment 3](assignments/haskell/3-higher_order_functions/assignment.pdf), [Source](assignments/haskell/3-higher_order_functions/Assignment3.hs) | 11/7 (1-3), 11/9 (4)
-11/07 | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/12
+11/07 | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/13
+11/09 | State-based Computation 1 | N/A | N/A | N/A | N/A
+11/14 | State-based Computation 2 | Chapter 11, Section 1 (Functors redux) | N/A | N/A | N/A
+11/16 | Functor, Applicative, Monad; Parsing | Chapter 11, Section 2 (Applicative functors) | Chapter 11, Section 1 | N/A | N/A
+11/21 | TBD | TBD | Chapter 11, Section 1 | N/A | N/A
 
 Ruby
 ----
