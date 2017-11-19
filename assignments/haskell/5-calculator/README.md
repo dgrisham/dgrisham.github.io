@@ -1,6 +1,8 @@
 Final Project, Part 1 -- Haskell Calculator
 ===========================================
 
+**This assignment is due Friday, December 1 by 11:59:59.**
+
 In this assignment, you will be filling in the missing pieces of a calculator
 implementation written in Haskell. Example run (input lines are prefixed with
 `> `, output lines just show a numeric result):
@@ -582,10 +584,11 @@ in general -- e.g. use pattern matching, `case` expressions, higher-level
 functions (one of the fold functions is particularly useful at one point in this
 assignment), etc. As a point of potential interest: I used quite a few `case`
 expressions in my code, and I did not use a single `guard` expression. If you're
-using `guard` expressions frequently, there might be a better way.
+using `guard` expressions frequently, there's probably a better way.
 
 *Please post on Piazza or come talk to me if you want to improve your Haskell
-code in these kinds of ways but are just uncomfortable/uncertain how to.*
+code in these kinds of ways but are just uncomfortable/uncertain how to. It
+will make your code more bearable to deal with in the long run.*
 
 ### Submission
 

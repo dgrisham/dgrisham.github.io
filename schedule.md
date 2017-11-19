@@ -31,8 +31,8 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 11/07 | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/13
 11/09 | State-based Computation 1 | N/A | N/A | N/A | N/A
 11/14 | State-based Computation 2 | Chapter 11, Section 1 (Functors redux) | N/A | N/A | N/A
-11/16 | Functor, Applicative, Monad; Parsing | Chapter 11, Section 2 (Applicative functors) | Chapter 11, Section 1 | N/A | N/A
-11/21 | TBD | TBD | Chapter 11, Section 1 | N/A | N/A
+11/16 | Functor, Applicative, Monad; Parsing 1 | Chapter 11, Section 2 (Applicative functors) | Quiz: Chapter 11, Section 1 | N/A | N/A
+11/21 | Parsing 2 | TBD | Quiz: Chapter 11, Section 1 | [Project 2: Calculator](assignments/haskell/5-calculator/README.md) | 12/1
 
 Ruby
 ----
