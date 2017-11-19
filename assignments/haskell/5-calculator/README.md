@@ -1,7 +1,8 @@
 Final Project, Part 1 -- Haskell Calculator
 ===========================================
 
-**This assignment is due Friday, December 1 by 11:59:59.**
+**This assignment is due Friday, December 1 by 11:59:59. You may work with a
+partner on this project**
 
 In this assignment, you will be filling in the missing pieces of a calculator
 implementation written in Haskell. Example run (input lines are prefixed with
