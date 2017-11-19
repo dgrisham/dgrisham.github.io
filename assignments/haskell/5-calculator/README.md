@@ -509,8 +509,6 @@ ExnVal "Variable name <v> is not defined."
 
 ### Division by zero
 
-<insert meme reference here>
-
 When `eval` is called on a `DivideExpr` where the denominator evaluates to
 `NumVal 0.0`, `eval` should return:
 
