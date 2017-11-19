@@ -188,7 +188,7 @@ Types
 
 The types are defined in `src/Common.hs`.
 
-### `Val`
+### Val
 
 `Val` is used to represent a value. The data declaration is:
 
@@ -207,7 +207,7 @@ The successful evaluation of an expression produces a `NumVal Float`, where the
 in an `ExnVal String` (`ExnVal` is short for *exception value*), where the
 `String` is an error message indicating the source of the error.
 
-### `Expr`
+### Expr
 
 `Expr` is used to represent an expression. The data declaration is:
 
@@ -221,13 +221,13 @@ data Expr = NumExpr      Float
           | DivideExpr   Expr Expr
 ```
 
-#### `NumExpr Float`
+#### NumExpr Float
 
 A `NumExpr` represents an `Expr` that contains a single number.
 
 Example: User input `3` parses to `NumExpr 3.0` and evaluates to `NumVal 3.0`.
 
-#### `ConstExpr String`
+#### ConstExpr String
 
 `ConstExpr` is for common mathematical constants, like pi or e. The constructor
 just contains the name of the constant -- the `eval` function will convert it to
@@ -240,7 +240,7 @@ The list of supported constant names and corresponding values is stored in the
 `consts` map in `src/Common.hs`. You should use this map to look up constants
 when implementing `eval` for `ConstExpr`.
 
-#### `VarExpr String`
+#### VarExpr String
 
 A `VarExpr` holds the name of a variable that the user wishes to access. Of
 course, the user must have declared the value of the variable in a statement
@@ -250,7 +250,7 @@ Example: User input `x` parses to `VarExpr "x"` and evaluates to
 `NumVal <xVal>`, where `<xVal>` is the value `x` was previously set to by the
 user in a statement (see the description of the `Stmt` type below).
 
-#### `AddExpr Expr Expr`
+#### AddExpr Expr Expr
 
 `AddExpr` is one of four operator expressions, which take two sub-expressions
 and combine them in some way. When evaluated, `AddExpr` adds the values that
@@ -259,7 +259,7 @@ each of its `Expr` arguments evaluate to.
 Example: User input `x + 2` parses to `AddExpr (VarExpr "x") (NumExpr 2.0)` and,
 assuming the value of `x` was previousy set to `3`, evaluates to `NumVal 5.0`.
 
-#### `SubtractExpr Expr Expr`
+#### SubtractExpr Expr Expr
 
 The second of the four operator expressions. When evaluated, `SubtractExpr`
 subtracts the result of evaluating the second `Expr` from the result of
@@ -268,7 +268,7 @@ evaluating the first `Expr`.
 Example: User input `1 - y` parses to
 `SubtractExpr (NumExpr 1.0) (VarExpr "y")`.
 
-#### `MultiplyExpr Expr Expr`
+#### MultiplyExpr Expr Expr
 
 The second of the four operator expressions. When evaluated, `MultiplyExpr`
 multiplies the values that each of its `Expr` arguments evaluate to.
@@ -276,7 +276,7 @@ multiplies the values that each of its `Expr` arguments evaluate to.
 Example: User input `-1 * 8` parses to
 `MultiplyExpr (NumExpr (-1.0)) (NumExpr 8.0)` and evaluates to `NumVal (-8.0)`.
 
-#### `DivideExpr Expr Expr`
+#### DivideExpr Expr Expr
 
 The second of the four operator expressions. When evaluated, `DivideExpr`
 divides the value that the first `Expr` evaluates to by the value that the
@@ -285,7 +285,7 @@ second `Expr` evaluates to.
 Example: User input `8 / pi` parses to
 `DivideExpr (NumExpr 8.0) (ConstExpr "pi")` and evaluates to `NumVal 2.546479`.
 
-### `Stmt`
+### Stmt
 
 `Stmt` is used to represent a statement. The data declaration is:
 
@@ -294,7 +294,7 @@ data Stmt = SetStmt  String Expr
           | SeqStmt  [Stmt]
 ```
 
-#### `SetStmt String Expr`
+#### SetStmt String Expr
 
 A `SetStmt` represents a variable declaration. The `String` field represents the
 name of the variable and the `Expr` is the expression that wil be evaluated into
@@ -303,7 +303,7 @@ name.
 
 Example: User input `x := 3` is parsed to `SetStmt "x" (NumExpr 3.0)`.
 
-#### `SeqStmt [Stmt]`
+#### SeqStmt [Stmt]
 
 A `SeqStmt` is a sequence of statements. This allows the user to pass in a
 semicolon-separated list of statements (represented by the `[Stmt]` field) that
@@ -389,7 +389,7 @@ You must fully define all of the currently `undefined` functions in
 `src/Lib.hs`. Each function is listed below, along with a description of how
 it should work.
 
-### `runLine`
+### runLine
 
 ```haskell
 runLine :: Line -> Env -> (Env, Maybe Val)
@@ -415,7 +415,7 @@ When determining how to write this function, remember the following:
 -   Evaluating an expression returns a value and does not change the
     environment.
 
-### `eval`
+### eval
 
 ```haskell
 eval :: Expr -> Env -> Val
@@ -423,7 +423,7 @@ eval :: Expr -> Env -> Val
 
 Implements the previously discussed expression evaluator.
 
-### `exec`
+### exec
 
 ```haskell
 exec :: Stmt -> Env -> Env
@@ -441,7 +441,7 @@ x := 3; x := 1
 the environment should be updated from left-to-right -- therefore, after the
 above line is executed, the value of `x` should be `1`, not `3`.
 
-### `liftNumOp`
+### liftNumOp
 
 ```haskell
 liftNumOp :: (Float -> Float -> Float) -> Val -> Val -> Val
@@ -518,7 +518,7 @@ When `eval` is called on a `DivideExpr` where the denominator evaluates to
 ExnVal "Division by zero."
 ```
 
-### `liftNumOp`
+### liftNumOp
 
 `liftNumOp` should fail when either or both of its arguments are `ExnVal`. The
 returned value should be:
@@ -527,7 +527,7 @@ returned value should be:
 ExnVal "Cannot lift."
 ```
 
-### `Show Val`
+### Show Val
 
 As mentioned above, running the program without any arguments will print the
 result of any expressions that the user inputs. You'll notice that the output
@@ -639,7 +639,7 @@ Note the nesting of the expressions in both cases -- the multiplication happens
 first, and the addition happens second. This makes the `eval` function more
 straightforward to write for these expressions.
 
-### `HashMap`
+### HashMap
 
 The `Env` is implemented using a hash map from the [`unordered-containers`
 package](https://hackage.haskell.org/package/unordered-containers-0.2.8.0/docs/Data-HashMap-Strict.html).
