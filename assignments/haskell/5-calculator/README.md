@@ -662,7 +662,7 @@ Ideas for this:
 -   Add more data types, like `Bool` (rather than just `Float`). This would
     require updating the data types, expression parser (see [`Megaparsec`'s
     expression parser
-    docs](https://hackage.haskell.org/package/megaparsec-6.2.0/docs/Text-Megaparsec-Expr.html)),
+    docs](https://hackage.haskell.org/package/megaparsec-5.3.1/docs/Text-Megaparsec-Expr.html)),
     and of course the evaluator.
 -   Making the command input more robust, e.g. by using
     [`haskeline`](https://hackage.haskell.org/package/haskeline). This can give
