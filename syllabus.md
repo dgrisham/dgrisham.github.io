@@ -73,11 +73,12 @@ Textbooks
 Student Evaluation
 ------------------
 
--   Assignments: 45%
+-   Ruby + Haskell Assignments: 45%
+-   Ruby Exam: 20%
+-   Haskell Projects: 25%
+-   Haskell Quizzes: 5%
 -   Class participation: 5%
--   Exams and Quizzes: 25%
--   Projects: 20%
--   Language Comparison: 5%
+    -   Meetup presentation is 40% of this (2% of the total)
 
 Late Policy
 -----------
