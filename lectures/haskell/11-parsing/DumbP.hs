@@ -21,9 +21,52 @@ number s =
 -- that does the following:
 -- > majorVersion "HTTP/1"
 -- Just (1,"")
+-- > majorVersion "HTTP/1.1"
+-- Just (1,".1")
 
 majorVersion :: Parser String Int
-majorVersion s = undefined
+majorVersion s =
+  case string "HTTP/" s of
+    Nothing -> Nothing
+    Just (_, rest) ->
+      case number rest of
+        Nothing -> Nothing
+        Just (maj, rest2) -> Just (maj, rest2)
 
-version1 :: Parser String Int
-version1 s = undefined
+
+
+
+
+
+
+
+
+
+
+versionDumb :: Parser String (Int, Int)
+versionDumb s =
+  case string "HTTP/" s of
+    Nothing -> Nothing
+    Just (_, rest0) ->
+      case number rest0 of
+        Nothing -> Nothing
+        Just (maj, rest1) -> Just (maj, rest1)
+        case string "." rest1 of
+          Nothing -> Nothing
+          Just (_, rest2) ->
+            case number rest2 of
+              Nothing -> Nothing
+              Just (minor, rest3) -> Just ((major, minor), rest3)
+
+case parser s of
+  Nothing -> Nothing
+  Just (result, rest) -> case parser2 rest of ....
+
+andThen :: Parser s a -> (a -> Parser s b) -> Parser s b
+andThen parse next = \input ->
+  case parse input of
+    Nothing -> Nothing
+    Just (x, rest) -> next x rest
+
+stuff :: a -> Parser s a
+stuff x = \input -> Just (x, input)
