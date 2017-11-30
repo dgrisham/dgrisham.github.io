@@ -27,12 +27,14 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 10/24 | [Higher Order Functions 1](lectures/haskell/05-higher_order_functions/notes.md) | Chapter 6 | Quiz: Chapter 4 | N/A
 10/26 | [Higher Order Functions 2](lectures/haskell/06-currying/notes.pdf) | TBD | N/A | [Assignment 2](assignments/haskell/2/assignment.md) | 10/31
 10/31 | [Haskell Overview](lectures/haskell/07-haskell_overview/presentation.pdf) | TBD | TBD| TBD
-11/02 | [Lambdas, Composition, and Typeclasses](lectures/haskell/08-typeclasses/notes.pdf) | Chapter 8 | N/A | [Assignment 3](assignments/haskell/3-higher_order_functions/assignment.pdf), [Source](assignments/haskell/3-higher_order_functions/Assignment3.hs) | 11/7 (1-3), 11/9 (4)
-11/07 | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/13
-11/09 | State-based Computation 1 | N/A | N/A | N/A | N/A
+11/2  | [Lambdas, Composition, and Typeclasses](lectures/haskell/08-typeclasses/notes.pdf) | Chapter 8 | N/A | [Assignment 3](assignments/haskell/3-higher_order_functions/assignment.pdf), [Source](assignments/haskell/3-higher_order_functions/Assignment3.hs) | 11/7 (1-3), 11/9 (4)
+11/7  | Typeclasses 2: This Time it's Personal | TBD | N/A | [Project 1: `tr`](assignments/haskell/4-tr/README.md) | 11/13
+11/9  | State-based Computation 1 | N/A | N/A | N/A | N/A
 11/14 | State-based Computation 2 | Chapter 11, Section 1 (Functors redux) | N/A | N/A | N/A
-11/16 | Functor, Applicative, Monad; Parsing 1 | Chapter 11, Section 2 (Applicative functors) | Quiz: Chapter 11, Section 1 | N/A | N/A
-11/21 | Parsing 2 ([src file](./lectures/haskell/11-parsing/DumbP.hs)) | TBD | Quiz: Chapter 11, Section 2 | [Project 2: Calculator](assignments/haskell/5-calculator/README.md) | 12/1
+11/16 | Functor, Applicative, Monad; [Parsing 1](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) | Chapter 11, Section 2 (Applicative functors) | Quiz: Chapter 11, Section 1 | N/A | N/A
+11/21 | [Parsing 2](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) ([src file](./lectures/haskell/11-parsing/DumbP.hs)) | N/A | Quiz: Chapter 11, Section 2 | [Project 2: Calculator](assignments/haskell/5-calculator/README.md) | 12/1
+11/30 | [Parsing 3](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) | [This handout](./assignments/haskell/monadic_parsec.md) [Real World Haskell, Ch. 16 (Parsec)](http://book.realworldhaskell.org/read/using-parsec.html) | N/A | N/A | N/A
+12/5  | TBD | TBD | Quiz: Real World Haskell, Ch. 16 (Parsec) | TBD | TBD
 
 Ruby
 ----
