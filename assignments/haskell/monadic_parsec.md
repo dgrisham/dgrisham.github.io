@@ -173,7 +173,8 @@ the parsing, AKA the type of the value that the parser holds for us. When we
 write parsers for the assignment, the `s` will be removed and we'll just have
 `Parser a` as the generic parser type -- this just means that the fact that
 we're always parsing a `String` is implicit in the `Parser` type itself, so we
-don't include the additional `s` type variable.*
+don't include the additional `s` type variable. I'm doing the same thing in
+this example for parsing a `Person`.*
 
 We can write a parser for a `Person` by combining these two parsers. Using `do`
 notation, this would look like:
