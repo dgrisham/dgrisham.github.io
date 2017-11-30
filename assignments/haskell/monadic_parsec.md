@@ -171,7 +171,7 @@ We can write a parser for a `Person` by combining these two parsers. Using `do`
 notation, this would look like:
 
 ```haskell
-p_person :: Parser Name Age
+p_person :: Parser Person
 p_person = do
   name <- p_name
   age  <- p_age
@@ -181,7 +181,7 @@ p_person = do
 Translating this to use the applicative Parsec style would give us:
 
 ```haskell
-p_person :: Parser Name Age
+p_person :: Parser Person
 p_person = Person <$> p_name <*> p_age
 ```
 
