@@ -185,7 +185,7 @@ p_person :: Parser Name Age
 p_person = Person <$> p_name <*> p_age
 ```
 
-You might think one of this is cleaner than the other, but the latter form is
+You might think one of these is cleaner than the other, but the latter form is
 the one we'll be using on the second half of the project.
 
 From here, you should read [the `Parsec` chapter of Real World
