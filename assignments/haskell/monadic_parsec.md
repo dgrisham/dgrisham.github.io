@@ -167,6 +167,14 @@ p_name :: Parser Name
 p_age  :: Parser Age
 ```
 
+*Note: The type we've been using for parsing has been `Parser s a`, where `s` is
+the type of the input to be parsed (`String` for us) and `a` is the result of
+the parsing, AKA the type of the value that the parser holds for us. When we
+write parsers for the assignment, the `s` will be removed and we'll just have
+`Parser a` as the generic parser type -- this just means that the fact that
+we're always parsing a `String` is implicit in the `Parser` type itself, so we
+don't include the additional `s` type variable.*
+
 We can write a parser for a `Person` by combining these two parsers. Using `do`
 notation, this would look like:
 
@@ -197,3 +205,5 @@ they're similar enough that the book chapter should give you a solid start.
 then moves to the notation that we want to use, which is 'applicative Parsec'*.
 However, it explains applicative Parsec using `do` notation, so it's helpful to
 understand both.
+
+
