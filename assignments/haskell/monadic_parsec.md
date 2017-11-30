@@ -132,9 +132,9 @@ few other typeclasses, namely `Functor`, which gives us the `(<$>)` ('fmap')
 operator, and `Applicative`, which gives us the `(<*>)` ('apply') operator and a
 few others (namely, `(*>)` and `(<*)`). We'll also see the `Alternative`
 typeclass, which gives us `(<|>)` -- you'll get an idea of how this operator
-works from the chapter reading.
+works from the chapter reading. We'll call this style 'applicative Parsec'.
 
-This style will allow us to take parsers that look like this:
+Applicative Parsec will allow us to take parsers that look like this:
 
 ```haskell
 majorVersion :: Parser String Int
@@ -151,15 +151,49 @@ majorVersion :: Parser String Int
 majorVersion = string "HTTP/" *> number
 ```
 
+As another example, consider a `Person` data type:
+
+```haskell
+data Person = Person Name Age
+type Name   = String
+type Age    = Int
+```
+
+Given parsers for a `Name` and `Age`, called `p_name` and `p_age`, resp.:
+
+```haskell
+-- definitions not given, just type signatures
+p_name :: Parser Name
+p_age  :: Parser Age
+```
+
+We can write a parser for a `Person` by combining these two parsers. Using `do`
+notation, this would look like:
+
+```haskell
+p_person :: Parser Name Age
+p_person = do
+  name <- p_name
+  age  <- p_age
+  return $ Person name age
+```
+
+Translating this to use the applicative Parsec style would give us:
+
+```haskell
+p_person :: Parser Name Age
+p_person = Person <$> p_name <*> p_age
+```
+
 You might think one of this is cleaner than the other, but the latter form is
 the one we'll be using on the second half of the project.
 
 From here, you should read [the `Parsec` chapter of Real World
 Haskell](http://book.realworldhaskell.org/read/using-parsec.html). `Parsec` is a
 parsing library in Haskell. The one we'll actually be using is
-[`Megaparsec`](https://hackage.haskell.org/package/megaparsec-6.2.0), but
+[`megaparsec`](https://hackage.haskell.org/package/megaparsec-6.2.0), but
 they're similar enough that the book chapter should give you a solid start.
 *Note that the chapter starts off by using* `do` *notation to define parsers,
-then moves to the notation that we want to use (called 'applicative Parsec')*.
+then moves to the notation that we want to use, which is 'applicative Parsec'*.
 However, it explains applicative Parsec using `do` notation, so it's helpful to
 understand both.
