@@ -34,7 +34,7 @@ Date  | Lecture Notes | Reading | Quiz | Assignment | Due Date
 11/16 | Functor, Applicative, Monad; [Parsing 1](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) | Chapter 11, Section 2 (Applicative functors) | Quiz: Chapter 11, Section 1 | N/A | N/A
 11/21 | [Parsing 2](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) ([src file](./lectures/haskell/11-parsing/DumbP.hs)) | N/A | Quiz: Chapter 11, Section 2 | [Project 2: Calculator](assignments/haskell/5-calculator/README.md) | 12/1
 11/30 | [Parsing 3](http://www.scs.stanford.edu/16wi-cs240h/slides/parsing-slides.html) | [This handout](./assignments/haskell/monadic_parsec.md) [Real World Haskell, Ch. 16 (Parsec)](http://book.realworldhaskell.org/read/using-parsec.html) | N/A | N/A | N/A
-12/5  | TBD | TBD | Quiz: Real World Haskell, Ch. 16 (Parsec) | TBD | TBD
+12/5  | TBD | TBD | Quiz: Real World Haskell, Ch. 16 (Parsec) | [Project 2, Part 2](./assignments/haskell/6-calculator_2/README.md) | TBD
 
 Ruby
 ----

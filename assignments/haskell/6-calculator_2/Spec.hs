@@ -335,7 +335,7 @@ test_appExpr = describe "Testing evaluator on AppExpr" $ do
 
   describe "Test builtin sin function (2)" $
     it "sin pi" $
-      eval (AppExpr "sin" [SubtractExpr (ConstExpr "pi") (NumExpr 0)]) H.empty `shouldBe` NumVal (sin pi)
+      eval (AppExpr "sin" [ConstExpr "pi"]) H.empty `shouldBe` NumVal (sin pi)
 
   describe "Test builtin cos function (1)" $
     it "cos 0" $
@@ -343,7 +343,7 @@ test_appExpr = describe "Testing evaluator on AppExpr" $ do
 
   describe "Test builtin cos function (2)" $
     it "cos pi" $
-      eval (AppExpr "cos" [AddExpr (ConstExpr "pi") (NumExpr 0)]) H.empty `shouldBe` NumVal (cos pi)
+      eval (AppExpr "cos" [ConstExpr "pi"]) H.empty `shouldBe` NumVal (cos pi)
 
   describe "Test function with no args" $
     it "f() -> 2" $
