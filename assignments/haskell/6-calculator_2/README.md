@@ -407,10 +407,10 @@ points (but you should talk to me about it first). Ideas:
     `Error: Function f expects 2 args, got 1.`.
 -   Support default values for function arguments, e.g. `f(x := 0) := x + 1`
     (here, `f()` would evaluate to `1` and `f(1)` would evaluate to `2`).
--   Make the expression evalauation lazy, rather than strict. If you do this,
-    you also have to decide whether you want to use *static* or *dynamic*
-    lexical scoping -- the latter is more difficult to implement, but will get
-    you more points.
+-   Make the expression evaluation lazy, rather than strict. If you do this, you
+    also have to decide whether you want to use *static* or *dynamic* lexical
+    scoping -- the latter is more difficult to implement, but will get you more
+    points.
 
 Feel free to ask about any of these if you have questions, or let me know of any
 ideas you come up with!
