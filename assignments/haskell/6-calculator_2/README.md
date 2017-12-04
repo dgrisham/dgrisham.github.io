@@ -1,8 +1,8 @@
 Final Project, Part 2 -- Haskell Calculator
 ===========================================
 
-**This assignment is due Friday, December 15 by 11:59:59 pm. You may work with a
-partner on this project.**
+**This assignment is due Thursday, December 14 by 11:59:59 pm. You may work with
+a partner on this project.**
 
 In the second part of this project, you'll be adding a new feature to the
 calculator -- functions. Example of how this will work:
