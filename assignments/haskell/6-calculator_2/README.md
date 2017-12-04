@@ -111,7 +111,7 @@ the environment would be the function's name, and the value would be the
 
 The `CloVal` constructor is used to represent a *closure*. A closure is a record
 that stores the information that the evaluator needs when evaluating an
-`AppExpr` -- the names of the function args, the function body, and the
+`AppExpr` -- the names of the function arguments, the function body, and the
 environment at the time the function was created. The semantics of the arguments
 are:
 
@@ -151,9 +151,9 @@ can run:
 The environment stored in the `CloVal` would contain the mapping from `n` to
 `NumVal 1.0` -- then, when evaluating the expression stored with the `CloVal`,
 which is `AddExpr (VarExpr "x") (VarExpr "n")`, you can lookup the value of `n`
-in the `CloVal`.
+in the environment associated with the `CloVal` for the function `f`.
 
-You should also modify your `Show Val` instance to handle `CloVal`s:
+You should also modify your `Show Val` instance to handle `CloVal`:
 
 ```haskell
 instance Show Val where
@@ -194,8 +194,8 @@ First consider the type, `Parser Line` -- roughly, this means that `p_line`
 2.  also knows *how to create* a value of type `Line` from that parsed input.
 
 On to the body of `p_line`, we see that this parser tries to run the `p_stmt`
-parser on its input. `p_stmt` has the type signature `Parser Stmt`. If `p_stmt`
-succeeds, then we transform the result into a `Line` by applying the `Stmt` data
+parser on its input. `p_stmt` has the type `Parser Stmt`. If `p_stmt` succeeds,
+then we transform the result into a `Line` by applying the `Stmt` data
 constructor to the result (which is what `Stmt <$> p_stmt` does). Otherwise, if
 `p_stmt` fails, then the parser tries to run `p_expr` on the input. If `p_expr`
 succeeds, then we transform the result into a `Line` by applying the `Expr` data
@@ -217,13 +217,13 @@ built out of two parsers from the [Megaparsec
 library](https://hackage.haskell.org/package/megaparsec-6.2.0):
 [`oneOf`](https://hackage.haskell.org/package/megaparsec-6.2.0) and
 [`some`](https://hackage.haskell.org/package/parser-combinators-0.2.0/docs/Control-Applicative-Combinators.html#v:some).
-`oneOf` accepts a list of characters and succeeds when it can parse a single one
-of those characters from the input. `some` takes a parser that parses anything
-and creates a parser that can parse a sequence of the same thing (and puts the
-results in a list). So, in this case, the `oneOf ['a'..'z']` parser succeeds
-when it can parse a single lowercase character, and `some $ oneOf ['a'..'z']`
-succeeds when it can parse a sequence of lowercase characters (i.e. a `String`
-made up of only lowercase characters).
+`oneOf` accepts a list of characters as its argument and creates a parser that
+succeeds when it can parse a single one of those characters from the input.
+`some` takes a parser that parses anything and creates a parser that can parse a
+sequence of the same thing (and puts the results in a list). So, in this case,
+the `oneOf ['a'..'z']` parser succeeds when it can parse a single lowercase
+character, and `some $ oneOf ['a'..'z']` succeeds when it can parse a sequence
+of lowercase characters (i.e. a `String` made up of only lowercase characters).
 
 `p_varExpr` then applies the `VarExpr` constructor to the `String` that `p_var`
 parses.
@@ -237,7 +237,7 @@ constructors that we've added, namely `FuncStmt` and `AppExpr`.
 
 ### FuncStmt
 
-Write a parser called `p_funcStmt` that parses `FuncStmt`s. There will be 3
+Write a parser called `p_funcStmt` that parses a `FuncStmt`. There will be 3
 primary sub-parsers that will be necessary for you to write for this.
 
 The **first** of these sub-parsers should parse and return a function name. For
@@ -268,8 +268,8 @@ before/after that string.
 
 ### AppExpr
 
-Write a parser called `p_appExpr` that parses `AppExpr`s. We'll leave it to you
-to figure out the details of this one.
+Write a parser called `p_appExpr` that parses an `AppExpr`. We'll leave it to
+you to figure out the details of this one.
 
 ### Integrating your parsers
 
@@ -296,13 +296,13 @@ everything should work around that.
 Executor
 --------
 
-You'll have to update `exec` to handle `FuncStmt`s and update the environment
+You'll have to update `exec` to handle `FuncStmt` and update the environment
 with the appropriate `CloVal`.
 
 Evaluator
 ---------
 
-You'll have to update `eval` to handle `AppExpr`s. Along with evaluating
+You'll have to update `eval` to handle `AppExpr`. Along with evaluating
 `AppExpr` based on user-defined functions as described above, you should also
 support two built-in functions: `sin` and `cos`. Thus, the user should be able
 to do the following:
@@ -323,7 +323,7 @@ implement a function called `liftNumFunc`. This has a similar purpose to
 `liftNumOp` from the previous part, and has the type signature:
 
 ```
-liftNumOp :: (Float -> Float) -> Val -> Val
+liftNumFunc :: (Float -> Float) -> Val -> Val
 ```
 
 If the `Val` input isn't a `NumVal`, this function should return
@@ -353,7 +353,7 @@ When the first argument of the input `AppExpr` refers to a value that isn't a
 
 When the first argument of the input `AppExpr` isn't in the environment, `eval`
 should return an `ExnVal` with a string of the form
-`"Function name <name> is not defined."`, where `"<name>"` is the name that
+`"Function name <name> is not defined."`, where `<name>` is the name that
 couldn't be found.
 
 You can assume function calls always have the correct number of arguments -- we
@@ -369,10 +369,10 @@ the rest of the parser.
 
 Your program should also successfully run with [this simple test
 script](./test.sh). You can run this with `./test.sh` (if it doesn't run the
-first time, you first have to modify the permissions with `chmod +x test.sh`.
-There are only 2 tests, and they both run strings of commands into your program
-and check that the output is as expected. You can think of these as basic
-integration tests that ensure your program works as expected when multiple
+first time, you first have to modify the permissions with `chmod +x test.sh`).
+There are only 2 tests, and they both run a sequence of commands into your
+program and check that the output is as expected. You can think of these as
+basic integration tests that ensure your program works as expected when multiple
 components are tested together (as opposed to the tests in `test/Spec.hs`, which
 are more like unit tests). Check out the file if you want to see what cases it's
 testing, because it's not as verbose as `stack test`.
@@ -391,3 +391,26 @@ are allocated to code quality/readability/comments.
 
 Run `stack sdist` and submit the resulting file to Canvas. Remember to put your
 partner's name in the submission comments if you have one.
+
+Extra Credit
+------------
+
+As before, feel free to add additional features to the program for extra credit
+points (but you should talk to me about it first). Ideas:
+
+-   Support `let` expressions for temporary variable bindings, which would let
+    you write expressions like: `let z := 1 in z` (much like Haskell's `let`
+    expressions). This would also be useful for functions, e.g.
+    `f(x) := let y := sin(x) in x * y`.
+-   Ensure that functions are called with the correct number of arguments. So,
+    defining `f(x, y) := x + y` then calling `f(0)` would output
+    `Error: Function f expects 2 args, got 1.`.
+-   Support default values for function arguments, e.g. `f(x := 0) := x + 1`
+    (here, `f()` would evaluate to `1` and `f(1)` would evaluate to `2`).
+-   Make the expression evalauation lazy, rather than strict. If you do this,
+    you also have to decide whether you want to use *static* or *dynamic*
+    lexical scoping -- the latter is more difficult to implement, but will get
+    you more points.
+
+Feel free to ask about any of these if you have questions, or let me know of any
+ideas you come up with!
