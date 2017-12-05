@@ -124,7 +124,7 @@ using the `Monad` design pattern without the ugly syntax.
 ## Applicative Parsing
 
 `do` notation gives us one way to clean up our parser definitions. The thing
-about `do`, though, is that it's 1. fairly straightforward to use, but 2. it's
+about `do`, though, is that 1. it's fairly straightforward to use, but 2. it's
 difficult to really understand what it's doing.
 
 So let's approach this from a different angle. Let's write our parsers using a
