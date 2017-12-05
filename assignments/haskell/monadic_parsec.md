@@ -90,7 +90,7 @@ functions by replacing `andThen` with `>>=` and `stuff` with `return`:
 version3 :: Parser String (Int, Int)
 version3 =
   string "HTTP/" >>= \_ ->
-  number  		 >>= \maj ->
+  number         >>= \maj ->
   string "."     >>= \_ ->
   number         >>= \min ->
   return (maj,min)
