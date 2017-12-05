@@ -167,6 +167,10 @@ instance Show Val where
 Parser
 ------
 
+**You must write your parsers in the Applicative form as laid out in the Real
+World Haskell reading (Chapter 16). This means that you should not use any `do`
+blocks and you should use operators like `<$>`, `<*>`, and `<|>`.**
+
 *Note: In the discussion below, whenever we say that a parser 'returns' a value,
 we're referring to the type of the value that the parser holds after it
 successfully parses input. So we'd say that a parser of type* `Parser Line`
