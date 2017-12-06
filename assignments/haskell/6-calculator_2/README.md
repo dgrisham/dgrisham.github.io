@@ -4,6 +4,9 @@ Final Project, Part 2 -- Haskell Calculator
 **This assignment is due Thursday, December 14 by 11:59:59 pm. You may work with
 a partner on this project.**
 
+Overview
+--------
+
 In the second part of this project, you'll be adding a new feature to the
 calculator -- functions. Example of how this will work:
 
@@ -380,6 +383,33 @@ basic integration tests that ensure your program works as expected when multiple
 components are tested together (as opposed to the tests in `test/Spec.hs`, which
 are more like unit tests). Check out the file if you want to see what cases it's
 testing, because it's not as verbose as `stack test`.
+
+### Additional Updates
+
+There are a couple of updates you'll have to make to your project to get it to
+work with the new tests. Download [this cabal file](./calculator.cabal) and
+replace yours with that. You also need to add the parsers that you're
+implementing to the export list of the `Parser` module so that they can be
+tested individually. To do this, open `src/Parser.hs` and change the top of the
+file so that it looks likes this:
+
+```haskell
+module Parser
+  ( runParser
+  , p_line
+  , p_funcStmt
+  , p_appExpr
+  )
+```
+
+If you do this, you'll have to define `p_funcStmt` and `p_appExpr` or you'll get
+an error when trying to run the tests. You can temporarily define them as:
+
+```haskell
+p_funcStmt = undefined
+
+p_appExpr = undefined
+```
 
 Logistics
 ---------
