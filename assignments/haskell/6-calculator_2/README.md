@@ -406,8 +406,10 @@ If you do this, you'll have to define `p_funcStmt` and `p_appExpr` or you'll get
 an error when trying to run the tests. You can temporarily define them as:
 
 ```haskell
+p_funcStmt :: Parser Stmt
 p_funcStmt = undefined
 
+p_appExpr :: Parser Expr
 p_appExpr = undefined
 ```
 
