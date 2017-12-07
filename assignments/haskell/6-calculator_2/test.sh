@@ -5,7 +5,7 @@ runTest() {
     input="$2"
     expected="$3"
 
-    actual=$(printf "$input" | stack exec haskell-calculator-exe 2>/dev/null | sed 's/> //g')
+    actual=$(printf "$input" | stack exec calculator-exe 2>/dev/null | sed 's/> //g')
 
     RED='\033[0;31m'
     GREEN='\033[0;32m'
