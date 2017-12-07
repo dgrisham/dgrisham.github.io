@@ -221,9 +221,11 @@ p_var = some $ oneOf ['a'..'z']
 First consider the `p_var` parser. `p_var` has the type `Parser String`, which
 means it parses input into a `String` value (and returns that `String`). It is
 built out of two parsers from the [Megaparsec
-library](https://hackage.haskell.org/package/megaparsec-6.2.0):
-[`oneOf`](https://hackage.haskell.org/package/megaparsec-6.2.0) and
-[`some`](https://hackage.haskell.org/package/parser-combinators-0.2.0/docs/Control-Applicative-Combinators.html#v:some).
+library](https://hackage.haskell.org/package/megaparsec-6.2.0): `oneOf` ([link
+to
+documentation](https://hackage.haskell.org/package/megaparsec-6.2.0/docs/Text-Megaparsec-Char.html#v:oneOf))
+and `some` ([link to
+documentation](https://hackage.haskell.org/package/parser-combinators-0.2.0/docs/Control-Applicative-Combinators.html#v:some)).
 `oneOf` accepts a list of characters as its argument and creates a parser that
 succeeds when it can parse a single one of those characters from the input.
 `some` takes a parser that parses anything and creates a parser that can parse a
