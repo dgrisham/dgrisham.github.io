@@ -11,7 +11,6 @@ import qualified Data.HashMap.Strict as H
 -- -----
 
 import Lib
-import Parser
 
 -- Constants
 -- =========
@@ -42,88 +41,14 @@ testingEnv'' = H.fromList [ ("n", NumVal 2)
                           , ("z", NumVal 1.1)
                           ]
 
-testingEnvFunc :: Env
-testingEnvFunc = H.fromList [ ("f", CloVal [] (NumExpr 1) H.empty) ]
-
-testingEnvFunc' :: Env
-testingEnvFunc' = H.fromList [ ("f", CloVal ["x"] (VarExpr "x") H.empty) ]
-
-testingEnvFunc'' :: Env
-testingEnvFunc'' = H.fromList [ ("f", CloVal ["x", "y"] (AddExpr (VarExpr "x") (VarExpr "y")) H.empty) ]
-
 -- Tests
 -- =====
 
 main :: IO ()
 main = hspec $ describe "Calculator tests" $ do
-  test_parser
   test_evaluator
   test_executor
   test_additional
-
--- Parser
--- ------
-
-test_parser :: SpecWith ()
-test_parser = describe "Parser tests" $ do
-  test_p_funcStmt
-  test_p_appExpr
-
-test_p_funcStmt :: SpecWith ()
-test_p_funcStmt = describe "Test p_funcStmt" $ do
-  describe "function with no args" $
-    it "f() := 2" $
-      runParser p_funcStmt "f() := 2" `shouldBe` (Right (FuncStmt "f" [] (NumExpr 2)))
-
-  describe "function with valid long name" $
-    it "myFunc_1() := 2" $
-      runParser p_funcStmt "myFunc_1() := 2" `shouldBe` (Right (FuncStmt "myFunc_1" [] (NumExpr 2)))
-
-  describe "function with invalid long name (1)" $
-    it "MyFunc_1() := 2" $
-      runParser p_funcStmt "MyFunc_1" `shouldSatisfy` isParseError
-
-  describe "function with invalid long name (2)" $
-    it "1myFunc_1() := 2" $
-      runParser p_funcStmt "1myFunc_1" `shouldSatisfy` isParseError
-
-  describe "function with invalid long name (3)" $
-    it "_myFunc_1() := 2" $
-      runParser p_funcStmt "_myFunc_1" `shouldSatisfy` isParseError
-
-  describe "function with 1 arg" $
-    it "f(x) := x" $
-      runParser p_funcStmt "f(x) := x" `shouldBe` (Right (FuncStmt "f" ["x"] (VarExpr "x")))
-
-  describe "function with 2 args" $
-    it "f(x, y) := x + y" $
-      runParser p_funcStmt "f(x, y) := x + y" `shouldBe`
-        (Right (FuncStmt "f" ["x", "y"] (AddExpr (VarExpr "x") (VarExpr "y"))))
-
-test_p_appExpr :: SpecWith ()
-test_p_appExpr = describe "Test p_appExpr" $ do
-  describe "function with no args" $
-    it "f()" $
-      runParser p_appExpr "f()" `shouldBe` (Right (AppExpr "f" []))
-
-  describe "function with 1 arg" $
-    it "f(1)" $
-      runParser p_appExpr "f(1)" `shouldBe` (Right (AppExpr "f" [NumExpr 1]))
-
-  describe "function with 2 args" $
-    it "f(x, y)" $
-      runParser p_appExpr "f(x, y)" `shouldBe` (Right (AppExpr "f" [VarExpr "x", VarExpr "y"]))
-
-  describe "function with AddExpr arg" $
-    it "f(x + 2)" $
-      runParser p_appExpr "f(x + 2)" `shouldBe`
-        (Right (AppExpr "f" [AddExpr (VarExpr "x") (NumExpr 2)]))
-
--- ### Helper functions
-
-isParseError :: Either String a -> Bool
-isParseError (Left _) = True
-isParseError _        = False
 
 -- Executor
 -- --------
@@ -131,7 +56,6 @@ isParseError _        = False
 test_executor :: SpecWith ()
 test_executor = describe "Testing statement executor" $ do
   test_setStmt
-  test_funcStmt
 
 test_setStmt :: SpecWith ()
 test_setStmt = describe "Testing statement evaluator" $ do
@@ -159,20 +83,6 @@ test_setStmt = describe "Testing statement evaluator" $ do
                     ])
         testingEnv `shouldBe` testingEnv'
 
-test_funcStmt :: SpecWith ()
-test_funcStmt = describe "Testing function declarations" $ do
-  describe "function with no args" $
-    it "exec f() := 2" $
-      exec (FuncStmt "f" [] (NumExpr 1)) H.empty `shouldBe` testingEnvFunc
-
-  describe "function with 1 arg" $
-    it "exec f(x) := x" $
-      exec (FuncStmt "f" ["x"] (VarExpr "x")) H.empty  `shouldBe` testingEnvFunc'
-
-  describe "function with 2 args" $
-    it "exec f(x, y) := x + y" $
-      exec (FuncStmt "f" ["x", "y"] (AddExpr (VarExpr "x") (VarExpr "y"))) H.empty  `shouldBe` testingEnvFunc''
-
 -- Evaluator
 -- ---------
 
@@ -185,7 +95,6 @@ test_evaluator = describe "Testing expression evaluator" $ do
   test_numExpr
   test_constExpr
   test_varExpr
-  test_appExpr
 
 -- ### NumExpr
 
@@ -325,52 +234,7 @@ test_divideExpr = describe "Testing evaluator on DivideExpr" $ do
     it "(-10) / (-4) -> 2.5" $
       eval (DivideExpr (NumExpr (-10)) (NumExpr (-4))) emptyEnv `shouldBe` NumVal 2.5
 
--- ### AppExpr
-
-test_appExpr :: SpecWith ()
-test_appExpr = describe "Testing evaluator on AppExpr" $ do
-  describe "Test builtin sin function (1)" $
-    it "sin 0" $
-      eval (AppExpr "sin" [NumExpr 0]) H.empty `shouldBe` NumVal (sin 0)
-
-  describe "Test builtin sin function (2)" $
-    it "sin pi" $
-      eval (AppExpr "sin" [SubtractExpr (ConstExpr "pi") (NumExpr 0)]) H.empty `shouldBe` NumVal (sin pi)
-
-  describe "Test builtin cos function (1)" $
-    it "cos 0" $
-      eval (AppExpr "cos" [NumExpr 0]) H.empty `shouldBe` NumVal (cos 0)
-
-  describe "Test builtin cos function (2)" $
-    it "cos pi" $
-      eval (AppExpr "cos" [AddExpr (ConstExpr "pi") (NumExpr 0)]) H.empty `shouldBe` NumVal (cos pi)
-
-  describe "Test function with no args" $
-    it "f() -> 2" $
-      eval (AppExpr "f" []) testingEnvFunc `shouldBe` NumVal 1
-
-  describe "Test function with 1 arg" $
-    it "f(3 / 2) -> 1.5" $
-      eval (AppExpr "f" [NumExpr 1.5]) testingEnvFunc' `shouldBe` NumVal 1.5
-
-  describe "Test function with 2 args" $
-    it "f(3, 4.5) -> 7.5" $
-      eval (AppExpr "f" [NumExpr 3, NumExpr 4.5]) testingEnvFunc'' `shouldBe` NumVal 7.5
-
-  describe "Test function name that doesn't exist" $
-    it "test() not found" $
-      eval (AppExpr "test" []) H.empty
-        `shouldBe` ExnVal "Function name test is not defined."
-
-  describe "Test name that isn't a CloVal" $
-    it "n := 3; n() gives error" $
-      eval (AppExpr "x" []) testingEnv
-        `shouldBe` ExnVal "Can only apply CloVals."
-
 -- ### Properties for QuickCheck tests
-
---prop_funcStmt_Args ::
---TODO
 
 prop_additiveIdentity :: Float -> Bool
 prop_additiveIdentity x =
